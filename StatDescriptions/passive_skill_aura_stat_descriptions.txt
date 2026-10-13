@@ -1,0 +1,207 @@
+include "Metadata/StatDescriptions/passive_skill_stat_descriptions.txt"
+
+no_description action_speed_-%
+no_description life_reserved_by_stat_%
+no_description base_physical_damage_%_to_convert_to_fire
+no_description zero_chaos_resistance
+description
+	1 damage_+%
+	2
+		1|# "Nearby Allies deal {0}% increased Damage"
+		#|-1 "Nearby Enemies deal {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "주변 동료들이 주는 피해 {0}% 증가"
+		#|-1 "주변의 적이 주는 피해 {0}% 감소" negate 1
+description
+	1 base_movement_velocity_+%
+	2
+		1|# "You and nearby Allies have {0}% increased Movement Speed"
+		#|-1 "You and nearby Allies have {0}% reduced Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "자신 및 주변 동료들의 이동 속도 {0}% 증가"
+		#|-1 "자신 및 주변 동료들의 이동 속도 {0}% 감소" negate 1
+description
+	1 chance_to_be_ignited_%
+	1
+		1|# "Nearby Enemies have {0:+d}% chance to be Ignited when Hit" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "주변의 적이 피격 시 점화될 확률 {0:+d}%" reminderstring ReminderTextIgnite
+description
+	1 chance_to_be_frozen_%
+	1
+		1|# "Nearby Enemies have {0:+d}% chance to be Frozen when Hit" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		1|# "주변의 적이 피격 시 동결될 확률 {0:+d}%" reminderstring ReminderTextFreeze
+description
+	1 chance_to_be_shocked_%
+	1
+		1|# "Nearby Enemies have {0:+d}% chance to be Shocked when Hit" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "주변의 적이 피격 시 감전될 확률 {0:+d}%" reminderstring ReminderTextShock
+description
+	1 inquisitor_aura_elemental_damage_+%_final
+	2
+		1|# "Nearby Enemies deal {0}% more Elemental Damage"
+		#|-1 "Nearby Enemies deal {0}% less Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적이 주는 원소 피해 {0}% 증폭"
+		#|-1 "주변의 적이 주는 원소 피해 {0}% 감폭" negate 1
+description
+	1 elemental_damage_taken_+%
+	2
+		1|# "Nearby Enemies take {0}% increased Elemental Damage"
+		#|-1 "Nearby Enemies take {0}% reduced Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적이 받는 원소 피해 {0}% 증가"
+		#|-1 "주변의 적이 받는 원소 피해 {0}% 감소" negate 1
+description
+	1 base_cold_damage_resistance_%
+	1
+		# "Nearby Enemies have {0:+d}% to Cold Resistance"
+	lang "Korean"
+	1
+		# "주변의 적의 냉기 저항 {0:+d}%"
+description
+	1 base_chaos_damage_resistance_%
+	1
+		# "Nearby Enemies have {0:+d}% to Chaos Resistance"
+	lang "Korean"
+	1
+		# "주변의 적의 카오스 저항 {0:+d}%"
+description
+	1 life_regeneration_rate_per_minute_%
+	1
+		# "You and nearby Allies Regenerate {0}% of Life per second" per_minute_to_per_second_2dp 1
+	lang "Korean"
+	1
+		# "자신 및 주변 동료들이 1초마다 생명력의 {0}% 재생" per_minute_to_per_second_2dp 1
+description
+	1 life_regeneration_rate_+%
+	2
+		1|# "Nearby Enemies have {0}% increased Life Regeneration rate"
+		#|-1 "Nearby Enemies have {0}% reduced Life Regeneration rate" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적의 생명력 재생 속도 {0}% 증가"
+		#|-1 "주변의 적의 생명력 재생 속도 {0}% 감소" negate 1
+description
+	1 hit_damage_+%_while_chilled
+	2
+		1|# "Nearby Chilled Enemies deal {0}% increased Damage with Hits"
+		#|-1 "Nearby Chilled Enemies deal {0}% reduced Damage with Hits" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 냉각된 적이 주는 명중 시 피해 {0}% 증가"
+		#|-1 "주변의 냉각된 적이 주는 명중 시 피해 {0}% 감소" negate 1
+description
+	1 damage_over_time_+%_while_hindered
+	2
+		1|# "Nearby Hindered Enemies deal {0}% increased Damage over Time"
+		#|-1 "Nearby Hindered Enemies deal {0}% reduced Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "이동 방해를 받는 주변의 적이 주는 지속 피해 {0}% 증가"
+		#|-1 "이동 방해를 받는 주변의 적이 주는 지속 피해 {0}% 감소" negate 1
+description
+	2 minimum_added_physical_damage_per_impaled_on_enemy maximum_added_physical_damage_per_impaled_on_enemy
+	1
+		# # "You and nearby Allies deal {0} to {1} added Physical Damage for\neach Impale on Enemy"
+	lang "Korean"
+	1
+		# # "자신 및 주변 동료들이 적을 꿰뚫을 때마다\n물리 피해 {0}~{1} 추가"
+description
+	1 base_critical_strike_multiplier_+
+	1
+		# "Nearby Enemies have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "주변의 적의 치명타 피해 배율 {0:+d}%"
+description
+	1 attack_cast_movement_speed_+%
+	2
+		1|# "Nearby Allies have {0}% increased Attack, Cast and Movement Speed"
+		#|-1 "Nearby Allies have {0}% reduced Attack, Cast and Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "주변 동료들의 공격, 시전 및 이동 속도 {0}% 증가"
+		#|-1 "주변 동료들의 공격, 시전 및 이동 속도 {0}% 감소" negate 1
+description
+	1 base_skill_area_of_effect_+%
+	2
+		1|# "Nearby Allies have {0}% increased Area of Effect"
+		#|-1 "Nearby Allies have {0}% reduced Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "주변 동료들의 효과 범위 {0}% 증가"
+		#|-1 "주변 동료들의 효과 범위 {0}% 감소" negate 1
+description
+	1 chance_to_intimidate_on_hit_%
+	2
+		#|99 "Nearby Allies have {0}% chance to Intimidate Enemies for 4 seconds on Hit" reminderstring ReminderTextIntimidate
+		100|# "Nearby Allies Intimidate Enemies for 4 seconds on Hit" reminderstring ReminderTextIntimidate
+	lang "Korean"
+	2
+		#|99 "명중 시 주변 동료들이 {0}%의 확률로 4초 동안 적 위협" reminderstring ReminderTextIntimidate
+		100|# "명중 시 주변 동료들이 4초 동안 적 위협" reminderstring ReminderTextIntimidate
+description
+	1 chance_to_unnerve_on_hit_%
+	2
+		#|99 "Nearby Allies have {0}% chance to Unnerve Enemies for 4 seconds on Hit" reminderstring ReminderTextUnnerve
+		100|# "Nearby Allies Unnerve Enemies for 4 seconds on Hit" reminderstring ReminderTextUnnerve
+	lang "Korean"
+	2
+		#|99 "명중 시 주변 동료들이 {0}%의 확률로 4초 동안 적 낙담 유발" reminderstring ReminderTextUnnerve
+		100|# "명중 시 주변 동료들이 4초 동안 적 낙담 유발" reminderstring ReminderTextUnnerve
+description
+	1 has_tailwind
+	1
+		# "You and nearby Allies have Tailwind" reminderstring ReminderTextTailwind
+	lang "Korean"
+	1
+		# "자신 및 주변 동료들이 순풍 획득" reminderstring ReminderTextTailwind
+description
+	1 action_speed_is_at_most_90%
+	1
+		# "Nearby Enemy Monsters' Action Speed is at most 90% of base value"
+	lang "Korean"
+	1
+		# "주변 적 몬스터의 동작 속도가 기본 수치의 최대 90%"
+description
+	1 base_cooldown_speed_+%
+	2
+		1|# "Nearby Enemies have {0}% increased Cooldown Recovery Rate"
+		#|-1 "Nearby Enemies have {0}% reduced Cooldown Recovery Rate" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적의 재사용 대기시간 회복 속도 {0}% 증가"
+		#|-1 "주변의 적의 재사용 대기시간 회복 속도 {0}% 감소" negate 1
+description
+	1 blinded
+	1
+		# "Nearby Enemies are Blinded" reminderstring ReminderTextBlindNoDuration
+	lang "Korean"
+	1
+		# "주변의 적 실명 유발" reminderstring ReminderTextBlindNoDuration
+description
+	1 damage_taken_+%_from_graft_skills
+	2
+		1|# "Nearby Enemies take {0}% increased Damage from Graft Skills"
+		#|-1 "Nearby Enemies take {0}% reduced Damage from Graft Skills" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적들이 기생체 스킬로 받는 피해 {0}% 증가"
+		#|-1 "주변의 적들이 기생체 스킬로 받는 피해 {0}% 감소" negate 1
+description
+	1 global_cannot_crit
+	1
+		# "Nearby Enemies cannot deal Critical Strikes"
+	lang "Korean"
+	1
+		# "주변의 적이 치명타를 가할 수 없음"

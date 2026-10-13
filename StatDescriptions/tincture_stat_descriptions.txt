@@ -1,0 +1,682 @@
+include "Metadata/StatDescriptions/stat_descriptions.txt"
+description
+	1 stun_threshold_reduction_+%_with_tinctured_weapons
+	2
+		1|# "{0}% reduced Enemy Stun Threshold with Melee Weapons" reminderstring ReminderTextStunThreshold
+		#|-1 "{0}% increased Enemy Stun Threshold with Melee Weapons" negate 1 reminderstring ReminderTextStunThreshold
+	lang "Korean"
+	2
+		1|# "근접 무기 사용 시 적 기절 한계치 {0}% 감소" reminderstring ReminderTextStunThreshold
+		#|-1 "근접 무기 사용 시 적 기절 한계치 {0}% 증가" negate 1 reminderstring ReminderTextStunThreshold
+description
+	1 chance_to_bleed_on_hit_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to cause Bleeding with Melee Weapons" reminderstring ReminderTextBleeding
+	lang "Korean"
+	1
+		1|# "근접 무기 사용 시 {0}%의 확률로 출혈 유발" reminderstring ReminderTextBleeding
+description
+	1 chance_to_blind_on_hit_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to Blind Enemies on Hit with Melee Weapons" reminderstring ReminderTextBlind
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중 시 {0}%의 확률로 적 실명 유발" reminderstring ReminderTextBlind
+description
+	1 local_cannot_generate_toxicity_stacks_over_time
+	1
+		# "Does not inflict Mana Burn over time"
+	lang "Korean"
+	1
+		# "일정 시간 동안 마나 연소를 유발하지 않음"
+description
+	1 toxicity_stacks_gained_on_hit_with_tinctured_weapons
+	2
+		1 "Inflicts Mana Burn on you when you Hit an Enemy with a Melee Weapon" reminderstring ReminderTextTinctureManaBurn
+		2|# "Inflicts {0} Mana Burn on you when you Hit an Enemy with a Melee Weapon" reminderstring ReminderTextTinctureManaBurn
+	lang "Korean"
+	2
+		1 "근접 무기로 적 명중 시 자신에게 마나 연소 유발" reminderstring ReminderTextTinctureManaBurn
+		2|# "근접 무기로 적 명중 시 자신에게 마나 연소 {0}개 유발" reminderstring ReminderTextTinctureManaBurn
+description
+	1 item_rarity_+%_per_toxicity_up_to_100%_from_tincture
+	1
+		1|# "{0}% increased Rarity of Items found per Mana Burn, up to a maximum of 100%"
+	lang "Korean"
+	1
+		1|# "마나 연소 하나당 발견하는 아이템 희귀도 {0}% 증가, 최대 100%"
+description
+	1 all_damage_with_tinctured_weapons_can_freeze
+	1
+		1|# "All Damage with Melee Weapons can Freeze" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		1|# "근접 무기로 주는 모든 피해가 동결 유발 가능" reminderstring ReminderTextFreeze
+description
+	1 all_damage_with_tinctured_weapons_can_ignite
+	1
+		1|# "All Damage with Melee Weapons can Ignite" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "근접 무기로 주는 모든 피해가 점화 유발 가능" reminderstring ReminderTextIgnite
+description
+	1 all_damage_with_tinctured_weapons_can_poison
+	1
+		1|# "All Damage with Melee Weapons can Poison" reminderstring ReminderTextPoison
+	lang "Korean"
+	1
+		1|# "근접 무기로 주는 모든 피해가 중독 유발 가능" reminderstring ReminderTextPoison
+description
+	1 all_damage_with_tinctured_weapons_can_shock
+	1
+		1|# "All Damage with Melee Weapons can Shock" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "근접 무기로 주는 모든 피해가 감전 유발 가능" reminderstring ReminderTextShock
+description
+	1 always_stun_enemies_that_are_on_full_life_with_tinctured_weapons
+	1
+		1|# "Damaging Melee Weapon Hits always Stun Enemies that are on Full Life"
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중하여 피해를 줄 경우 생명력이 최대인 적을 항상 기절시킴"
+description
+	1 apply_X_wither_stacks_for_2_seconds_with_tinctured_weapons
+	1
+		1|# "Melee Weapon Hits Inflict {0} Withered Debuffs for 2 seconds" reminderstring ReminderTextWithered
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중 시 2초 동안 위축 디버프 {0}개 유발" reminderstring ReminderTextWithered
+description
+	1 base_killed_monster_from_tinctured_weapon_attack_dropped_item_rarity_+%
+	2
+		1|# "{0}% increased Rarity of Items Dropped by Enemies killed by Melee Weapon Attacks"
+		#|-1 "{0}% reduced Rarity of Items Dropped by Enemies killed by Melee Weapon Attacks" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 공격으로 처치한 적이 떨어뜨리는 아이템의 희귀도 {0}% 증가"
+		#|-1 "근접 무기 공격으로 처치한 적이 떨어뜨리는 아이템의 희귀도 {0}% 감소" negate 1
+description
+	1 bleeding_damage_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Damage with Bleeding from Melee Weapons" reminderstring ReminderTextBleeding
+		#|-1 "{0}% reduced Damage with Bleeding from Melee Weapons" negate 1 reminderstring ReminderTextBleeding
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발한 출혈 피해 {0}% 증가" reminderstring ReminderTextBleeding
+		#|-1 "근접 무기로 유발한 출혈 피해 {0}% 감소" negate 1 reminderstring ReminderTextBleeding
+description
+	1 blind_effect_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Effect of Blind from Melee Weapons" reminderstring ReminderTextBlindNoDuration
+		#|-1 "{0}% reduced Effect of Blind from Melee Weapons" negate 1 reminderstring ReminderTextBlindNoDuration
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발한 실명 효과 {0}% 증가" reminderstring ReminderTextBlindNoDuration
+		#|-1 "근접 무기로 유발한 실명 효과 {0}% 감소" negate 1 reminderstring ReminderTextBlindNoDuration
+description
+	1 chance_to_apply_grasping_vines_on_tinctured_weapon_hit_%
+	2
+		1|99 "{0}% chance to inflict a Grasping Vine on Melee Weapon Hit" reminderstring ReminderTextGraspingVines
+		100|# "Inflict a Grasping Vine on Melee Weapon Hit" reminderstring ReminderTextGraspingVines
+	lang "Korean"
+	2
+		1|99 "근접 무기로 명중 시 {0}%의 확률로 탐욕스러운 덩굴 1개 유발" reminderstring ReminderTextGraspingVines
+		100|# "근접 무기로 명중 시 탐욕스러운 덩굴 1개 유발" reminderstring ReminderTextGraspingVines
+description
+	1 chance_to_block_attack_damage_if_stunned_an_enemy_with_tinctured_weapon_recently_+%
+	1
+		# "+{0}% Chance to Block Attack Damage if you've Stunned an Enemy with a Melee Weapon Recently" reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		# "최근 4초 이내에 근접 무기로 적을 기절시킨 경우 공격 피해 막기 확률 +{0}%" reminderstring ReminderTextRecently
+description
+	1 chance_to_freeze_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to Freeze with Melee Weapons" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		1|# "근접 무기 사용 시 {0}%의 확률로 동결 유발" reminderstring ReminderTextFreeze
+description
+	1 chance_to_ignite_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to Ignite with Melee Weapons" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "근접 무기 사용 시 {0}%의 확률로 점화 유발" reminderstring ReminderTextIgnite
+description
+	1 chance_to_poison_on_hit_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to Poison with Melee Weapons" reminderstring ReminderTextPoison
+	lang "Korean"
+	1
+		1|# "근접 무기 사용 시 {0}%의 확률로 중독 유발" reminderstring ReminderTextPoison
+description
+	1 chance_to_shock_%_with_tinctured_weapons
+	1
+		1|# "{0}% chance to Shock with Melee Weapons" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "근접 무기 사용 시 {0}%의 확률로 감전 유발" reminderstring ReminderTextShock
+description
+	1 chill_effect_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Effect of Chill from Melee Weapons" reminderstring ReminderTextChillPotentialEffect
+		#|-1 "{0}% reduced Effect of Chill from Melee Weapons" negate 1 reminderstring ReminderTextChillPotentialEffect
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발하는 냉각 효과 {0}% 증가" reminderstring ReminderTextChillPotentialEffect
+		#|-1 "근접 무기로 유발하는 냉각 효과 {0}% 감소" negate 1 reminderstring ReminderTextChillPotentialEffect
+description
+	1 create_consecrated_ground_on_tinctured_weapon_hit_%_vs_rare_or_unique_enemy
+	1
+		1|# "{0}% chance to create Consecrated Ground when you Hit a Rare or\nUnique Enemy with a Melee Weapon, lasting 8 seconds" reminderstring ReminderTextConsecratedGround
+	lang "Korean"
+	1
+		1|# "근접 무기로 희귀 또는 고유 적 명중 시\n{0}%의 확률로 8초간 지속되는 신성화 지대 생성" reminderstring ReminderTextConsecratedGround
+description
+	1 critical_strike_chance_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Critical Strike Chance with Melee Weapons"
+		#|-1 "{0}% reduced Critical Strike Chance with Melee Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 사용 시 치명타 확률 {0}% 증가"
+		#|-1 "근접 무기 사용 시 치명타 확률 {0}% 감소" negate 1
+description
+	1 culling_strike_with_tinctured_weapons
+	1
+		# "Melee Weapon Attacks have Culling Strike" reminderstring ReminderTextCullingStrike
+	lang "Korean"
+	1
+		# "근접 무기 공격 시 마무리 타격 가능" reminderstring ReminderTextCullingStrike
+description
+	1 elemental_damage_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Elemental Damage with Melee Weapons"
+		#|-1 "{0}% reduced Elemental Damage with Melee Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 사용 시 원소 피해 {0}% 증가"
+		#|-1 "근접 무기 사용 시 원소 피해 {0}% 감소" negate 1
+description
+	1 explode_enemies_for_10%_life_as_fire_on_tinctured_weapon_kill_chance_%
+	1
+		1|# "Killing Blows with Melee Weapons have a {0}% chance for Enemies to\nExplode, dealing a tenth of their maximum Life as Fire Damage"
+	lang "Korean"
+	1
+		1|# "근접 무기로 최후의 일격 시 적이 {0}%의 확률로 폭발하여,\n최대 생명력의 1/10을 화염 피해로 줌"
+description
+	1 fire_damage_taken_+_per_toxicity_from_tincture
+	1
+		# "{0:+d} Fire Damage taken from Hits per Mana Burn"
+	lang "Korean"
+	1
+		# "마나 연소 하나당 피격 시 받는 화염 피해 {0:+d}"
+description
+	1 gain_1_rare_monster_mod_on_killing_blow_with_tinctured_weapons_for_60_seconds_%_chance
+	1
+		1|# "Killing Blows with Melee Weapons against Rare Monsters have a\n{0}% chance to grant one of their Modifiers for 60 seconds"
+	lang "Korean"
+	1
+		1|# "희귀 몬스터를 상대로 근접 무기로 최후의 일격 시,\n{0}%의 확률로 해당 몬스터의 속성 1개를 60초 동안 획득"
+description
+	1 gain_rage_on_hitting_rare_unique_enemy_with_tinctured_weapon_%
+	2
+		1|99 "{0}% chance to gain 1 Rage when you Hit a Rare or Unique Enemy with a Melee Weapon" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+		100|# "Gain 1 Rage when you Hit a Rare or Unique Enemy with a Melee Weapon" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+	lang "Korean"
+	2
+		1|99 "근접 무기로 희귀 또는 고유 적 명중 시 {0}%의 확률로 격노 1 획득" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+		100|# "근접 무기로 희귀 또는 고유 적 명중 시 격노 1 획득" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+description
+	1 gain_x_rage_on_hit_with_tinctured_weapons
+	1
+		1|# "Gain {0} Rage on Melee Weapon Hit" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+	lang "Korean"
+	1
+		1|# "근접 무기 명중 시 격노 {0} 획득" reminderstring ReminderTextRage reminderstring ReminderTextRageOnHit
+description
+	1 hits_ignore_enemy_monster_physical_damage_reduction_%_chance_with_tinctured_weapons
+	2
+		1|99 "Melee Weapon Hits have {0}% chance to ignore Enemy Physical Damage Reduction"
+		100|# "Melee Weapon Hits ignore Enemy Physical Damage Reduction"
+	lang "Korean"
+	2
+		1|99 "근접 무기로 명중 시 {0}%의 확률로 적의 물리 피해 감소를 무시"
+		100|# "근접 무기로 명중 시 적의 물리 피해 감소를 무시"
+description
+	1 ignite_damage_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Damage with Ignite from Melee Weapons" reminderstring ReminderTextIgniteNonHitNoDuration
+		#|-1 "{0}% reduced Damage with Ignite from Melee Weapons" negate 1 reminderstring ReminderTextIgniteNonHitNoDuration
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발하는 점화의 피해 {0}% 증가" reminderstring ReminderTextIgniteNonHitNoDuration
+		#|-1 "근접 무기로 유발하는 점화의 피해 {0}% 감소" negate 1 reminderstring ReminderTextIgniteNonHitNoDuration
+description
+	1 leech_%_is_instant_with_tinctured_weapons_vs_low_life_enemies
+	1
+		# "{0}% of Melee Weapon Leech is Instant against Enemies that are on Low Life" reminderstring ReminderTextLowLife
+	lang "Korean"
+	1
+		# "낮은 생명력 상태의 적에 대한 근접 무기 흡수의 {0}%가 즉시 적용" reminderstring ReminderTextLowLife
+description
+	1 life_leech_on_overkill_tinctured_weapon_damage_%
+	1
+		1|# "{0}% of Overkill Damage with Melee Weapons is Leeched as Life" reminderstring ReminderTextLifeLeech reminderstring ReminderTextOverkill
+	lang "Korean"
+	1
+		1|# "근접 무기로 주는 과잉살상 피해의 {0}%를 생명력으로 흡수" reminderstring ReminderTextLifeLeech reminderstring ReminderTextOverkill
+description
+	1 mana_regeneration_rate_+%_if_enemy_shocked_with_tinctured_weapon_recently
+	2
+		1|# "{0}% increased Mana Regeneration Rate if you have Shocked an Enemy with a Melee Weapon Recently" reminderstring ReminderTextRecently
+		#|-1 "{0}% reduced Mana Regeneration Rate if you have Shocked an Enemy with a Melee Weapon Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|# "최근 4초 이내 근접 무기로 적을 감전시킨 경우 마나 재생 속도 {0}% 증가" reminderstring ReminderTextRecently
+		#|-1 "최근 4초 이내 근접 무기로 적을 감전시킨 경우 마나 재생 속도 {0}% 감소" negate 1 reminderstring ReminderTextRecently
+description
+	2 melee_splash_with_tinctured_weapons melee_splash_area_of_effect_+%
+	3
+		# 0 "Melee Strike Skills deal Splash Damage to surrounding targets"
+		# 1|# "Melee Strike Skills deal Splash Damage to surrounding targets, with {1}% increased Area of Effect"
+		# #|-1 "Melee Strike Skills deal Splash Damage to surrounding targets, with {1}% reduced Area of Effect" negate 2 canonical_line
+	lang "Korean"
+	3
+		# 0 "근접 타격 스킬로 주변 대상에게 범위 피해를 줌"
+		# 1|# "근접 타격 스킬로 주변 대상에게 범위 피해를 줌, 범위 피해의 효과 범위 {1}% 증가"
+		# #|-1 "근접 타격 스킬로 주변 대상에게 범위 피해를 줌, 범위 피해의 효과 범위 {1}% 감소" negate 2 canonical_line
+description
+	1 melee_tinctured_weapon_range_+
+	2
+		10 "{0:+d} metre to Melee Strike Range" locations_to_metres 1 reminderstring ReminderTextMeleeStrikeRange
+		# "{0:+d} metres to Melee Strike Range" locations_to_metres 1 reminderstring ReminderTextMeleeStrikeRange
+	lang "Korean"
+	2
+		10 "근접 타격 범위 {0:+d}미터" locations_to_metres 1 reminderstring ReminderTextMeleeStrikeRange
+		# "근접 타격 범위 {0:+d}미터" locations_to_metres 1 reminderstring ReminderTextMeleeStrikeRange
+description
+	1 number_of_additional_projectiles_with_tinctured_weapon_attacks_if_you_have_been_hit_recently
+	2
+		1 "Attacks with Melee Weapons fire an additional Projectile if you've been Hit Recently" reminderstring ReminderTextRecently
+		2|# "Attacks with Melee Weapons fire {0} additional Projectiles if you've been Hit Recently" reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1 "최근 4초 이내 피격된 경우 근접 무기 공격이 투사체 1개 추가 발사" reminderstring ReminderTextRecently
+		2|# "최근 4초 이내 피격된 경우 근접 무기 공격이 투사체 {0}개 추가 발사" reminderstring ReminderTextRecently
+description
+	1 overwhelm_%_physical_damage_reduction_with_tinctured_weapons_%
+	1
+		# "Melee Weapons have {0}% chance to ignore Enemy Physical Damage Reduction"
+	lang "Korean"
+	1
+		# "근접 무기 사용 시 {0}%의 확률로 적 몬스터 물리 피해 감소를 무시"
+description
+	1 penetrate_elemental_resistances_%_per_toxicity_with_tinctured_weapons
+	1
+		1|# "Melee Weapon Damage Penetrates {0}% Elemental Resistances per Mana Burn, up to a maximum of 200%"
+	lang "Korean"
+	1
+		1|# "마나 연소 하나당 근접 무기 피해가 원소 저항 {0}%씩, 최대 200% 관통"
+description
+	1 phasing_for_4_seconds_on_tinctured_weapon_kill_%
+	2
+		#|99 "{0}% chance to gain Phasing for 4 seconds on Melee Weapon Kill" reminderstring ReminderTextPhasing
+		100|# "Gain Phasing for 4 seconds on Melee Weapon Kill" reminderstring ReminderTextPhasing
+	lang "Korean"
+	2
+		#|99 "근접 무기로 처치 시 {0}%의 확률로 4초 동안 차원 능력 획득" reminderstring ReminderTextPhasing
+		100|# "근접 무기로 처치 시 4초 동안 차원 능력 획득" reminderstring ReminderTextPhasing
+description
+	1 poison_damage_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Damage with Poison from Melee Weapons" reminderstring ReminderTextPoison
+		#|-1 "{0}% reduced Damage with Poison from Melee Weapons" negate 1 reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발하는 중독의 피해 {0}% 증가" reminderstring ReminderTextPoison
+		#|-1 "근접 무기로 유발하는 중독의 피해 {0}% 감소" negate 1 reminderstring ReminderTextPoison
+description
+	1 local_tincture_cooldown_recovery_+%
+	2
+		1|# "{0}% increased Cooldown Recovery Rate"
+		#|-1 "{0}% reduced Cooldown Recovery Rate" negate 1
+	lang "Korean"
+	2
+		1|# "재사용 대기시간 회복 속도 {0}% 증가"
+		#|-1 "재사용 대기시간 회복 속도 {0}% 감소" negate 1
+description
+	1 local_tincture_mod_effect_+%
+	2
+		1|# "{0}% increased effect"
+		#|-1 "{0}% reduced effect" negate 1
+	lang "Korean"
+	2
+		1|# "효과 {0}% 증가"
+		#|-1 "효과 {0}% 감소" negate 1
+description
+	1 local_tincture_toxicity_rate_+%
+	2
+		1|# "{0}% increased Mana Burn rate"
+		#|-1 "{0}% reduced Mana Burn rate" negate 1 canonical_line
+	lang "Korean"
+	2
+		1|# "마나 연소 속도 {0}% 증가"
+		#|-1 "마나 연소 속도 {0}% 감소" negate 1 canonical_line
+description
+	1 random_curse_on_tinctured_weapon_hit_%
+	1
+		# "{0}% chance to Curse Enemies with a random Hex on Melee Weapon Hit"
+	lang "Korean"
+	1
+		# "근접 무기로 명중 시 적이 {0}%의 확률로 무작위 사술에 걸림"
+description
+	1 recover_%_maximum_life_on_killing_rare_or_unique_with_tinctured_weapon
+	2
+		1|# "Recover {0}% of Life on Killing a Rare or Unique Enemy with a Melee Weapon"
+		#|-1 "Lose {0}% of Life on Killing a Rare or Unique Enemy with a Melee Weapon" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기로 희귀 또는 고유 적 처치 시 생명력의 {0}% 회복"
+		#|-1 "근접 무기로 희귀 또는 고유 적 처치 시 생명력의 {0}% 상실" negate 1
+description
+	1 reduce_enemy_chaos_resistance_with_tinctured_weapons_%
+	2
+		1|# "Melee Weapon Damage Penetrates {0}% Chaos Resistance"
+		#|-1 "Your Melee Weapon Hits treat Chaos Resistance as {0}% higher than actual value" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 피해가 카오스 저항 {0}% 관통"
+		#|-1 "근접 무기로 명중 시 카오스 저항을 실제 값보다 {0}% 높게 취급" negate 1
+description
+	1 reduce_enemy_cold_resistance_with_tinctured_weapons_%
+	2
+		1|# "Melee Weapon Damage Penetrates {0}% Cold Resistance"
+		#|-1 "Your Melee Weapon Hits treat Cold Resistance as {0}% higher than actual value" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 피해가 냉기 저항 {0}% 관통"
+		#|-1 "근접 무기로 명중 시 냉기 저항을 실제 값보다 {0}% 높게 취급" negate 1
+description
+	1 reduce_enemy_fire_resistance_with_tinctured_weapons_%
+	2
+		1|# "Melee Weapon Damage Penetrates {0}% Fire Resistance"
+		#|-1 "Your Melee Weapon Hits treat Fire Resistance as {0}% higher than actual value" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 피해가 화염 저항 {0}% 관통"
+		#|-1 "근접 무기로 명중 시 화염 저항을 실제 값보다 {0}% 높게 취급" negate 1
+description
+	1 reduce_enemy_lightning_resistance_with_tinctured_weapons_%
+	2
+		1|# "Melee Weapon Damage Penetrates {0}% Lightning Resistance"
+		#|-1 "Your Melee Weapon Hits treat Lightning Resistance as {0}% higher than actual value" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 피해가 번개 저항 {0}% 관통"
+		#|-1 "근접 무기로 명중 시 번개 저항을 실제 값보다 {0}% 높게 취급" negate 1
+description
+	1 refresh_bleeding_duration_on_tinctured_weapon_hit_%_chance
+	1
+		1|# "{0}% chance to refresh Bleeding Duration on Melee Weapon Hit" reminderstring ReminderTextBleeding
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중 시 {0}%의 확률로 출혈 지속시간 초기화" reminderstring ReminderTextBleeding
+description
+	1 refresh_ignite_duration_on_tinctured_weapon_hit_%_chance
+	1
+		1|# "{0}% chance to refresh Ignite Duration on Melee Weapon Hit" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중 시 {0}%의 확률로 점화 지속시간 초기화" reminderstring ReminderTextIgnite
+description
+	1 shatter_on_tinctured_weapon_kill_chance_%
+	1
+		1|# "Killing Blows with Melee Weapons have {0}% chance to Shatter Enemies"
+	lang "Korean"
+	1
+		1|# "근접 무기로 최후의 일격 시 {0}%의 확률로 적이 산산이 조각남"
+description
+	1 shock_effect_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Effect of Shock from Melee Weapons" reminderstring ReminderTextShockPotentialEffect
+		#|-1 "{0}% reduced Effect of Shock from Melee Weapons" negate 1 reminderstring ReminderTextShockPotentialEffect
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발하는 감전의 효과 {0}% 증가" reminderstring ReminderTextShockPotentialEffect
+		#|-1 "근접 무기로 유발하는 감전의 효과 {0}% 감소" negate 1 reminderstring ReminderTextShockPotentialEffect
+description
+	1 steal_endurance_charges_on_hit_%_with_tinctured_weapons
+	2
+		1|99 "{0}% chance to Steal Endurance Charges on Hit with Melee Weapons"
+		100|# "Melee Weapon Hits Steal Endurance Charges"
+	lang "Korean"
+	2
+		1|99 "근접 무기로 명중 시 {0}%의 확률로 인내 충전 강탈"
+		100|# "근접 무기로 명중 시 인내 충전 강탈"
+description
+	1 steal_frenzy_charges_on_hit_%_with_tinctured_weapons
+	2
+		1|99 "{0}% chance to Steal Frenzy Charges on Hit with Melee Weapons"
+		100|# "Melee Weapon Hits Steal Frenzy Charges"
+	lang "Korean"
+	2
+		1|99 "근접 무기로 명중 시 {0}%의 확률로 격분 충전 강탈"
+		100|# "근접 무기로 명중 시 격분 충전 강탈"
+description
+	1 steal_power_charges_on_hit_%_with_tinctured_weapons
+	2
+		1|99 "{0}% chance to Steal Power Charges on Hit with Melee Weapons"
+		100|# "Melee Weapon Hits Steal Power Charges"
+	lang "Korean"
+	2
+		1|99 "근접 무기로 명중 시 {0}%의 확률로 권능 충전 강탈"
+		100|# "근접 무기로 명중 시 권능 충전 강탈"
+description
+	1 stun_duration_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Stun Duration with Melee Weapons"
+		#|-1 "{0}% reduced Stun Duration with Melee Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기로 유발하는 기절의 지속시간 {0}% 증가"
+		#|-1 "근접 무기로 유발하는 기절의 지속시간 {0}% 감소" negate 1
+description
+	1 attack_speed_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Melee Weapon Attack Speed"
+		#|-1 "{0}% reduced Melee Weapon Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 공격 속도 {0}% 증가"
+		#|-1 "근접 무기 공격 속도 {0}% 감소" negate 1
+description
+	1 base_mana_gained_on_tinctured_weapon_kill
+	2
+		1|# "Gain {0} Mana per Enemy Killed with Melee Weapons"
+		#|-1 "Lose {0} Mana per Enemy Killed with Melee Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기로 처치한 적 하나당 마나 {0} 획득"
+		#|-1 "근접 무기로 처치한 적 하나당 마나 {0} 상실" negate 1
+description
+	1 critical_strike_multiplier_+_with_tinctured_weapons
+	1
+		# "{0:+d}% to Melee Weapon Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "근접 무기 치명타 피해 배율 {0:+d}%"
+description
+	1 damage_over_time_multiplier_+_with_tinctured_weapons
+	1
+		# "{0:+d}% to Damage over Time Multiplier with Melee Weapon Attacks"
+	lang "Korean"
+	1
+		# "근접 무기 공격으로 주는 지속 피해 배율 {0:+d}%"
+description
+	1 elemental_ailment_duration_+%_with_tinctured_weapons
+	2
+		1|# "{0}% increased Duration of Elemental Ailments from Melee Weapon Attacks" reminderstring ReminderTextElementalAilments
+		#|-1 "{0}% reduced Duration of Elemental Ailments from Melee Weapon Attacks" negate 1 reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	2
+		1|# "근접 무기 공격으로 유발하는 원소 상태 이상의 지속시간 {0}% 증가" reminderstring ReminderTextElementalAilments
+		#|-1 "근접 무기 공격으로 유발하는 원소 상태 이상의 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextElementalAilments
+description
+	1 flask_charges_granted_from_tinctured_weapon_kills_+%
+	2
+		1|# "{0}% increased Flask Charges gained from Kills with Melee Weapons"
+		#|-1 "{0}% reduced Flask Charges gained from Kills with Melee Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "근접 무기 처치로 얻는 플라스크 충전량 {0}% 증가"
+		#|-1 "근접 무기 처치로 얻는 플라스크 충전량 {0}% 감소" negate 1
+description
+	1 life_gained_on_hitting_enemies_with_tinctured_weapons
+	1
+		1|# "Gain {0} Life per Enemy Hit with Melee Weapons"
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중한 적 하나당 생명력 {0} 획득"
+description
+	1 life_gained_on_killing_enemies_with_tinctured_weapons
+	1
+		# "Gain {0} Life per Enemy Killed with Melee Weapons"
+	lang "Korean"
+	1
+		# "근접 무기로 처치한 적 하나당 생명력 {0} 획득"
+description
+	1 mana_gained_on_hitting_enemies_with_tinctured_weapons
+	1
+		1|# "Gain {0} Mana per Enemy Hit with Melee Weapons"
+	lang "Korean"
+	1
+		1|# "근접 무기로 명중한 적 하나당 마나 {0} 획득"
+description
+	1 penetrate_elemental_resistances_%_with_tinctured_weapons
+	1
+		1|# "Melee Weapon Damage Penetrates {0}% Elemental Resistances"
+	lang "Korean"
+	1
+		1|# "근접 무기 피해가 원소 저항 {0}% 관통"
+description
+	1 tinctured_weapon_damage_+%_vs_enemies_that_are_on_low_life
+	1
+		1|# "{0}% increased Melee Weapon Damage against Enemies that are on Low Life" reminderstring ReminderTextLowLife
+	lang "Korean"
+	1
+		1|# "낮은 생명력 상태의 적에게 근접 무기로 주는 피해 {0}% 증가" reminderstring ReminderTextLowLife
+description
+	1 tincture_bleeding_damage_+%_final_vs_non_bleeding_enemies
+	2
+		1|# "Bleeding inflicted with Melee Weapons on non-Bleeding Enemies deals {0}% more Damage" reminderstring ReminderTextBleeding
+		#|-1 "Bleeding inflicted with Melee Weapons on non-Bleeding Enemies deals {0}% less Damage" negate 1 reminderstring ReminderTextBleeding
+	lang "Korean"
+	2
+		1|# "출혈 중이 아닌 적에게 근접 무기로 유발하는 출혈이 주는 피해 {0}% 증폭" reminderstring ReminderTextBleeding
+		#|-1 "출혈 중이 아닌 적에게 근접 무기로 유발하는 출혈이 주는 피해 {0}% 감폭" negate 1 reminderstring ReminderTextBleeding
+description
+	1 tinctured_weapon_additional_critical_strike_chance_percent_against_full_life_enemies
+	1
+		# "Melee Weapons have {0:+d}% to Critical Strike Chance against Enemies that are on Full Life"
+	lang "Korean"
+	1
+		# "생명력이 최대인 적에 대한 근접 무기 치명타 확률 {0:+d}%"
+description
+	1 tinctured_weapon_attack_poison_on_non_poisoned_enemies_damage_+%
+	2
+		1|# "Poisons inflicted with Melee Weapons on non-Poisoned Enemies deal {0}% increased Damage" reminderstring ReminderTextPoison
+		#|-1 "Poisons inflicted with Melee Weapons on non-Poisoned Enemies deal {0}% reduced Damage" negate 1 reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1|# "중독되지 않은 적에게 근접 무기로 유발하는 중독의 피해 {0}% 증가" reminderstring ReminderTextPoison
+		#|-1 "중독되지 않은 적에게 근접 무기로 유발하는 중독의 피해 {0}% 감소" negate 1 reminderstring ReminderTextPoison
+description
+	1 tinctured_weapon_attack_speed_+%_if_have_blocked_recently
+	2
+		1|# "{0}% increased Melee Weapon Attack Speed if you have Blocked Recently" reminderstring ReminderTextRecently
+		#|-1 "{0}% reduced Melee Weapon Attack Speed if you have Blocked Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|# "최근 4초 이내 막아낸 경우 근접 무기 공격 속도 {0}% 증가" reminderstring ReminderTextRecently
+		#|-1 "최근 4초 이내 막아낸 경우 근접 무기 공격 속도 {0}% 감소" negate 1 reminderstring ReminderTextRecently
+description
+	1 tinctured_weapon_chill_minimum_slow_%
+	1
+		1|# "Chills from Melee Weapon Hits always reduce Action Speed by at least {0}%"
+	lang "Korean"
+	1
+		1|# "근접 무기 명중으로 유발된 냉각이 항상 동작 속도를 최소 {0}% 감소시킴"
+description
+	1 tinctured_weapon_cover_in_ash_on_hit_for_X_seconds_vs_full_life_enemies
+	1
+		# "Cover Full Life Enemies in Ash for {0} seconds on Melee Weapon Hit" reminderstring ReminderTextCoveredInAshNoDuration
+	lang "Korean"
+	1
+		# "근접 무기로 생명력이 최대인 적 명중 시 해당 적을 {0}초 동안 재로 뒤덮음" reminderstring ReminderTextCoveredInAshNoDuration
+description
+	1 tinctured_weapon_cover_in_frost_on_hit_for_X_seconds_vs_full_life_enemies
+	1
+		# "Cover Full Life Enemies in Frost for {0} seconds on Melee Weapon Hit" reminderstring ReminderTextCoveredInFrostNoDuration
+	lang "Korean"
+	1
+		# "근접 무기로 생명력이 최대인 적 명중 시 해당 적을 {0}초 동안 서리로 뒤덮음" reminderstring ReminderTextCoveredInFrostNoDuration
+description
+	1 tinctured_weapon_critical_strike_multiplier_vs_enemies_on_full_life_+
+	1
+		# "{0:+d}% to Melee Weapon Critical Strike Multiplier against Enemies that are on Full Life"
+	lang "Korean"
+	1
+		# "생명력이 최대인 적에 대한 근접 무기 치명타 피해 배율 {0:+d}%"
+description
+	1 tinctured_weapon_crush_on_hit_for_X_seconds_vs_full_life_enemies
+	1
+		# "Crush Full Life Enemies for {0} seconds on Melee Weapon Hit" reminderstring ReminderTextCrushedNoDuration
+	lang "Korean"
+	1
+		# "근접 무기로 생명력이 최대인 적 명중 시 해당 적을 {0}초 동안 타쇄" reminderstring ReminderTextCrushedNoDuration
+description
+	1 tinctured_weapon_damage_+%_per_non_instant_spell_cast_in_past_8_seconds
+	2
+		1|# "{0}% increased Melee Weapon Damage for each\nNon-Instant Spell you've Cast in the past 8 seconds"
+		#|-1 "{0}% reduced Melee Weapon Damage for each\nNon-Instant Spell you've Cast in the past 8 seconds" negate 1
+	lang "Korean"
+	2
+		1|# "최근 8초 이내 시전한 비-즉시 시전 주문 하나당\n근접 무기 피해 {0}% 증가"
+		#|-1 "최근 8초 이내 시전한 비-즉시 시전 주문 하나당\n근접 무기 피해 {0}% 감소" negate 1
+description
+	1 tinctured_weapon_hits_cannot_be_evaded_while_on_low_life
+	1
+		# "Your Melee Weapon Hits can't be Evaded while you are on Low Life" reminderstring ReminderTextLowLife
+	lang "Korean"
+	1
+		# "낮은 생명력 상태일 때 플레이어의 근접 무기 명중 회피 불가" reminderstring ReminderTextLowLife
+description
+	1 tinctured_weapon_kill_chance_to_gain_onslaught_on_kill_for_10_seconds_%
+	2
+		1|99 "{0}% chance to gain Onslaught for 10 seconds on Killing Blow with Melee Weapons" reminderstring ReminderTextOnslaught
+		100|# "Gain Onslaught for 10 seconds on Killing Blow with Melee Weapons" reminderstring ReminderTextOnslaught
+	lang "Korean"
+	2
+		1|99 "근접 무기로 최후의 일격 시 {0}%의 확률로 10초 동안 맹공 획득" reminderstring ReminderTextOnslaught
+		100|# "근접 무기로 최후의 일격 시 10초 동안 맹공 획득" reminderstring ReminderTextOnslaught
+description
+	1 tinctured_weapon_projectile_chain_from_terrain_chance_%
+	2
+		0|99 "Projectiles from Melee Weapon Attacks have {0}% chance to be able to Chain when colliding with terrain"
+		100|# "Projectiles from Melee Weapon Attacks can Chain when colliding with terrain"
+	lang "Korean"
+	2
+		0|99 "근접 무기 공격의 투사체가 지형과 충돌 시 {0}%의 확률로 연쇄"
+		100|# "근접 무기 공격의 투사체가 지형과 충돌 시 연쇄"
+description
+	1 tinctured_weapon_skill_area_of_effect_+%_if_enemy_killed_recently
+	2
+		1|# "{0}% increased Melee Weapon Attack Area of Effect if you've Killed Recently" reminderstring ReminderTextRecently
+		#|-1 "{0}% reduced Melee Weapon Attack Area of Effect if you've Killed Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|# "최근 4초 이내 적을 처치한 경우 근접 무기 공격의 효과 범위 {0}% 증가" reminderstring ReminderTextRecently
+		#|-1 "최근 4초 이내 적을 처치한 경우 근접 무기 공격의 효과 범위 {0}% 감소" negate 1 reminderstring ReminderTextRecently

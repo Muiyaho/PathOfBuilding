@@ -1,0 +1,820 @@
+include "Metadata/StatDescriptions/stat_descriptions.txt"
+description
+	1 brequel_resource_gained_+%
+	2
+		1|# "{0}% increased Graftblood gained"
+		#|-1 "{0}% reduced Graftblood gained" negate 1
+	lang "Korean"
+	2
+		1|# "기생혈 획득량 {0}% 증가"
+		#|-1 "기생혈 획득량 {0}% 감소" negate 1
+description
+	1 local_maximum_brequel_resource_+%
+	2
+		1|# "{0}% increased Graftblood stored"
+		#|-1 "{0}% reduced Graftblood stored" negate 1
+	lang "Korean"
+	2
+		1|# "기생혈 저장량 {0}% 증가"
+		#|-1 "기생혈 저장량 {0}% 감소" negate 1
+description
+	1 brequel_currency_fruit_found_chance_+%
+	2
+		1|# "{0}% increased chance to find Lavish Wombgifts"
+		#|-1 "{0}% reduced chance to find Lavish Wombgifts" negate 1
+	lang "Korean"
+	2
+		1|# "화려한 생명의 결실을 발견할 확률 {0}% 증가"
+		#|-1 "화려한 생명의 결실을 발견할 확률 {0}% 감소" negate 1
+description
+	1 brequel_equipment_fruit_found_chance_+%
+	2
+		1|# "{0}% increased chance to find Provisioning Wombgifts"
+		#|-1 "{0}% reduced chance to find Provisioning Wombgifts" negate 1
+	lang "Korean"
+	2
+		1|# "베푸는 생명의 결실을 발견할 확률 {0}% 증가"
+		#|-1 "베푸는 생명의 결실을 발견할 확률 {0}% 감소" negate 1
+description
+	1 brequel_graft_fruit_found_chance_+%
+	2
+		1|# "{0}% increased chance to find Growing Wombgifts"
+		#|-1 "{0}% reduced chance to find Growing Wombgifts" negate 1
+	lang "Korean"
+	2
+		1|# "성장하는 생명의 결실을 발견할 확률 {0}% 증가"
+		#|-1 "성장하는 생명의 결실을 발견할 확률 {0}% 감소" negate 1
+description
+	1 brequel_misc_fruit_found_chance_+%
+	2
+		1|# "{0}% increased chance to find Mysterious Wombgifts"
+		#|-1 "{0}% reduced chance to find Mysterious Wombgifts" negate 1
+	lang "Korean"
+	2
+		1|# "수수께끼 생명의 결실을 발견할 확률 {0}% 증가"
+		#|-1 "수수께끼 생명의 결실을 발견할 확률 {0}% 감소" negate 1
+description
+	1 brequel_unique_fruit_found_chance_+%
+	2
+		1|# "{0}% increased chance to find Ancient Wombgifts"
+		#|-1 "{0}% reduced chance to find Ancient Wombgifts" negate 1
+	lang "Korean"
+	2
+		1|# "고대 생명의 결실을 발견할 확률 {0}% 증가"
+		#|-1 "고대 생명의 결실을 발견할 확률 {0}% 감소" negate 1
+description
+	2 graft_granted_minimum_base_lightning_damage graft_granted_maximum_base_lightning_damage
+	1
+		1|# 1|# "Radiant Ground created by Skills from this Graft grants Allies on it an additional {0} to {1} added Lightning Damage"
+	lang "Korean"
+	1
+		1|# 1|# "이 기생체의 스킬로 생성된 찬란한 지대가 그 위의 동료에게 추가 번개 피해 {0}~{1} 부여"
+description
+	1 graft_skill_all_ailment_duration_+%
+	2
+		1|# "Ailments inflicted by Skills used by this Graft have {0}% increased duration"
+		#|-1 "Ailments inflicted by Skills used by this Graft have {0}% reduced duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬로 유발되는 상태 이상의 지속시간 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬로 유발되는 상태 이상의 지속시간 {0}% 감소" negate 1
+description
+	1 graft_skill_area_of_effect_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Area of Effect"
+		#|-1 "Skills used by this Graft have {0}% reduced Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 효과 범위 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 효과 범위 {0}% 감소" negate 1
+description
+	1 graft_skill_attack_speed_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Attack Speed"
+		#|-1 "Skills used by this Graft have {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 공격 속도 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 공격 속도 {0}% 감소" negate 1
+description
+	1 graft_skill_chaining_range_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Chaining range"
+		#|-1 "Skills used by this Graft have {0}% reduced Chaining range" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 연쇄 범위 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 연쇄 범위 {0}% 감소" negate 1
+description
+	1 graft_skill_chance_to_freeze_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Freeze"
+		100|# "Skills used by this Graft Freeze"
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 {0}% 확률로 동결"
+		100|# "이 기생체가 사용하는 스킬이 동결"
+description
+	1 graft_skill_chance_to_ignite_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Ignite"
+		100|# "Skills used by this Graft Ignite"
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 {0}% 확률로 점화"
+		100|# "이 기생체가 사용하는 스킬이 점화"
+description
+	1 graft_skill_chance_to_unnerve_on_hit_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Unnerve on Hit" reminderstring ReminderTextUnnerve
+		100|# "Skills used by this Graft Unnerve on Hit" reminderstring ReminderTextUnnerve
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 낙담 유발" reminderstring ReminderTextUnnerve
+		100|# "이 기생체가 사용하는 스킬 명중 시 낙담 유발" reminderstring ReminderTextUnnerve
+description
+	1 graft_skill_cold_damage_%_to_add_as_chaos
+	1
+		1|# "Skills used by this Graft Gain {0}% of Cold Damage as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 냉기 피해의 {0}%를 추가 카오스 피해로 획득"
+description
+	1 graft_skill_conductivity_on_hit_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Conductivity on Hit" reminderstring ReminderTextCurseConductivity
+		100|# "Skills used by this Graft inflict Conductivity on Hit" reminderstring ReminderTextCurseConductivity
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 전도성 유발" reminderstring ReminderTextCurseConductivity
+		100|# "이 기생체가 사용하는 스킬 명중 시 전도성 유발" reminderstring ReminderTextCurseConductivity
+description
+	1 graft_skill_cooldown_speed_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Cooldown Recovery Rate"
+		#|-1 "Skills used by this Graft have {0}% reduced Cooldown Recovery Rate" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 재사용 대기시간 회복 속도 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 재사용 대기시간 회복 속도 {0}% 감소" negate 1
+description
+	1 graft_skill_cover_in_ash_on_hit_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Cover Enemies in Ash on Hit" reminderstring ReminderTextCoveredInAsh
+		100|# "Skills used by this Graft Cover Enemies in Ash on Hit" reminderstring ReminderTextCoveredInAsh
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 명중 시 {0}% 확률로 적을 재로 덮음" reminderstring ReminderTextCoveredInAsh
+		100|# "이 기생체가 사용하는 스킬이 명중 시 적을 재로 덮음" reminderstring ReminderTextCoveredInAsh
+description
+	1 graft_skill_cover_in_frost_on_hit_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Cover Enemies in Frost on Hit" reminderstring ReminderTextCoveredInFrost
+		100|# "Skills used by this Graft Cover Enemies in Frost on Hit" reminderstring ReminderTextCoveredInFrost
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 명중 시 {0}% 확률로 적을 서리로 덮음" reminderstring ReminderTextCoveredInFrost
+		100|# "이 기생체가 사용하는 스킬이 명중 시 적을 서리로 덮음" reminderstring ReminderTextCoveredInFrost
+description
+	1 graft_skill_critical_strike_chance_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Critical Strike Chance"
+		#|-1 "Skills used by this Graft have {0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 치명타 확률 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 치명타 확률 {0}% 감소" negate 1
+description
+	1 graft_skill_critical_strike_multiplier_+
+	1
+		# "Skills used by this Graft have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "이 기생체가 사용하는 스킬의 치명타 피해 배율 {0:+d}%"
+description
+	1 graft_skill_crush_on_hit_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Crush on Hit" reminderstring ReminderTextCrushed
+		100|# "Skills used by this Graft Crush on Hit" reminderstring ReminderTextCrushed
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 타쇄" reminderstring ReminderTextCrushed
+		100|# "이 기생체가 사용하는 스킬 명중 시 타쇄" reminderstring ReminderTextCrushed
+description
+	1 graft_skill_curse_with_punishment_on_hit_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Punishment on Hit" reminderstring ReminderTextCursePunishment
+		100|# "Skills used by this Graft inflict Punishment on Hit" reminderstring ReminderTextCursePunishment
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 응징 유발" reminderstring ReminderTextCursePunishment
+		100|# "이 기생체가 사용하는 스킬 명중 시 응징 유발" reminderstring ReminderTextCursePunishment
+description
+	1 graft_skill_damage_+%
+	2
+		1|# "Skills used by this Graft deal {0}% increased Damage"
+		#|-1 "Skills used by this Graft deal {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬로 주는 피해 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬로 주는 피해 {0}% 감소" negate 1
+description
+	1 graft_skill_damage_+%_vs_ignited_enemies
+	2
+		1|# "Skills used by this Graft deal {0}% increased Damage against Ignited Enemies"
+		#|-1 "Skills used by this Graft deal {0}% reduced Damage against Ignited Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬이 점화된 적에게 주는 피해 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬이 점화된 적에게 주는 피해 {0}% 감소" negate 1
+description
+	1 graft_skill_damaging_ailments_deal_damage_+%_faster
+	1
+		# "Damaging Ailments inflicted by Skills used by this Graft deal damage {0}% faster" reminderstring ReminderTextDamagingAilments reminderstring ReminderTextDealsDamageFaster
+	lang "Korean"
+	1
+		# "이 기생체가 사용하는 스킬이 유발하는 피해를 주는 상태 이상 피해 {0}%만큼 가속" reminderstring ReminderTextDamagingAilments reminderstring ReminderTextDealsDamageFaster
+description
+	1 graft_skill_duration_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Skill Effect Duration"
+		#|-1 "Skills used by this Graft have {0}% reduced Skill Effect Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 스킬 효과 지속시간 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 스킬 효과 지속시간 {0}% 감소" negate 1
+description
+	1 graft_skill_esh_jolt_damage_taken_+%_to_grant
+	2
+		1|# "Jolt granted by this Graft grants {0:+d}% increased Damage taken"
+		#|-1 "Jolt granted by this Graft grants {0:+d}% reduced Damage taken" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체로 유발된 경악이 받는 피해 {0:+d}% 증가 효과 부여"
+		#|-1 "이 기생체로 유발된 경악이 받는 피해 {0:+d}% 감소 효과 부여" negate 1
+description
+	1 graft_skill_esh_jolt_maximum_attack_damage_+%_final_to_grant
+	2
+		1|# "Jolt granted by this Graft grants {0:+d}% more Maximum Attack Damage"
+		#|-1 "Jolt granted by this Graft grants {0:+d}% less Maximum Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체로 유발된 경악이 최대 공격 피해 {0:+d}% 증폭 효과 부여"
+		#|-1 "이 기생체로 유발된 경악이 최대 공격 피해 {0:+d}% 감폭 효과 부여" negate 1
+description
+	1 graft_skill_esh_lightning_bolts_number_of_bolts
+	2
+		1 "Skills used by this Graft cause an additional lightning bolt strike"
+		2|# "Skills used by this Graft cause {0} additional lightning bolt strikes"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 스킬이 추가 번갯불 타격 1회 유발"
+		2|# "이 기생체가 사용하는 스킬이 추가 번갯불 타격 {0}회 유발"
+description
+	1 graft_skill_esh_lightning_hands_number_of_hands_spawned
+	2
+		1 "Enervating Grasp used by this Graft creates {0} additional Hand"
+		2|# "Enervating Grasp used by this Graft creates {0} additional Hands"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 피폐의 장악이 추가 손 {0}개 생성"
+		2|# "이 기생체가 사용하는 피폐의 장악이 추가 손 {0}개 생성"
+description
+	1 graft_skill_fire_damage_%_to_add_as_chaos
+	1
+		1|# "Skills used by this Graft Gain {0}% of Fire Damage as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 화염 피해의 {0}%를 추가 카오스 피해로 획득"
+description
+	1 graft_skill_frostbite_on_hit_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Frostbite on Hit" reminderstring ReminderTextCurseFrostbite
+		100|# "Skills used by this Graft inflict Frostbite on Hit" reminderstring ReminderTextCurseFrostbite
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 명중 시 {0}% 확률로 동상 유발" reminderstring ReminderTextCurseFrostbite
+		100|# "이 기생체가 사용하는 스킬이 명중 시 동상 유발" reminderstring ReminderTextCurseFrostbite
+description
+	1 graft_skill_ignore_enemy_physical_damage_reduction_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to ignore Enemy Physical Damage Reduction"
+		100|# "Skills used by this Graft ignore Enemy Physical Damage Reduction"
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 {0}% 확률로 적의 물리 피해 감소 무시"
+		100|# "이 기생체가 사용하는 스킬이 적의 물리 피해 감소 무시"
+description
+	1 graft_skill_impale_debuff_effect_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Impale Effect"
+		#|-1 "Skills used by this Graft have {0}% reduced Impale Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 꿰뚫기 효과 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 꿰뚫기 효과 {0}% 감소" negate 1
+description
+	1 graft_skill_inflict_fire_exposure_on_hit_%_chance
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+		100|# "Skills used by this Graft inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 화염 노출 유발" reminderstring ReminderTextFireExposure
+		100|# "이 기생체가 사용하는 스킬 명중 시 화염 노출 유발" reminderstring ReminderTextFireExposure
+description
+	1 graft_skill_inflict_lightning_exposure_on_hit_%_chance
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+		100|# "Skills used by this Graft inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 명중 시 {0}% 확률로 번개 노출 유발" reminderstring ReminderTextLightningExposure
+		100|# "이 기생체가 사용하는 스킬 명중 시 번개 노출 유발" reminderstring ReminderTextLightningExposure
+description
+	1 graft_skill_intimidate_on_hit_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Intimidate on Hit" reminderstring ReminderTextIntimidate
+		# "Skills used by this Graft Intimidate on Hit" reminderstring ReminderTextIntimidate
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 명중 시 {0}% 확률로 위협" reminderstring ReminderTextIntimidate
+		# "이 기생체가 사용하는 스킬이 명중 시 위협" reminderstring ReminderTextIntimidate
+description
+	1 graft_skill_jolt_buff_critical_strike_chance_+%_to_grant
+	2
+		1|# "Jolt granted by this Graft grants {0}% increased Critical Strike Chance"
+		#|-1 "Jolt granted by this Graft grants {0:+d}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체로 유발된 경악이 치명타 확률 {0}% 증가 효과 부여"
+		#|-1 "이 기생체로 유발된 경악이 치명타 확률 {0:+d}% 감소 효과 부여" negate 1
+description
+	1 graft_skill_jolt_buff_critical_strike_multiplier_+_to_grant
+	1
+		1|# "Jolt granted by this Graft grants {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		1|# "이 기생체로 유발된 경악이 치명타 피해 배율 {0:+d}% 부여"
+description
+	1 graft_skill_jolt_buff_maximum_buff_count
+	1
+		1|# "Overcharged Sinews used by this Graft can apply {0:+d} maximum Jolt Buffs"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 과충전된 힘줄로 유발 가능한 최대 경악 버프 {0:+d}"
+description
+	1 graft_skill_jolt_buff_movement_velocity_+%_to_grant
+	2
+		1|# "Jolt granted by this Graft grants {0}% increased Movement Speed"
+		#|-1 "Jolt granted by this Graft grants {0:+d}% reduced Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체로 유발된 경악이 이동 속도 {0}% 증가 효과 부여"
+		#|-1 "이 기생체로 유발된 경악이 이동 속도 {0:+d}% 감소 효과 부여" negate 1
+description
+	1 graft_skill_level_+
+	1
+		1|# "{0:+d} to level of Skills used by this Graft"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬 레벨 {0:+d}"
+description
+	1 graft_skill_lightning_damage_%_to_add_as_chaos
+	1
+		1|# "Skills used by this Graft Gain {0}% of Lightning Damage as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 번개 피해의 {0}%를 추가 카오스 피해로 획득"
+description
+	1 graft_skill_minion_attack_speed_+%
+	2
+		1|# "Minions summoned by this Graft have {0}% increased Attack Speed"
+		#|-1 "Minions summoned by this Graft have {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 소환한 소환수의 공격 속도 {0}% 증가"
+		#|-1 "이 기생체가 소환한 소환수의 공격 속도 {0}% 감소" negate 1
+description
+	1 graft_skill_minion_attacks_chance_to_taunt_on_hit_%
+	2
+		1|99 "Minions summoned by this Graft have {0}% chance to Taunt on Hit" reminderstring ReminderTextTaunt
+		100|# "Minions summoned by this Graft Taunt on Hit" reminderstring ReminderTextTaunt
+	lang "Korean"
+	2
+		1|99 "이 기생체가 소환한 소환수가 명중 시 {0}% 확률로 도발 유발" reminderstring ReminderTextTaunt
+		100|# "이 기생체가 소환한 소환수가 명중 시 도발 유발" reminderstring ReminderTextTaunt
+description
+	1 graft_skill_minion_damage_+%
+	2
+		1|# "Minions summoned by this Graft deal {0}% increased Damage"
+		#|-1 "Minions summoned by this Graft deal {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 소환한 소환수가 주는 피해 {0}% 증가"
+		#|-1 "이 기생체가 소환한 소환수가 주는 피해 {0}% 감소" negate 1
+description
+	1 graft_skill_minion_maximum_life_+%
+	2
+		1|# "Minions summoned by this Graft have {0}% increased Life"
+		#|-1 "Minions summoned by this Graft have {0}% reduced Life" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 소환한 소환수의 생명력 {0}% 증가"
+		#|-1 "이 기생체가 소환한 소환수의 생명력 {0}% 감소" negate 1
+description
+	1 graft_skill_minion_physical_damage_%_to_add_as_cold
+	1
+		1|# "Minions summoned by this Graft gain {0}% of Physical Damage as Extra Cold Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 소환한 소환수가 물리 피해의 {0}%를 추가 냉기 피해로 획득"
+description
+	1 graft_skill_minions_%_chance_to_blind_on_hit
+	2
+		1|99 "Minions summoned by this Graft have {0}% chance to Blind on Hit" reminderstring ReminderTextBlind
+		100|# "Minions summoned by this Graft Blind on Hit" reminderstring ReminderTextBlind
+	lang "Korean"
+	2
+		1|99 "이 기생체가 소환한 소환수가 명중 시 {0}% 확률로 실명 유발" reminderstring ReminderTextBlind
+		100|# "이 기생체가 소환한 소환수가 명중 시 실명 유발" reminderstring ReminderTextBlind
+description
+	1 graft_skill_non_damaging_ailment_effect_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased effect of Non-Damaging Ailments"
+		#|-1 "Skills used by this Graft have {0}% reduced effect of Non-Damaging Ailments" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 비-피해 상태 이상 효과 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 비-피해 상태 이상 효과 {0}% 감소" negate 1
+description
+	1 graft_skill_number_of_additional_projectiles
+	2
+		1 "Skills used by this Graft fire an additional Projectile"
+		2|# "Skills used by this Graft fire {0} additional Projectiles"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 스킬이 추가 투사체 1개 발사"
+		2|# "이 기생체가 사용하는 스킬이 추가 투사체 {0}개 발사"
+description
+	1 graft_skill_projectile_damage_+%_final_if_pierced_enemy
+	2
+		1|# "Projectiles created by this Graft that have Pierced deal {0}% more Damage"
+		#|-1 "Projectiles created by this Graft that have Pierced deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체로 생성되어 관통한 투사체가 주는 피해 {0}% 증폭"
+		#|-1 "이 기생체로 생성되어 관통한 투사체가 주는 피해 {0}% 감폭" negate 1
+description
+	1 graft_skill_projectile_speed_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Projectile Speed"
+		#|-1 "Skills used by this Graft have {0}% reduced Projectile Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 투사체 속도 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 투사체 속도 {0}% 감소" negate 1
+description
+	1 graft_skill_reduce_enemy_cold_resistance_%
+	1
+		1|# "Skills used by this Graft penetrate {0}% Enemy Cold Resistance"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 적의 냉기 저항 {0}% 관통"
+description
+	1 graft_skill_reduce_enemy_fire_resistance_%
+	1
+		1|# "Skills used by this Graft penetrate {0}% Enemy Fire Resistance"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 적의 화염 저항 {0}% 관통"
+description
+	1 graft_skill_reduce_enemy_lightning_resistance_%
+	1
+		1|# "Skills used by this Graft penetrate {0}% Enemy Lightning Resistance"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 스킬이 적의 번개 저항 {0}% 관통"
+description
+	1 graft_skill_shock_as_though_dealing_damage_+%_final
+	2
+		1|# "Skills used by this Graft Shock Enemies as though dealing {0}% more Damage"
+		#|-1 "Skills used by this Graft Shock Enemies as though dealing {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬이 {0}% 증폭된 피해를 준 것처럼 적에게 감전 유발"
+		#|-1 "이 기생체가 사용하는 스킬이 {0}% 감폭된 피해를 준 것처럼 적에게 감전 유발" negate 1
+description
+	1 graft_skill_shock_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to Shock"
+		100|# "Skills used by this Graft Shock"
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 {0}% 확률로 감전 유발"
+		100|# "이 기생체가 사용하는 스킬이 감전 유발"
+description
+	1 graft_skill_skip_cooldown_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to not consume a Cooldown on use"
+		100|# "Skills used by this Graft do not consume a Cooldown on use"
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬 사용 시 {0}% 확률로 재사용 횟수를 소모하지 않음"
+		100|# "이 기생체가 사용하는 스킬 사용 시 재사용 횟수를 소모하지 않음"
+description
+	1 graft_skill_spells_chance_to_hinder_on_hit_%
+	2
+		1|99 "Spells used by this Graft have {0}% chance to Hinder Enemies on Hit" reminderstring ReminderTextHinder
+		100|# "Spells used by this Graft Hinder Enemies on Hit" reminderstring ReminderTextHinder
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 주문이 명중 시 {0}% 확률로 적 이동 방해" reminderstring ReminderTextHinder
+		100|# "이 기생체가 사용하는 주문이 명중 시 적 이동 방해" reminderstring ReminderTextHinder
+description
+	1 graft_skill_stun_duration_+%
+	2
+		1|# "Skills used by this Graft have {0}% increased Stun Duration"
+		#|-1 "Skills used by this Graft have {0}% reduced Stun Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 기절 지속시간 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 스킬의 기절 지속시간 {0}% 감소" negate 1
+description
+	1 graft_skill_tul_aegis_%_elemental_resistance_to_grant
+	1
+		1|# "Preserving Stillness used by this Graft also grants {0:+d}% to all Elemental Resistances"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 보존의 고요가 모든 원소 저항 {0:+d}% 효과 부여"
+description
+	1 graft_skill_tul_aegis_additional_maximum_all_elemental_resistances_%_to_grant
+	1
+		1|# "Preserving Stillness used by this Graft also grants {0:+d}% to all maximum Elemental Resistances" reminderstring ReminderTextMaximumResistance
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 보존의 고요가 모든 원소 저항 최대치 {0:+d}% 효과 부여" reminderstring ReminderTextMaximumResistance
+description
+	1 graft_skill_tul_aegis_aegis_shield_amount_granted_on_applying_exposure
+	1
+		1|# "Preserving Stillness used by this Graft can take {0} additional Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 보존의 고요가 추가로 {0}의 피해를 받을 수 있음"
+description
+	1 graft_skill_tul_mortar_damage_+%_final_vs_frozen_enemies
+	2
+		1|# "Skills used by this Graft deal {0}% more Damage to Frozen Enemies"
+		#|-1 "Skills used by this Graft deal {0}% less Damage to Frozen Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬로 동결 상태의 적에게 주는 피해 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 스킬로 동결 상태의 적에게 주는 피해 {0}% 감폭" negate 1
+description
+	1 graft_skill_tul_mortars_maximum_mortars_fired_per_volley
+	2
+		1 "Falling Crystals used by this Graft fires up to {0:d} additional mortar"
+		2|# "Falling Crystals used by this Graft fires up to {0:d} additional mortars"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 낙하하는 수정이 추가 박격포 최대 {0:d}회 발사"
+		2|# "이 기생체가 사용하는 낙하하는 수정이 추가 박격포 최대 {0:d}회 발사"
+description
+	1 graft_skill_tul_tornado_damage_+%_final
+	2
+		1|# "Skills used by this Graft deal {0}% more Damage"
+		#|-1 "Skills used by this Graft deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬로 주는 피해 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 스킬로 주는 피해 {0}% 감폭" negate 1
+description
+	1 graft_skill_tul_tornado_number_additional_tornados
+	2
+		1 "Dance in the White used by this Graft creates an additional Tornado"
+		2|# "Dance in the White used by this Graft creates {0} additional Tornados"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 설원에서의 춤이 추가 회오리 1개 생성"
+		2|# "이 기생체가 사용하는 설원에서의 춤이 추가 회오리 {0}개 생성"
+description
+	1 graft_skill_tul_tornado_number_of_tornados_allowed
+	1
+		1|# "Dance in the White used by this Graft has {0:+d} to maximum Tornados"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 설원에서의 춤의 최대 회오리 {0:+d}개"
+description
+	1 graft_skill_uulnetol_bone_spires_num_of_spires_to_create
+	2
+		1 "Seize the Flesh used by this Graft creates {0:+d} Spire"
+		2|# "Seize the Flesh used by this Graft creates {0:+d} Spires"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 살점 붙잡기가 첨탑 {0:+d}개 생성"
+		2|# "이 기생체가 사용하는 살점 붙잡기가 첨탑 {0:+d}개 생성"
+description
+	1 graft_skill_uulnetol_hand_slam_damage_for_cdr_damage_+%_final
+	2
+		1|# "Skills used by this Graft deal {0}% more Damage"
+		#|-1 "Skills used by this Graft deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬로 주는 피해 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 스킬로 주는 피해 {0}% 감폭" negate 1
+description
+	1 graft_skill_uulnetol_impale_buff_additional_impales_to_grant
+	2
+		1 "Violent Desire used by this Graft grants {0:+d} additional Impale"
+		2|# "Violent Desire used by this Graft grants {0:+d} additional Impales"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 난폭한 갈망이 추가 꿰뚫기 {0:+d} 부여"
+		2|# "이 기생체가 사용하는 난폭한 갈망이 추가 꿰뚫기 {0:+d} 부여"
+description
+	1 graft_skill_uulnetol_impale_buff_attack_area_of_effect_+%_to_grant
+	2
+		1|# "Violent Desire used by this Graft also grants {0}% increased Area of Effect with Attacks"
+		#|-1 "Violent Desire used by this Graft also grants {0}% reduced Area of Effect with Attacks" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 난폭한 갈망의 공격 효과 범위 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 난폭한 갈망의 공격 효과 범위 {0}% 감소" negate 1
+description
+	1 graft_skill_uulnetol_impale_buff_attack_speed_+%_to_grant
+	2
+		1|# "Violent Desire used by this Graft also grants {0}% increased Attack Speed"
+		#|-1 "Violent Desire used by this Graft also grants {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 난폭한 갈망의 공격 속도 {0}% 증가"
+		#|-1 "이 기생체가 사용하는 난폭한 갈망의 공격 속도 {0}% 감소" negate 1
+description
+	1 graft_skill_uulnetol_impale_buff_hits_ignore_enemy_monster_physical_damage_reduction_%_chance_to_grant
+	1
+		1|# "Violent Desire used by this Graft also grants Hits have {0}% chance to ignore Enemy Physical Damage Reduction"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 난폭한 갈망이 명중 시 {0}% 확률로 적의 물리 피해 감소 무시 효과 부여"
+description
+	1 graft_skill_uulnetol_impale_buff_impale_effect_%_to_grant
+	1
+		1|# "Violent Desire used by this Graft grants {0:+d}% increased effect of Impale" reminderstring ReminderTextImpale
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 난폭한 갈망의 꿰뚫기 효과 {0:+d}% 증가" reminderstring ReminderTextImpale
+description
+	1 graft_skill_vulnerability_on_hit_chance_%
+	2
+		1|99 "Skills used by this Graft have {0}% chance to inflict Vulnerability on Hit" reminderstring ReminderTextCurseVulnerability
+		100|# "Skills used by this Graft inflict Vulnerability on Hit" reminderstring ReminderTextCurseVulnerability
+	lang "Korean"
+	2
+		1|99 "이 기생체가 사용하는 스킬이 명중 시 {0}% 확률로 취약성 유발" reminderstring ReminderTextCurseVulnerability
+		100|# "이 기생체가 사용하는 스킬이 명중 시 취약성 유발" reminderstring ReminderTextCurseVulnerability
+description
+	1 graft_skill_xoph_ailment_buff_%_of_physical_damage_gained_as_element_to_grant
+	1
+		1|# "The Grey Wind Howls used by this Graft grants {0:+d}% additional Physical Damage gained as Extra Elemental Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 회색 바람의 포효가 추가 원소 피해로 획득하는 추가 물리 피해 {0:+d}% 효과 부여"
+description
+	1 graft_skill_xoph_ailment_buff_also_grants_%_elemental_resistance
+	1
+		1|# "The Grey Wind Howls used by this Graft also grants {0:+d}% to all Elemental Resistances"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 회색 바람의 포효가 모든 원소 저항 {0:+d}% 효과 부여"
+description
+	1 graft_skill_xoph_ailment_buff_also_grants_%_of_elemental_damage_added_as_chaos
+	1
+		1|# "The Grey Wind Howls used by this Graft also grants {0}% of Elemental Damage gained as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 회색 바람의 포효가 원소 피해의 {0}%를 추가 카오스 피해로 획득 효과 부여"
+description
+	1 graft_skill_xoph_ailment_buff_also_grants_avoid_all_elemental_status_%
+	1
+		1|# "The Grey Wind Howls used by this Graft also grants {0}% chance to Avoid Elemental Ailments" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 회색 바람의 포효가 {0}% 확률로 원소 상태 이상 긴급회피 효과 부여" reminderstring ReminderTextElementalAilments
+description
+	1 graft_skill_xoph_flame_pillars_number_of_pillars
+	2
+		1 "Call the Pyre used by this Graft creates {0:+d} Ashen Pillar"
+		2|# "Call the Pyre used by this Graft creates {0:+d} Ashen Pillars"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 장작 부르기가 잿빛 기둥 {0:+d}개 생성"
+		2|# "이 기생체가 사용하는 장작 부르기가 잿빛 기둥 {0:+d}개 생성"
+description
+	1 graft_skill_xoph_geyser_explosion_number_of_geysers_to_spawn
+	2
+		1 "His Burning Message used by this Graft creates an additional geyser"
+		2|# "His Burning Message used by this Graft creates {0} additional geysers"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 그의 불타는 뜻이 추가 간헐천 1개 생성"
+		2|# "이 기생체가 사용하는 그의 불타는 뜻이 추가 간헐천 {0}개 생성"
+description
+	1 graft_skill_xoph_geyser_explosion_number_of_projectiles_to_erupt
+	2
+		1 "Geysers created by this Graft fire {0} additional Projectile when you Warcry"
+		2|# "Geysers created by this Graft fire {0} additional Projectiles when you Warcry"
+	lang "Korean"
+	2
+		1 "이 기생체로 생성된 간헐천이 플레이어가 함성을 사용할 때 추가 투사체 {0}개 발사"
+		2|# "이 기생체로 생성된 간헐천이 플레이어가 함성을 사용할 때 추가 투사체 {0}개 발사"
+description
+	1 graft_skill_xoph_molten_shell_absorb_limit
+	1
+		1|# "Heart of Flame Buff used by this Graft can take an additional {0} Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 화염의 심장 버프가 추가로 {0}의 피해를 받을 수 있음"
+description
+	1 graft_skill_xoph_molten_shell_additional_%_armour_during_buff
+	2
+		1|# "Heart of Flame Buff used by this Graft grants {0}% increased Armour"
+		#|-1 "Heart of Flame Buff used by this Graft grants {0}% reduced Armour" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 화염의 심장 버프가 방어도 {0}% 증가 효과 부여"
+		#|-1 "이 기생체가 사용하는 화염의 심장 버프가 방어도 {0}% 감소 효과 부여" negate 1
+description
+	1 graft_skill_xoph_molten_shell_damage_absorbed_%
+	1
+		1|# "An additional {0}% of Damage from Hits is taken from Heart of Flame Buff used by this Graft before Life or Energy Shield"
+	lang "Korean"
+	1
+		1|# "피격 시 피해의 {0}%가 생명력이나 에너지 보호막보다 이 기생체가 사용하는 화염의 심장 버프에 먼저 적용"
+description
+	1 graft_skill_xoph_molten_shell_shield_amount_+%_final
+	2
+		1|# "Heart of Flame Buff used by this Graft can take {0}% more Damage"
+		#|-1 "Heart of Flame Buff used by this Graft can take {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 화염의 심장 버프가 받을 수 있는 피해 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 화염의 심장 버프가 받을 수 있는 피해 {0}% 감폭" negate 1
+description
+	1 graft_uulnetol_attack_block_chance_+_to_grant_on_reaching_low_life
+	1
+		1|# "Buff granted by Tender Embrace used by this Graft grants {0:+d}% chance to Block Attack Damage"
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 다정한 포옹의 버프가 공격 피해 막기 확률 {0:+d}% 부여"
+description
+	1 graft_uulnetol_life_leech_permyriad_to_grant_on_reaching_low_life
+	1
+		1|# "Buff granted by Tender Embrace used by this Graft grants {0}% of Damage Leeched as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "이 기생체가 사용하는 다정한 포옹이 부여하는 버프가 피해의 {0}%를 생명력으로 흡수 효과 부여" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description
+	1 graft_uulnetol_life_recovery_rate_+%_final_to_grant_on_reaching_low_life
+	2
+		1|# "Buff granted by Tender Embrace used by this Graft grants {0}% more Life Recovery Rate"
+		#|-1 "Buff granted by Tender Embrace used by this Graft grants {0}% less Life Recovery Rate" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 다정한 포옹이 부여하는 버프가 생명력 회복 속도 {0}% 증폭 효과 부여"
+		#|-1 "이 기생체가 사용하는 다정한 포옹이 부여하는 버프가 생명력 회복 속도 {0}% 감폭 효과 부여" negate 1
+description
+	1 graft_uulnetol_number_of_endurance_charges_to_grant_on_reaching_low_life
+	2
+		1 "Buff granted by Tender Embrace used by this Graft grants {0:+d} Endurance Charge when gained"
+		2|# "Buff granted by Tender Embrace used by this Graft grants {0:+d} Endurance Charges when gained"
+	lang "Korean"
+	2
+		1 "이 기생체가 사용하는 다정한 포옹이 부여하는 버프 획득 시 인내 충전 {0:+d} 부여"
+		2|# "이 기생체가 사용하는 다정한 포옹이 부여하는 버프 획득 시 인내 충전 {0:+d} 부여"
+description
+	1 item_found_rarity_+%_from_brequel_monsters
+	2
+		1|# "{0}% increased Rarity of Items found from Hiveborn Monsters"
+		#|-1 "{0}% reduced Rarity of Items found from Hiveborn Monsters" negate 1
+	lang "Korean"
+	2
+		1|# "벌레집 태생 몬스터에게서 발견하는 아이템의 희귀도 {0}% 증가"
+		#|-1 "벌레집 태생 몬스터에게서 발견하는 아이템의 희귀도 {0}% 감소" negate 1
+description
+	1 graft_skill_uulnetol_hand_slam_speed_for_AOE_area_of_effect_+%_final
+	2
+		1|# "Skills used by this Graft have {0}% more Area of Effect"
+		#|-1 "Skills used by this Graft have {0}% less Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 효과 범위 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 스킬의 효과 범위 {0}% 감폭" negate 1
+description
+	1 graft_skill_uulnetol_hand_slam_speed_for_AOE_attack_speed_+%_final
+	2
+		1|# "Skills used by this Graft have {0}% more Attack Speed"
+		#|-1 "Skills used by this Graft have {0}% less Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 기생체가 사용하는 스킬의 공격 속도 {0}% 증폭"
+		#|-1 "이 기생체가 사용하는 스킬의 공격 속도 {0}% 감폭" negate 1

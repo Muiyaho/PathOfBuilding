@@ -1,0 +1,769 @@
+include "Metadata/StatDescriptions/minion_spell_skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description buff_duration
+	1 buff_effect_duration
+	1
+		1|# "Debuff Lasts {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "{0}초간 디버프 지속" milliseconds_to_seconds_2dp 1
+description critical_strike_chance_incr
+	1 critical_strike_chance_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Critical Strike Chance"
+		#|-1 "This Spell and Minions have {0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 치명타 확률 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 치명타 확률 {0}% 감소" negate 1
+description controlled_destruction_critical_strike_chance
+	1 support_controlled_destruction_critical_strike_chance_+%_final
+	2
+		1|# "This Spell and Minions have {0}% more Critical Strike Chance"
+		#|-1 "This Spell and Minions have {0}% less Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 치명타 확률 {0}% 증폭"
+		#|-1 "이 주문 및 소환수의 치명타 확률 {0}% 감폭" negate 1
+description critical_strike_multiplier_incr
+	1 base_critical_strike_multiplier_+
+	1
+		# "This Spell and Minions have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "이 주문 및 소환수의 치명타 피해 배율 {0:+d}%"
+description life_leech_from_any
+	1 life_leech_from_any_damage_permyriad
+	1
+		1|# "This Spell and Minions Leech {0}% of Damage as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description energy_shield_leech_from_any
+	1 energy_shield_leech_from_any_damage_permyriad
+	1
+		1|# "This Spell and Minions Leech {0}% of Damage as Energy Shield" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 피해의 {0}%를 에너지 보호막으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+description knockback_chance
+	1 base_global_chance_to_knockback_%
+	2
+		1|99 "This Spell and Minions have an additional {0}% chance to Knock Enemies Back on Hit" reminderstring ReminderTextKnockback
+		100|# "This Spell and Minions knock Enemies Back on Hit" reminderstring ReminderTextKnockback
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 적을 밀어낼 확률 {0}% 추가" reminderstring ReminderTextKnockback
+		100|# "이 주문 및 소환수가 명중 시 적을 밀어냄" reminderstring ReminderTextKnockback
+description knockback_distance
+	1 knockback_distance_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Knockback Distance"
+		#|-1 "This Spell and Minions have {0}% reduced Knockback Distance" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 밀어내기 거리 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 밀어내기 거리 {0}% 감소" negate 1
+description stun_threshold_reduction_incr
+	1 base_stun_threshold_reduction_+%
+	2
+		1|# "This Spell and Minions have {0}% reduced Enemy Stun Threshold" reminderstring ReminderTextStunThreshold
+		#|-1 "This Spell and Minions have {0}% increased Enemy Stun Threshold" negate 1 reminderstring ReminderTextStunThreshold
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 적 기절 한계치 {0}% 감소" reminderstring ReminderTextStunThreshold
+		#|-1 "이 주문 및 소환수의 적 기절 한계치 {0}% 증가" negate 1 reminderstring ReminderTextStunThreshold
+description killed_monster_dropped_item_rarity_incr
+	1 killed_monster_dropped_item_rarity_+%
+	2
+		1|# "{0}% increased Rarity of Items Dropped by enemies Slain by this Spell or Minions"
+		#|-1 "{0}% reduced Rarity of Items Dropped by enemies Slain by this Spell or Minions" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 처치한 적이 떨어뜨리는 아이템 희귀도 {0}% 증가"
+		#|-1 "이 주문 또는 소환수가 처치한 적이 떨어뜨리는 아이템 희귀도 {0}% 감소" negate 1
+description killed_monster_dropped_item_quantity_incr
+	1 killed_monster_dropped_item_quantity_+%
+	2
+		1|# "{0}% increased Quantity of Items Dropped by enemies Slain by this Spell or Minions"
+		#|-1 "{0}% reduced Quantity of Items Dropped by enemies Slain by this Spell or Minions" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 처치한 적이 떨어뜨리는 아이템 수량 {0}% 증가"
+		#|-1 "이 주문 또는 소환수가 처치한 적이 떨어뜨리는 아이템 수량 {0}% 감소" negate 1
+description freeze_chance
+	2 base_chance_to_freeze_% always_freeze
+	3
+		# 1|# "This Spell and Minions always Freeze Enemies" reminderstring ReminderTextFreeze
+		100|# 0 "This Spell and Minions always Freeze Enemies" reminderstring ReminderTextFreeze
+		1|99  0 "This Spell and Minions have {0}% chance to Freeze enemies" reminderstring ReminderTextFreeze
+	lang "Korean"
+	3
+		# 1|# "이 주문 및 소환수가 항상 동결 유발" reminderstring ReminderTextFreeze
+		100|# 0 "이 주문 및 소환수가 항상 동결 유발" reminderstring ReminderTextFreeze
+		1|99  0 "이 주문 및 소환수가 {0}%의 확률로 적 동결 유발" reminderstring ReminderTextFreeze
+description shock_chance
+	1 base_chance_to_shock_%
+	1
+		1|# "This Spell and Minions have {0}% chance to Shock enemies" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 {0}%의 확률로 적 감전 유발" reminderstring ReminderTextShock
+description burn_chance
+	1 base_chance_to_ignite_%
+	1
+		1|# "This Spell and Minions have {0}% chance to Ignite enemies" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 {0}%의 확률로 적 점화 유발" reminderstring ReminderTextIgnite
+description chance_to_flee
+	1 global_hit_causes_monster_flee_%
+	1
+		1|# "This Spell and Minions have {0}% chance to cause Monsters to Flee on Hit" reminderstring ReminderTextFlee
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 명중 시 {0}%의 확률로 몬스터를 도망치게 함" reminderstring ReminderTextFlee
+description area_of_effect_incr
+	1 base_skill_area_of_effect_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Area of Effect"
+		#|-1 "This Spell and Minions have {0}% reduced Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 효과 범위 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 효과 범위 {0}% 감소" negate 1
+description concentrated_area_of_effect
+	1 support_concentrated_effect_skill_area_of_effect_+%_final
+	2
+		1|# "This Spell and Minions have {0}% more Area of Effect"
+		#|-1 "This Spell and Minions have {0}% less Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 효과 범위 {0}% 증폭"
+		#|-1 "이 주문 및 소환수의 효과 범위 {0}% 감폭" negate 1
+description stun_duration_incr
+	1 base_stun_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Stun Duration on enemies"
+		#|-1 "This Spell and Minions have {0}% reduced Stun Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 적에게 적용하는 기절 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수가 적에게 적용하는 기절 지속시간 {0}% 감소" negate 1
+description chill_effect
+	1 chill_effect_+%
+	2
+		1|# "{0}% increased Effect of Chill inflicted by this Spell or Minions"
+		#|-1 "{0}% reduced Effect of Chill inflicted by this Spell or Minions" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 유발하는 냉각 효과 {0}% 증가"
+		#|-1 "이 주문 또는 소환수가 유발하는 냉각 효과 {0}% 감소" negate 1
+description shock_effect
+	1 shock_effect_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Shock Effect"
+		#|-1 "This Spell and Minions have {0}% reduced Shock Effect" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 감전 효과 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 감전 효과 {0}% 감소" negate 1
+description burn_duration
+	1 ignite_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Ignite Duration"
+		#|-1 "This Spell and Minions have {0}% reduced Ignite Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 점화 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 점화 지속시간 {0}% 감소" negate 1
+description chill_duration
+	1 chill_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Chill Duration"
+		#|-1 "This Spell and Minions have {0}% reduced Chill Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 냉각 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 냉각 지속시간 {0}% 감소" negate 1
+description freeze_duration
+	1 freeze_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Freeze Duration"
+		#|-1 "This Spell and Minions have {0}% reduced Freeze Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 동결 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 동결 지속시간 {0}% 감소" negate 1
+description shock_duration
+	1 shock_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Shock Duration"
+		#|-1 "This Spell and Minions have {0}% reduced Shock Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 감전 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 감전 지속시간 {0}% 감소" negate 1
+description elemental_status_aura
+	1 elemental_status_effect_aura_radius
+	1
+		# "Elemental Ailments caused by this Spell or Minions also spread to nearby enemies" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "이 주문 또는 소환수에 의해 발생하는 원소 상태 이상이 주변의 적에게도 확산" reminderstring ReminderTextElementalAilments
+description ignite_aura
+	1 support_ignite_proliferation_radius
+	1
+		# "Ignites caused by this Spell or Minions spread to other nearby Enemies"
+	lang "Korean"
+	1
+		# "이 주문 또는 소환수로 인해 발생하는 점화가 주변의 다른 적에게 확산"
+description additional_poisons_vs_non_poisoned_enemies
+	1 additional_poisons_+_to_apply_vs_non_poisoned_enemies
+	2
+		1 "This Spell and Minions that Poison non-Poisoned Enemies inflict an additional Poison" reminderstring ReminderTextPoison
+		# "This Spell and Minions that Poison non-Poisoned Enemies inflict {0} additional Poisons" reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1 "이 주문 및 소환수가 중독되지 않은 적을 중독시키면 추가 중독 1회 유발" reminderstring ReminderTextPoison
+		# "이 주문 및 소환수가 중독되지 않은 적을 중독시키면 추가 중독 {0}회 유발" reminderstring ReminderTextPoison
+description support_lethal_dose_poison_damage
+	1 support_lethal_dose_poison_damage_+%_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage with Poison"
+		#|-1 "This Spell and Minions deal {0}% less Damage with Poison" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 주는 중독 피해 {0}% 증폭"
+		#|-1 "이 주문 및 소환수가 주는 중독 피해 {0}% 감폭" negate 1
+description physical_damage_to_convert_to_lightning
+	1 skill_physical_damage_%_to_convert_to_lightning
+	1
+		1|# "This Spell and Minions Convert {0}% of Physical Damage to Lightning Damage"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 물리 피해의 {0}%를 번개 피해로 전환"
+description chance_to_blind
+	1 virtual_chance_to_blind_on_hit_%
+	1
+		# "This Spell and Minions have {0}% chance to Blind on Hit" reminderstring ReminderTextBlind
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 명중 시 {0}%의 확률로 실명 유발" reminderstring ReminderTextBlind
+description blind_duration_incr
+	1 blind_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Blinding duration"
+		#|-1 "This Spell and Minions have {0}% reduced Blinding duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 실명 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 실명 지속시간 {0}% 감소" negate 1
+description fire_penetration
+	1 base_reduce_enemy_fire_resistance_%
+	1
+		1|# "This Spell and Minions Penetrate {0}% Fire Resistance"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 화염 저항 {0}% 관통"
+description cold_penetration
+	1 base_reduce_enemy_cold_resistance_%
+	1
+		1|# "This Spell and Minions Penetrate {0}% Cold Resistance"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 냉기 저항 {0}% 관통"
+description elemental_penetration
+	1 reduce_enemy_elemental_resistance_%
+	1
+		1|# "This Spell and Minions Penetrate {0}% Elemental Resistances"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 {0}%의 원소 저항 관통"
+description lightning_penetration
+	1 base_reduce_enemy_lightning_resistance_%
+	1
+		1|# "This Spell and Minions Penetrate {0}% Lightning Resistance"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 번개 저항 {0}% 관통"
+description base_multicast
+	1 base_spell_repeat_count
+	2
+		1 "This Spell and Minion's Spells Repeat an additional time"
+		2|# "This Spell and Minion's Spells Repeat an additional {0} times"
+	lang "Korean"
+	2
+		1 "이 주문 및 소환수의 주문 1회 추가 반복"
+		2|# "이 주문 및 소환수의 주문 {0}회 추가 반복"
+description cruelty_duration_incr
+	1 cruelty_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Duration of Cruelty"
+		#|-1 "This Spell and Minions have {0}% reduced Duration of Cruelty" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 잔혹 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 잔혹 지속시간 {0}% 감소" negate 1
+description power_charge_on_crit_chance
+	1 add_power_charge_on_critical_strike_%
+	2
+		1|99 "This Spell and Minions have {0}% chance to gain a Power Charge on Critical Strike"
+		100|# "This Spell and Minions gain a Power Charge on Critical Strike"
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 치명타 명중 시 {0}%의 확률로 권능 충전 획득"
+		100|# "이 주문 및 소환수가 치명타 명중 시 권능 충전 획득"
+description freeze_chance_vs_chilled
+	1 additional_chance_to_freeze_chilled_enemies_%
+	1
+		# "This Spell and Minions have {0:d}% chance to Freeze Enemies which are Chilled" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 {0:d}%의 확률로 냉각된 적 동결 유발" reminderstring ReminderTextFreeze
+description hypothermia_damage
+	1 support_hypothermia_damage_+%_vs_chilled_enemies_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage with Hits and Ailments against Chilled Enemies" reminderstring ReminderTextDamagingAilments
+		#|-1 "This Spell and Minions deal {0}% less Damage with Hits and Ailments against Chilled Enemies" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 냉각된 적에게 주는 명중 및 상태 이상 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "이 주문 및 소환수가 냉각된 적에게 주는 명중 및 상태 이상 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description cannot_inflict_ailments
+	1 cannot_inflict_status_ailments
+	1
+		# "This Spell and Minions cannot inflict Elemental Ailments" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 원소 상태 이상 유발 불가" reminderstring ReminderTextElementalAilments
+description poison_on_hit
+	1 global_poison_on_hit
+	1
+		# "This Spell and Minions Poison Enemies on Hit" reminderstring ReminderTextPoison
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 명중 시 적 중독 유발" reminderstring ReminderTextPoison
+description poison_duration
+	1 base_poison_duration_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Poison Duration"
+		#|-1 "This Spell and Minions have {0}% reduced Poison Duration" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 중독 지속시간 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 중독 지속시간 {0}% 감소" negate 1
+description additional_crit
+	1 additional_base_critical_strike_chance
+	1
+		# "This Spell and Minions have {0:+d}% to Critical Strike Chance" divide_by_one_hundred 1
+	lang "Korean"
+	1
+		# "이 주문 및 소환수의 치명타 확률 {0:+d}%" divide_by_one_hundred 1
+description ailment_duration_incr
+	1 base_all_ailment_duration_+%
+	2
+		1|# "{0}% increased Duration of Ailments inflicted with this Spell or by Minions" reminderstring ReminderTextAilments
+		#|-1 "{0}% reduced Duration of Ailments inflicted with this Spell or by Minions" negate 1 reminderstring ReminderTextAilments
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 유발하는 상태 이상 지속시간 {0}% 증가" reminderstring ReminderTextAilments
+		#|-1 "이 주문 또는 소환수가 유발하는 상태 이상 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextAilments
+description poison_chance
+	1 base_chance_to_poison_on_hit_%
+	2
+		1|99 "This Spell and Minions have {0}% chance to Poison on Hit" reminderstring ReminderTextPoison
+		100|# "This Spell and Minions always Poison on Hit" reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}%의 확률로 적 중독 유발" reminderstring ReminderTextPoison
+		100|# "이 주문 및 소환수가 명중 시 항상 중독 유발" reminderstring ReminderTextPoison
+description inflict_cold_exposure_on_hit_chance
+	1 base_inflict_cold_exposure_on_hit_%_chance
+	2
+		1|99 "This Spell and Minions have {0}% chance to inflict Cold Exposure on Hit" reminderstring ReminderTextColdExposure
+		100|# "This Spell and Minions inflict Cold Exposure on Hit" reminderstring ReminderTextColdExposure
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}%의 확률로 냉기 노출 유발" reminderstring ReminderTextColdExposure
+		100|# "이 주문 및 소환수가 명중 시 냉기 노출 유발" reminderstring ReminderTextColdExposure
+description inflict_fire_exposure_on_hit_chance
+	1 base_inflict_fire_exposure_on_hit_%_chance
+	2
+		1|99 "This Spell and Minions have {0}% chance to inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+		100|# "This Spell and Minions inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}%의 확률로 화염 노출 유발" reminderstring ReminderTextFireExposure
+		100|# "이 주문 및 소환수가 명중 시 화염 노출 유발" reminderstring ReminderTextFireExposure
+description inflict_lightning_exposure_on_hit_chance
+	1 base_inflict_lightning_exposure_on_hit_%_chance
+	2
+		1|99 "This Spell and Minions have {0}% chance to inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+		100|# "This Spell and Minions inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}%의 확률로 번개 노출 유발" reminderstring ReminderTextLightningExposure
+		100|# "이 주문 및 소환수가 명중 시 번개 노출 유발" reminderstring ReminderTextLightningExposure
+description life_leech_from_chaos_damage
+	1 base_life_leech_from_chaos_damage_permyriad
+	1
+		1|# "This Spell and Minions have {0}% of Chaos Damage Leeched as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 카오스 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description cold_ailment_effect_incr
+	1 cold_ailment_effect_+%
+	2
+		1|# "This Spell and Minions Have {0}% increased Effect of Cold Ailments" reminderstring ReminderTextColdAilments
+		#|-1 "This Spell and Minions Have {0}% reduced Effect of Cold Ailments" negate 1 reminderstring ReminderTextColdAilments
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 냉기 상태 이상 효과 {0}% 증가" reminderstring ReminderTextColdAilments
+		#|-1 "이 주문 및 소환수의 냉기 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextColdAilments
+description critical_strike_chance_incr_vs_blinded_enemies
+	1 critical_strike_chance_+%_vs_blinded_enemies
+	2
+		1|# "This Spell and Minions have {0}% increased Critical Strike Chance against Blinded Enemies"
+		#|-1 "This Spell and Minions have {0}% reduced Critical Strike Chance against Blinded Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 실명된 적에 대한 치명타 확률 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 실명된 적에 대한 치명타 확률 {0}% 감소" negate 1
+description cruelty_effect_incr
+	1 cruelty_effect_+%
+	2
+		1|# "{0}% increased Effect of Cruelty gained by this Spell or Minions"
+		#|-1 "{0}% reduced Effect of Cruelty gained by this Spell or Minions" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 부여하는 잔혹 효과 {0}% 증가"
+		#|-1 "이 주문 또는 소환수가 부여하는 잔혹 효과 {0}% 감소" negate 1
+description damage_if_consumed_corpse_recently
+	1 damage_+%_if_you_have_consumed_a_corpse_recently
+	2
+		1|# "{0}% increased Damage if you have Consumed a corpse Recently\nMinions deal {0}% increased Damage if they have Consumed a corpse Recently" reminderstring ReminderTextRecently
+		#|-1 "{0}% reduced Damage if you have Consumed a corpse Recently\nMinions deal {0}% reduced Damage if they have Consumed a corpse Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|# "최근 4초 이내 시신을 소모한 경우 피해 {0}% 증가\n소환수가 최근 4초 이내 시신을 소모한 경우 소환수가 주는 피해 {0}% 증가" reminderstring ReminderTextRecently
+		#|-1 "최근 4초 이내 시신을 소모한 경우 피해 {0}% 감소\n소환수가 최근 4초 이내 시신을 소모한 경우 소환수가 주는 피해 {0}% 감소" negate 1 reminderstring ReminderTextRecently
+description damage_incr_per_ailment
+	1 damage_+%_vs_enemies_per_freeze_shock_ignite
+	2
+		1|# "This Spell and Minions deal {0}% increased Damage with Hits and Ailments per Freeze, Shock or Ignite on Enemy" reminderstring ReminderTextDamagingAilments
+		#|-1 "This Spell and Minions deal {0}% reduced Damage with Hits and Ailments  per Freeze, Shock or Ignite on Enemy" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "적에게 유발된 동결, 감전 또는 점화 하나당 이 주문 및 소환수가 주는 명중 피해 및 상태 이상 피해 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "적에게 유발된 동결, 감전 또는 점화 하나당 이 주문 및 소환수가 주는 명중 피해 및 상태 이상 피해 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description damage_while_es_leeching
+	1 damage_+%_while_es_leeching
+	2
+		1|# "This Spell and Minions deal {0}% increased Damage while Leeching Energy Shield"
+		#|-1 "This Spell and Minions deal {0}% reduced Damage while Leeching Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 증가"
+		#|-1 "에너지 보호막을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_while_life_leeching
+	1 damage_+%_while_life_leeching
+	2
+		1|# "This Spell and Minions deal {0}% increased Damage while Leeching Life"
+		#|-1 "This Spell and Minions deal {0}% reduced Damage while Leeching Life" negate 1
+	lang "Korean"
+	2
+		1|# "생명력을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 증가"
+		#|-1 "생명력을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_while_mana_leeching
+	1 damage_+%_while_mana_leeching
+	2
+		1|# "This Spell and Minions deal {0}% increased Damage while Leeching Mana"
+		#|-1 "This Spell and Minions deal {0}% reduced Damage while Leeching Mana" negate 1
+	lang "Korean"
+	2
+		1|# "마나를 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 증가"
+		#|-1 "마나를 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_per_enemy_curse_incr
+	1 damage_vs_cursed_enemies_per_enemy_curse_+%
+	2
+		1|# "This Spell and Minions deal {0}% increased Damage with Hits and Ailments per Curse on Enemy" reminderstring ReminderTextDamagingAilments
+		#|-1 "This Spell and Minions deal {0}% reduced Damage with Hits and Ailments per Curse on Enemy" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "적에게 걸린 저주 하나당 이 주문 및 소환수가 주는 명중 피해 및 상태 이상 피해 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "적에게 걸린 저주 하나당 이 주문 및 소환수가 주는 명중 피해 및 상태 이상 피해 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description damage_vs_enemies_on_low_life_incr
+	1 damage_vs_enemies_on_low_life_+%
+	1
+		1|# "This Spell and Minions deal {0}% increased Damage with Hits against Enemies that are on Low Life"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 낮은 생명력 상태의 적 명중 시 주는 피해 {0}% 증가"
+description damaging_ailments_deal_damage_faster
+	1 damaging_ailments_deal_damage_+%_faster
+	1
+		# "Damaging Ailments inflicted with this Spell or by Minions deal damage {0}% faster" reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	1
+		# "이 주문 또는 소환수가 유발하는 상태 이상 피해 {0}%만큼 가속" reminderstring ReminderTextDamagingAilments
+description decay_on_hit
+	1 deal_chaos_damage_per_second_for_10_seconds_on_hit
+	1
+		# "This Spell and Minions inflict Decay on Hit, dealing {0} Chaos Damage per second for 8 seconds"
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 명중 시 부패를 유발하여, 8초 동안 1초마다 {0} 카오스 피해를 줌"
+description shocked_movement_speed
+	1 enemies_you_shock_movement_speed_+%
+	2
+		1|# "Enemies Shocked by this Spell or Minions have {0}% increased Movement Speed"
+		#|-1 "Enemies Shocked by this Spell or Minions have {0}% reduced Movement Speed" negate 1 canonical_line
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 감전시킨 적의 이동 속도 {0}% 증가"
+		#|-1 "이 주문 또는 소환수가 감전시킨 적의 이동 속도 {0}% 감소" negate 1 canonical_line
+description enemies_explode_random_element_on_killing_blow
+	1 explode_enemies_for_10%_life_as_random_element_on_killing_blow_chance_%
+	2
+		1|99 "This Spell and Minion's Killing Blows cause Enemies to have a {0}% chance to Explode, dealing a tenth of their maximum Life as Damage of a Random Element"
+		100|# "This Spell and Minion's Killing Blows cause Enemies to Explode, dealing a tenth of their maximum Life as Damage of a Random Element"
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수의 최후의 일격이 적을 {0}%의 확률로 폭발시켜, 해당 적 최대 생명력의 1/10을 무작위 원소 피해로 줌"
+		100|# "이 주문 및 소환수의 최후의 일격이 적을 폭발시켜, 해당 적 최대 생명력의 1/10을 무작위 원소 피해로 줌"
+description gain_power_charge_on_kill_chance
+	1 gain_power_charge_on_kill_with_hit_%
+	1
+		1|# "This Spell and Minions have {0}% chance to gain a Power Charge on Killing Blow"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 최후의 일격 시 {0}%의 확률로 권능 충전 획득"
+description hits_cannot_kill
+	1 hits_cannot_kill_enemies
+	1
+		# "This Spell and Minion Hits cannot kill Enemies"
+	lang "Korean"
+	1
+		# "이 주문 및 소환수의 명중으로 적 처치 불가"
+description hits_grant_cruelty
+	1 hits_grant_cruelty
+	1
+		# "This Spell and Minions gain Cruelty on Hit" reminderstring ReminderTextCruelty
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 명중 시 잔혹 획득" reminderstring ReminderTextCruelty
+description ignites_apply_fire_res
+	1 ignites_apply_fire_resistance_+
+	1
+		# "Enemies Ignited by this Spell or Minions have {0:+d}% to Fire Resistance"
+	lang "Korean"
+	1
+		# "이 주문 또는 소환수에 의해 점화된 적의 화염 저항 {0:+d}%"
+description inflict_all_exposure_on_hit
+	1 inflict_all_exposure_on_hit
+	1
+		# "This Spell and Minions inflict Fire, Cold, and Lightning Exposure on Hit" reminderstring ReminderTextAll3Exposures
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 명중 시 화염, 냉기, 번개 노출 유발" reminderstring ReminderTextAll3Exposures
+description support_inflict_equivalent_chill_on_shock
+	1 inflict_equivalent_chill_on_inflicting_shock_with_hits
+	1
+		# "Chill enemies when they are Shocked by Hits from this Spell or Minon, reducing Action Speed by Shock Effect"
+	lang "Korean"
+	1
+		# "적이 이 주문 또는 소환수의 명중으로 감전될 때 해당 적을 냉각시켜, 감전 효과로 인한 동작 속도를 감소시킴"
+
+description support_inflict_equivalent_shock_on_chill
+	1 inflict_equivalent_shock_on_inflicting_chill_with_hits
+	1
+		# "Shock enemies when they are Chilled by Hits from this Spell or Minon, increasing Damage taken by Chill Effect"
+	lang "Korean"
+	1
+		# "적이 이 주문 또는 소환수의 명중으로 냉각될 때 해당 적을 감전시켜, 냉각 효과로 받는 피해를 증가시킴"
+
+description normal_or_magic_enemy_cull
+	1 kill_normal_or_magic_enemy_on_hit_if_under_x%_life
+	1
+		1|# "Your Spells and Minions kill Normal and Magic Rarity Enemies that have {0}% Life or lower when Hit"
+	lang "Korean"
+	1
+		1|# "플레이어의 주문 및 소환수가 명중 시 생명력이 {0}% 이하인 일반 및 마법 희귀도 적 처치"
+description killing_blow_consume_corpse_add_flat_life
+	2 killing_blow_consumes_corpse_restore_x_life killing_blow_consumes_corpse_restore_x_mana
+	3
+		1|# 1|# "Killing Blows Consume corpses to Recover {0} Life and {1} Mana\nMinions Consume corpses on Killing Blow to Recover {0} Life and {1} Mana"
+		1|# 0 "Killing Blows Consume corpses to Recover {0} Life\nMinions Consume corpses on Killing Blow to Recover {0} Life"
+		0   1|# "Killing Blows Consume corpses to Recover {1} Mana\nMinions Consume corpses on Killing Blow to Recover {1} Mana"
+	lang "Korean"
+	3
+		1|# 1|# "최후의 일격 시 시체를 소모해 생명력 {0} 및 마나 {1} 회복\n소환수가 최후의 일격 시 시체를 소모해 생명력 {0} 및 마나 {1} 회복"
+		1|# 0 "최후의 일격 시 시체를 소모해 생명력 {0} 회복\n소환수가 최후의 일격 시 시체를 소모해 생명력 {0} 회복"
+		0   1|# "최후의 일격 시 시체를 소모해 마나 {1} 회복\n소환수가 최후의 일격 시 시체를 소모해 마나 {1} 회복"
+description close_range_knockback
+	1 knockback_chance_%_at_close_range
+	1
+		# "This Spell and Minions have {0}% chance to Knock Enemies Back with Hits at Close Range" reminderstring ReminderTextCloseRange
+	lang "Korean"
+	1
+		# "이 주문 및 소환수가 근거리에서 명중 시 {0}%의 확률로 적을 밀어냄" reminderstring ReminderTextCloseRange
+description lightning_ailment_effect_incr
+	1 lightning_ailment_effect_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Effect of Lightning Ailments" reminderstring ReminderTextLightningAilments
+		#|-1 "This Spell and Minions have {0}% reduced Effect of Lightning Ailments" negate 1 reminderstring ReminderTextLightningAilments
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 번개 상태 이상 효과 {0}% 증가" reminderstring ReminderTextLightningAilments
+		#|-1 "이 주문 및 소환수의 번개 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextLightningAilments
+description ailment_non_damaging_incr_effect
+	1 non_damaging_ailment_effect_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Effect of non-Damaging Ailments" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "This Spell and Minions have {0}% reduced Effect of non-Damaging Ailments" negate 1 reminderstring ReminderTextNonDamagingAilments
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 비-피해 상태 이상 효과 {0}% 증가" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "이 주문 및 소환수의 비-피해 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextNonDamagingAilments
+description chaos_penetration
+	1 reduce_enemy_chaos_resistance_%
+	1
+		1|# "This Spell and Minions Penetrate {0}% Chaos Resistance"
+	lang "Korean"
+	1
+		1|# "이 주문 및 소환수가 카오스 저항 {0}% 관통"
+description critical_shock_effect
+	1 shock_effect_+%_with_critical_strikes
+	2
+		1|# "{0}% increased Effect of Shocks this Spell or Minions inflict with Critical Strikes"
+		#|-1 "{0}% reduced Effect of Shocks this Spell or Minions inflict with Critical Strikes" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수의 치명타로 유발한 감전의 효과 {0}% 증가"
+		#|-1 "이 주문 또는 소환수의 치명타로 유발한 감전의 효과 {0}% 감소" negate 1
+description skill_and_damaging_ailment_duration_incr
+	1 skill_effect_and_damaging_ailment_duration_+%
+	2
+		1|# "{0}% increased Duration of Damaging Ailments\nMinions have {0}% increased Duration of Skills and Damaging Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "{0}% reduced Duration of Damaging Ailments\nMinions have {0}% reduced Duration of Skills and Damaging Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "피해를 주는 상태 이상 지속시간 {0}% 증가\n소환수의 스킬 지속시간 및 피해를 주는 상태 이상 지속시간 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "피해를 주는 상태 이상 지속시간 {0}% 감소\n소환수의 스킬 지속시간 및 피해를 주는 상태 이상 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description support_chills_incr_cold_dot_taken
+	1 support_chills_also_grant_cold_damage_taken_per_minute_+%
+	2
+		1|# "Enemies Chilled by this Spell or Minions take {0}% increased Cold Damage over Time"
+		#|-1 "Enemies Chilled by this Spell or Minions take {0}% reduced Cold Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수에 의해 냉각된 적이 받는 지속 냉기 피해 {0}% 증가"
+		#|-1 "이 주문 또는 소환수에 의해 냉각된 된 적이 받는 지속 냉기 피해 {0}% 감소" negate 1
+description support_chills_incr_cold_damage_taken
+	1 support_chills_also_grant_cold_damage_taken_+%_equal_to_slow_amount
+	1
+		# "Enemies Chilled by this Spell or Minions have Cold Damage taken increased by Chill Effect"
+	lang "Korean"
+	1
+		# "이 주문 또는 소환수에 의해 냉각된 적이 냉각 효과로 받는 냉기 피해 증가"
+description support_damage_full_es_incr
+	1 support_energy_shield_leech_damage_+%_on_full_energy_shield_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage while on Full Energy Shield"
+		#|-1 "This Spell and Minions deal {0}% less Damage while on Full Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막이 최대일 때 이 주문 및 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "에너지 보호막이 최대일 때 이 주문 및 소환수가 주는 피해 {0}% 감폭" negate 1
+description damage_while_es_leeching_more
+	1 support_energy_shield_leech_damage_+%_while_leeching_energy_shield_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage while Leeching Energy Shield"
+		#|-1 "This Spell and Minions deal {0}% less Damage while Leeching Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "에너지 보호막을 흡수하는 동안 이 주문 및 소환수가 주는 피해 {0}% 감폭" negate 1
+description support_faster_ailments_duration
+	1 support_faster_ailments_ailment_duration_+%_final
+	2
+		1|# "{0}% more Duration of Ailments inflicted with This Spell or by Minions" reminderstring ReminderTextAilments
+		#|-1 "{0}% less Duration of Ailments inflicted with This Spell or by Minions" negate 1 reminderstring ReminderTextAilments
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수가 유발하는 상태 이상 지속시간 {0}% 증폭" reminderstring ReminderTextAilments
+		#|-1 "이 주문 또는 소환수가 유발하는 상태 이상 지속시간 {0}% 감폭" negate 1 reminderstring ReminderTextAilments
+description added_fire_against_burning
+	2 global_minimum_added_fire_damage_vs_burning_enemies global_maximum_added_fire_damage_vs_burning_enemies
+	1
+		# # "This Spell and Minions deal {0} to {1} added Fire Damage against Burning Enemies"
+	lang "Korean"
+	1
+		# # "이 주문 및 소환수가 화상 상태의 적에게 주는 화염 피해 {0}~{1} 추가"
+description pure_shock_less_damage
+	1 support_pure_shock_damage_+%_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage"
+		#|-1 "This Spell and Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "이 주문 및 소환수가 주는 피해 {0}% 감폭" negate 1
+description support_shock_with_more_damage
+	1 support_pure_shock_shock_as_though_damage_+%_final
+	2
+		1|# "This Spell and Minions Shock Enemies as though dealing {0}% more Damage"
+		#|-1 "This Spell and Minions Shock Enemies as though dealing {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 {0}% 증폭된 피해를 준 것처럼 적에게 감전 유발"
+		#|-1 "이 주문 및 소환수가 {0}% 감폭된 피해를 준 것처럼 적에게 감전 유발" negate 1
+description spell_echo_final_repeat_damage
+	1 support_spell_echo_final_repeat_damage_+%_final
+	2
+		1|# "Final Repeat of this Spell or Minion's Spells deals {0}% more Damage"
+		#|-1 "Final Repeat of this Spell or Minion's Spells deals {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 또는 소환수의 주문 마지막 반복이 주는 피해 {0}% 증폭"
+		#|-1 "이 주문 또는 소환수의 주문 마지막 반복이 주는 피해 {0}% 감폭" negate 1
+description ailment_damage_incr
+	1 support_unbound_ailments_ailment_damage_+%_final
+	2
+		1|# "This Spell and Minions deal {0}% more Damage with Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "This Spell and Minions deal {0}% less Damage with Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수가 주는 상태 이상 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "이 주문 및 소환수가 주는 상태 이상 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description withered_support_base_duration
+	1 support_withered_base_duration_ms
+	2
+		1000 "Withered inflicted by this Spell or Minions has a base duration of {0} second" milliseconds_to_seconds 1
+		# "Withered inflicted by this Spell or Minions has a base duration of {0} seconds" milliseconds_to_seconds 1
+	lang "Korean"
+	2
+		1000 "이 주문 또는 소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+		# "이 주문 또는 소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+description invert_elemental_resistance
+	1 treat_enemy_resistances_as_negated_on_elemental_damage_hit_%_chance
+	2
+		1|99 "Hits from this Spell and Minions have {0}% chance to treat Enemy Monster Elemental Resistance values as inverted"
+		100|# "Hits from this Spell and Minions treat Enemy Monster Elemental Resistance values as inverted"
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}% 확률로 적 몬스터 원소 저항을 반대로 간주"
+		100|# "이 주문 및 소환수가 명중 시 적 몬스터 원소 저항을 반대로 간주"
+description withered_on_hit_chance
+	1 withered_on_hit_chance_%
+	2
+		1|99 "This Spell and Minions have {0}% chance to inflict Withered on Hit" reminderstring ReminderTextWithered
+		100|# "This Spell and Minions inflict Withered on Hit" reminderstring ReminderTextWithered
+	lang "Korean"
+	2
+		1|99 "이 주문 및 소환수가 명중 시 {0}%의 확률로 위축 유발" reminderstring ReminderTextWithered
+		100|# "이 주문 및 소환수가 명중 시 위축 유발" reminderstring ReminderTextWithered

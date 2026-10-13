@@ -1,0 +1,263 @@
+include "Metadata/StatDescriptions/stat_descriptions.txt"
+
+
+
+description
+	4 local_unique_jewel_alternate_tree_version local_unique_jewel_alternate_tree_seed local_unique_jewel_alternate_tree_keystone local_unique_jewel_alternate_tree_internal_revision
+	23
+		1 # 1 # "Bathed in the blood of {1} sacrificed in the name of Xibaqua(Ahuana-Xibaqua)\nPassives in radius are Conquered by the Vaal" reminderstring ReminderTextConqueredPassives
+		1 # 2 0 "Bathed in the blood of {1} sacrificed in the name of Zerphi(Ahuana-Xibaqua)\nPassives in radius are Conquered by the Vaal" reminderstring ReminderTextConqueredPassives
+		1 # 2 1|# "Bathed in the blood of {1} sacrificed in the name of Ahuana(Ahuana-Xibaqua)\nPassives in radius are Conquered by the Vaal" reminderstring ReminderTextConqueredPassives
+		1 # 3 # "Bathed in the blood of {1} sacrificed in the name of Doryani(Ahuana-Xibaqua)\nPassives in radius are Conquered by the Vaal" reminderstring ReminderTextConqueredPassives
+		2 # 1 # "Commanded leadership over {1} warriors under Kaom(Akoya-Rakiata)\nPassives in radius are Conquered by the Karui" reminderstring ReminderTextConqueredPassives
+		2 # 2 # "Commanded leadership over {1} warriors under Rakiata(Akoya-Rakiata)\nPassives in radius are Conquered by the Karui" reminderstring ReminderTextConqueredPassives
+		2 # 3 0 "Commanded leadership over {1} warriors under Kiloava(Akoya-Rakiata)\nPassives in radius are Conquered by the Karui" reminderstring ReminderTextConqueredPassives
+		2 # 3 1|# "Commanded leadership over {1} warriors under Akoya(Akoya-Rakiata)\nPassives in radius are Conquered by the Karui" reminderstring ReminderTextConqueredPassives
+		3 # 1 0 "Denoted service of {1} dekhara in the akhara of Deshret(Asenath-Nasima)\nPassives in radius are Conquered by the Maraketh" reminderstring ReminderTextConqueredPassives
+		3 # 1 1|# "Denoted service of {1} dekhara in the akhara of Balbala(Asenath-Nasima)\nPassives in radius are Conquered by the Maraketh" reminderstring ReminderTextConqueredPassives
+		3 # 2 # "Denoted service of {1} dekhara in the akhara of Asenath(Asenath-Nasima)\nPassives in radius are Conquered by the Maraketh" reminderstring ReminderTextConqueredPassives
+		3 # 3 # "Denoted service of {1} dekhara in the akhara of Nasima(Asenath-Nasima)\nPassives in radius are Conquered by the Maraketh" reminderstring ReminderTextConqueredPassives
+		4 # 1 0 "Carved to glorify {1} new faithful converted by High Templar Venarius(Avarius-Maxarius)\nPassives in radius are Conquered by the Templars" reminderstring ReminderTextConqueredPassives
+		4 # 1 1|# "Carved to glorify {1} new faithful converted by High Templar Maxarius(Avarius-Maxarius)\nPassives in radius are Conquered by the Templars" reminderstring ReminderTextConqueredPassives
+		4 # 2 # "Carved to glorify {1} new faithful converted by High Templar Dominus(Avarius-Maxarius)\nPassives in radius are Conquered by the Templars" reminderstring ReminderTextConqueredPassives
+		4 # 3 # "Carved to glorify {1} new faithful converted by High Templar Avarius(Avarius-Maxarius)\nPassives in radius are Conquered by the Templars" reminderstring ReminderTextConqueredPassives
+		5 # 1 # "Commissioned {1} coins to commemorate Cadiro(Cadiro-Victario)\nPassives in radius are Conquered by the Eternal Empire" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 2 # "Commissioned {1} coins to commemorate Victario(Cadiro-Victario)\nPassives in radius are Conquered by the Eternal Empire" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 3 0 "Commissioned {1} coins to commemorate Chitus(Cadiro-Victario)\nPassives in radius are Conquered by the Eternal Empire" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 3 1|# "Commissioned {1} coins to commemorate Caspiro(Cadiro-Victario)\nPassives in radius are Conquered by the Eternal Empire" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		6 # 1 # "Remembrancing {1} songworthy deeds by the line of Vorana(Vorana-Medved)\nPassives in radius are Conquered by the Kalguur" reminderstring ReminderTextConqueredPassives
+		6 # 2 # "Remembrancing {1} songworthy deeds by the line of Uhtred(Vorana-Medved)\nPassives in radius are Conquered by the Kalguur" reminderstring ReminderTextConqueredPassives
+		6 # 3 # "Remembrancing {1} songworthy deeds by the line of Medved(Vorana-Medved)\nPassives in radius are Conquered by the Kalguur" reminderstring ReminderTextConqueredPassives
+	lang "Korean"
+	23
+		1 # 1 # "지바콰(아후아나-지바콰)의 이름으로 희생된 {1}명의 피로 적셔짐\n반경 내 패시브 스킬은 바알의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		1 # 2 0 "제르피(아후아나-지바콰)의 이름으로 희생된 {1}명의 피로 적셔짐\n반경 내 패시브 스킬은 바알의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		1 # 2 1|# "아후아나(아후아나-지바콰)의 이름으로 희생된 {1}명의 피로 적셔짐\n반경 내 패시브 스킬은 바알의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		1 # 3 # "도리아니(아후아나-지바콰)의 이름으로 희생된 {1}명의 피로 적셔짐\n반경 내 패시브 스킬은 바알의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		2 # 1 # "카옴(아코야-라키아타) 휘하 전사 {1}명에게 지휘권 행사\n반경 내 패시브 스킬은 카루이의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		2 # 2 # "라키아타(아코야-라키아타) 휘하 전사 {1}명에게 지휘권 행사\n반경 내 패시브 스킬은 카루이의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		2 # 3 0 "킬로아바(아코야-라키아타) 휘하 전사 {1}명에게 지휘권 행사\n반경 내 패시브 스킬은 카루이의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		2 # 3 1|# "아코야(아코야-라키아타) 휘하 전사 {1}명에게 지휘권 행사\n반경 내 패시브 스킬은 카루이의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		3 # 1 0 "데쉬렛(아세나스-나시마)의 아카라에 속한 데카라 {1}명의 봉사 상징\n반경 내 패시브 스킬은 마라케스의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		3 # 1 1|# "발바라(아세나스-나시마)의 아카라에 속한 데카라 {1}명의 봉사 상징\n반경 내 패시브 스킬은 마라케스의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		3 # 2 # "아세나스(아세나스-나시마)의 아카라에 속한 데카라 {1}명의 봉사 상징\n반경 내 패시브 스킬은 마라케스의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		3 # 3 # "나시마(아세나스-나시마)의 아카라에 속한 데카라 {1}명의 봉사 상징\n반경 내 패시브 스킬은 마라케스의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		4 # 1 0 "고위 템플러 베나리우스(아배리우스-막사리우스)가 개종시킨 새로운 신도 {1}명을 찬미하기 위해 조각됨\n반경 내 패시브 스킬은 템플러의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		4 # 1 1|# "고위 템플러 막사리우스(아배리우스-막사리우스)가 개종시킨 새로운 신도 {1}명을 찬미하기 위해 조각됨\n반경 내 패시브 스킬은 템플러의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		4 # 2 # "고위 템플러 도미누스(아배리우스-막사리우스)가 개종시킨 새로운 신도 {1}명을 찬미하기 위해 조각됨\n반경 내 패시브 스킬은 템플러의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		4 # 3 # "고위 템플러 아배리우스(아배리우스-막사리우스)가 개종시킨 새로운 신도 {1}명을 찬미하기 위해 조각됨\n반경 내 패시브 스킬은 템플러의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		5 # 1 # "카디로(카디로-빅타리오)를 기념하기 위해 제작한 주화 {1}개\n반경 내 패시브 스킬은 영원한 제국의 지배를 받음" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 2 # "빅타리오(카디로-빅타리오)를 기념하기 위해 제작한 주화 {1}개\n반경 내 패시브 스킬은 영원한 제국의 지배를 받음" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 3 0 "치투스(카디로-빅타리오)를 기념하기 위해 제작한 주화 {1}개\n반경 내 패시브 스킬은 영원한 제국의 지배를 받음" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		5 # 3 1|# "카스피로(카디로-빅타리오)를 기념하기 위해 제작한 주화 {1}개\n반경 내 패시브 스킬은 영원한 제국의 지배를 받음" times_twenty 2 reminderstring ReminderTextConqueredPassives
+		6 # 1 # "보라나의 핏줄(보라나-메드베드)이 행한 노래로 남을 공적 {1}개 추모\n반경 내 패시브 스킬이 칼구르의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		6 # 2 # "우트레드의 핏줄(보라나-메드베드)이 행한 노래로 남을 공적 {1}개 추모\n반경 내 패시브 스킬이 칼구르의 지배를 받음" reminderstring ReminderTextConqueredPassives
+		6 # 3 # "메드베드의 핏줄(보라나-메드베드)이 행한 노래로 남을 공적 {1}개 추모\n반경 내 패시브 스킬이 칼구르의 지배를 받음" reminderstring ReminderTextConqueredPassives
+description
+	1 local_jewel_variable_ring_radius_value
+	5
+		1 "Only affects Passives in Small Ring(Small Ring-Very Large Ring)" reminderstring ReminderTextJewelRadiusRing
+		2 "Only affects Passives in Medium Ring(Small Ring-Very Large Ring)" reminderstring ReminderTextJewelRadiusRing
+		3 "Only affects Passives in Large Ring(Small Ring-Very Large Ring)" reminderstring ReminderTextJewelRadiusRing
+		4 "Only affects Passives in Very Large Ring(Small Ring-Very Large Ring)" reminderstring ReminderTextJewelRadiusRing
+		5 "Only affects Passives in Massive Ring" reminderstring ReminderTextJewelRadiusRing
+	lang "Korean"
+	5
+		1 "좁은 반경의 패시브 스킬에만 영향을 미침(좁은 반경-아주 넓은 반경)" reminderstring ReminderTextJewelRadiusRing
+		2 "중간 반경의 패시브 스킬에만 영향을 미침(좁은 반경-아주 넓은 반경)" reminderstring ReminderTextJewelRadiusRing
+		3 "넓은 반경의 패시브 스킬에만 영향을 미침(좁은 반경-아주 넓은 반경)" reminderstring ReminderTextJewelRadiusRing
+		4 "아주 넓은 반경의 패시브 스킬에만 영향을 미침(좁은 반경-아주 넓은 반경)" reminderstring ReminderTextJewelRadiusRing
+		5 "거대한 반경의 패시브 스킬에만 영향을 미침" reminderstring ReminderTextJewelRadiusRing
+description
+	1 shaper_apparition_ability
+	3
+		1 "Grants Level 20 Summon Shaper Memory\nGrants Level 20 Shaper's Devastation(Shaper's Despair-Shaper's Ire), which will be used by Shaper Memory"
+		2 "Grants Level 20 Summon Shaper Memory\nGrants Level 20 Shaper's Ire(Shaper's Despair-Shaper's Ire), which will be used by Shaper Memory"
+		3 "Grants Level 20 Summon Shaper Memory\nGrants Level 20 Shaper's Despair(Shaper's Despair-Shaper's Ire), which will be used by Shaper Memory"
+	lang "Korean"
+	3
+		1 "20레벨 쉐이퍼의 기억 소환 사용 가능\n쉐이퍼의 기억이 사용하는 20레벨 쉐이퍼의 유린(쉐이퍼의 절망, 쉐이퍼의 진노) 사용 가능"
+		2 "20레벨 쉐이퍼의 기억 소환 사용 가능\n쉐이퍼의 기억이 사용하는 20레벨 쉐이퍼의 진노(쉐이퍼의 절망, 쉐이퍼의 진노) 사용 가능"
+		3 "20레벨 쉐이퍼의 기억 소환 사용 가능\n쉐이퍼의 기억이 사용하는 20레벨 쉐이퍼의 절망(쉐이퍼의 절망, 쉐이퍼의 진노) 사용 가능"
+description
+	1 area_damage_+%_per_10_devotion
+	2
+		1|# "{0}% increased Area Damage per 10 Devotion"
+		#|-1 "{0}% reduced Area Damage per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 범위 피해 {0}% 증가"
+		#|-1 "헌신 10당 범위 피해 {0}% 감소" negate 1
+description
+	1 channelled_skill_damage_+%_per_10_devotion
+	2
+		1|# "Channelling Skills deal {0}% increased Damage per 10 Devotion"
+		#|-1 "Channelling Skills deal {0}% reduced Damage per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 집중 유지 스킬로 주는 피해 {0}% 증가"
+		#|-1 "헌신 10당 집중 유지 스킬로 주는 피해 {0}% 감소" negate 1
+description
+	1 elemental_damage_+%_per_10_devotion
+	2
+		1|# "{0}% increased Elemental Damage per 10 Devotion"
+		#|-1 "{0}% reduced Elemental Damage per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 원소 피해 {0}% 증가"
+		#|-1 "헌신 10당 원소 피해 {0}% 감소" negate 1
+description
+	1 elemental_resistance_%_per_10_devotion
+	1
+		# "{0:+d}% to all Elemental Resistances per 10 Devotion"
+	lang "Korean"
+	1
+		# "헌신 10당 모든 원소 저항 {0:+d}%"
+description
+	2 hexes_expire_on_reaching_200%_effect hex_remove_at_effect_variance
+	2
+		0 !0 "Non-Aura Hexes expire upon reaching {1:+d}% of base Effect"
+		!0 0 "Non-Aura Hexes expire upon reaching 200% of base Effect"
+	lang "Korean"
+	2
+		0 !0 "비-오라 사술이 기본 효과의 {1:+d}%에 도달 시 만료"
+		!0 0 "비-오라 사술이 기본 효과의 200%에 도달 시 만료"
+description
+	1 mana_cost_+%_per_10_devotion
+	2
+		1|# "{0}% increased Mana Cost of Skills per 10 Devotion"
+		#|-1 "{0}% reduced Mana Cost of Skills per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 스킬의 마나 소모 {0}% 증가"
+		#|-1 "헌신 10당 스킬의 마나 소모 {0}% 감소" negate 1
+description
+	1 mana_regeneration_rate_per_minute_per_10_devotion
+	1
+		# "Regenerate {0} Mana per Second per 10 Devotion" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		# "헌신 10당 1초마다 마나 {0} 재생" per_minute_to_per_second 1
+description
+	1 maximum_number_of_X_minion_type_doubled
+	16
+		1 "Maximum number of Animated Weapons (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Animated Weapons (Animated Weapons-Holy Armaments)"
+		2 "Maximum number of Summoned Golems (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Golems (Animated Weapons-Holy Armaments)"
+		3 "Maximum number of Summoned Raging Spirits (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Raging Spirits (Animated Weapons-Holy Armaments)"
+		4 "Maximum number of Raised Spectres (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Raised Spectres (Animated Weapons-Holy Armaments)"
+		5 "Maximum number of Raised Spiders (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Raised Spiders (Animated Weapons-Holy Armaments)"
+		6 "Maximum number of Raised Zombies (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Raised Zombies (Animated Weapons-Holy Armaments)"
+		7 "Maximum number of Summoned Reapers (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Reapers (Animated Weapons-Holy Armaments)"
+		8 "Maximum number of Sentinels of Absolution (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Sentinels of Absolution (Animated Weapons-Holy Armaments)"
+		9 "Maximum number of Sentinels of Dominance (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Sentinels of Dominance (Animated Weapons-Holy Armaments)"
+		10 "Maximum number of Sentinels of Purity (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Sentinels of Purity (Animated Weapons-Holy Armaments)"
+		11 "Maximum number of Summoned Holy Relics (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Holy Relics (Animated Weapons-Holy Armaments)"
+		12 "Maximum number of Summoned Phantasms (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Phantasms (Animated Weapons-Holy Armaments)"
+		13 "Maximum number of Summoned Skeletons (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Skeletons (Animated Weapons-Holy Armaments)"
+		14 "Maximum number of Summoned Spectral Wolves (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Summoned Spectral Wolves (Animated Weapons-Holy Armaments)"
+		15 "Maximum number of Living Lightning (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Living Lightning (Animated Weapons-Holy Armaments)"
+		16 "Maximum number of Holy Armaments (Animated Weapons-Holy Armaments) is Doubled\nCannot have Minions other than Living Lightning (Animated Weapons-Holy Armaments)"
+	lang "Korean"
+	16
+		1 "기동된 무기(기동된 무기-신성한 병기) 최대 수 2배\n기동된 무기(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		2 "소환된 골렘(기동된 무기-신성한 병기) 최대 수 2배\n소환된 골렘(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		3 "소환된 격노의 유령(기동된 무기-신성한 병기) 최대 수 2배\n소환된 격노의 유령(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		4 "소환한 망령(기동된 무기-신성한 병기) 최대 수 2배\n소환한 망령(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		5 "소환한 거미(기동된 무기-신성한 병기) 최대 수 2배\n소환한 거미(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		6 "소환한 좀비(기동된 무기-신성한 병기) 최대 수 2배\n소환한 좀비(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		7 "소환된 수확자(기동된 무기-신성한 병기) 최대 수 2배\n소환된 수확자(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		8 "면죄의 파수꾼(기동된 무기-신성한 병기) 최대 수 2배\n면죄의 파수꾼(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		9 "지배의 파수꾼(기동된 무기-신성한 병기) 최대 수 2배\n지배의 파수꾼(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		10 "정화의 파수꾼(기동된 무기-신성한 병기) 최대 수 2배\n정화의 파수꾼(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		11 "소환된 신성한 유물(기동된 무기-신성한 병기) 최대 수 2배\n소환된 신성한 유물(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		12 "소환된 환영(기동된 무기-신성한 병기) 최대 수 2배\n소환된 환영(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		13 "소환된 해골(기동된 무기-신성한 병기) 최대 수 2배\n소환된 해골(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		14 "소환된 영체 늑대(기동된 무기-신성한 병기) 최대 수 2배\n소환된 영체 늑대(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		15 "살아 있는 번개(기동된 무기-신성한 병기) 최대 수 2배\n살아 있는 번개(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+		16 "신성한 병기(기동된 무기-신성한 병기) 최대 수 2배\n살아 있는 번개(기동된 무기-신성한 병기) 외의 다른 소환수 보유 불가"
+description
+	1 minion_accuracy_rating_per_10_devotion
+	1
+		# "Minions have +{0} to Accuracy Rating per 10 Devotion"
+	lang "Korean"
+	1
+		# "헌신 10당 소환수 정확도 +{0}"
+description
+	1 minion_attack_and_cast_speed_+%_per_10_devotion
+	2
+		1|# "{0}% increased Minion Attack and Cast Speed per 10 Devotion"
+		#|-1 "{0}% reduced Minion Attack and Cast Speed per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 소환수 공격 및 시전 속도 {0}% 증가"
+		#|-1 "헌신 10당 소환수 공격 및 시전 속도 {0}% 감소" negate 1
+description
+	1 non_curse_aura_effect_+%_per_10_devotion
+	2
+		1|# "{0}% increased effect of Non-Curse Auras per 10 Devotion"
+		#|-1 "{0}% reduced effect of Non-Curse Auras per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 비-저주 오라 효과 {0}% 증가"
+		#|-1 "헌신 10당 비-저주 오라 효과 {0}% 감소" negate 1
+description
+	1 non_damaging_ailment_effect_+%_per_10_devotion
+	2
+		1|# "{0}% increased Effect of non-Damaging Ailments on Enemies per 10 Devotion" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "{0}% reduced Effect of non-Damaging Ailments on Enemies per 10 Devotion" negate 1 reminderstring ReminderTextNonDamagingAilments
+	lang "Korean"
+	2
+		1|# "헌신 10당 적에게 적용되는 비-피해 상태 이상 효과 {0}% 증가" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "헌신 10당 적에게 적용되는 비-피해 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextNonDamagingAilments
+description
+	1 self_curse_duration_+%_per_10_devotion
+	2
+		1|# "{0}% increased Duration of Curses on you per 10 Devotion"
+		#|-1 "{0}% reduced Duration of Curses on you per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 플레이어에게 적용되는 저주 지속시간 {0}% 증가"
+		#|-1 "헌신 10당 플레이어에게 적용되는 저주 지속시간 {0}% 감소" negate 1
+description
+	1 self_elemental_status_duration_-%_per_10_devotion
+	2
+		1|# "{0}% reduced Elemental Ailment Duration on you per 10 Devotion" reminderstring ReminderTextElementalAilments
+		#|-1 "{0}% increased Elemental Ailment Duration on you per 10 Devotion" negate 1 reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	2
+		1|# "헌신 10당 플레이어에게 적용되는 원소 상태 이상 지속시간 {0}% 감소" reminderstring ReminderTextElementalAilments
+		#|-1 "헌신 10당 플레이어에게 적용되는 원소 상태 이상 지속시간 {0}% 증가" negate 1 reminderstring ReminderTextElementalAilments
+description
+	1 shield_defences_+%_per_10_devotion
+	2
+		1|# "{0}% increased Defences from Equipped Shield per 10 Devotion" reminderstring ReminderTextDefences
+		#|-1 "{0}% reduced Defences from Equipped Shield per 10 Devotion" negate 1 reminderstring ReminderTextDefences
+	lang "Korean"
+	2
+		1|# "헌신 10당 장착한 방패로 얻는 방어 {0}% 증가" reminderstring ReminderTextDefences
+		#|-1 "헌신 10당 장착한 방패로 얻는 방어 {0}% 감소" negate 1 reminderstring ReminderTextDefences
+description
+	1 sigil_damage_+%_per_10_devotion
+	2
+		1|# "{0}% increased Brand Damage per 10 Devotion" reminderstring ReminderTextBrandDamage
+		#|-1 "{0}% reduced Brand Damage per 10 Devotion" negate 1 reminderstring ReminderTextBrandDamage
+	lang "Korean"
+	2
+		1|# "헌신 10당 낙인 피해 {0}% 증가" reminderstring ReminderTextBrandDamage
+		#|-1 "헌신 10당 낙인 피해 {0}% 감소" negate 1 reminderstring ReminderTextBrandDamage
+description
+	1 totem_damage_+%_per_10_devotion
+	2
+		1|# "{0}% increased Totem Damage per 10 Devotion"
+		#|-1 "{0}% reduced Totem Damage per 10 Devotion" negate 1
+	lang "Korean"
+	2
+		1|# "헌신 10당 토템 피해 {0}% 증가"
+		#|-1 "헌신 10당 토템 피해 {0}% 감소" negate 1
+description
+	1 local_is_alternate_tree_jewel
+	1
+		# "Historic"
+	lang "Korean"
+	1
+		# "역사적인 순간"

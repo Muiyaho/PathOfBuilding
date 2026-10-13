@@ -1,0 +1,19 @@
+include "Metadata/StatDescriptions/buff_skill_stat_descriptions.txt"
+		
+has_identifiers		
+		
+
+description secondary_buff_duration
+	1 secondary_buff_effect_duration
+	1
+		1|# "Debuff Lasts {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "디버프 {0}초간 지속" milliseconds_to_seconds_2dp 1
+description base_secondary_duration_identifier
+	1 base_secondary_skill_effect_duration
+	1
+		1|# "Base Debuff Duration is {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "기본 디버프 지속시간 {0}초" milliseconds_to_seconds_2dp 1

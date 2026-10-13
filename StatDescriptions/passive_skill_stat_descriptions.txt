@@ -1,0 +1,998 @@
+include "Metadata/StatDescriptions/stat_descriptions.txt"
+
+no_description damage_taken_+%_from_hits
+no_description create_sand_mirage_on_contact_for_damaging_non_channel_spells
+description
+	1 base_devotion
+	1
+		# "{0:+d} to Devotion"
+	lang "Korean"
+	1
+		# "헌신 {0:+d}"
+description
+	1 base_strength
+	1
+		# "{0:+d} to Strength"
+	lang "Korean"
+	1
+		# "힘 {0:+d}"
+description
+	1 strength_+%
+	2
+		1|# "{0}% increased Strength"
+		#|-1 "{0}% reduced Strength" negate 1
+	lang "Korean"
+	2
+		1|# "힘 {0}% 증가"
+		#|-1 "힘 {0}% 감소" negate 1
+description
+	1 base_dexterity
+	1
+		# "{0:+d} to Dexterity"
+	lang "Korean"
+	1
+		# "민첩 {0:+d}"
+description
+	1 dexterity_+%
+	2
+		1|# "{0}% increased Dexterity"
+		#|-1 "{0}% reduced Dexterity" negate 1
+	lang "Korean"
+	2
+		1|# "민첩 {0}% 증가"
+		#|-1 "민첩 {0}% 감소" negate 1
+description
+	1 base_intelligence
+	1
+		# "{0:+d} to Intelligence"
+	lang "Korean"
+	1
+		# "지능 {0:+d}"
+description
+	1 intelligence_+%
+	2
+		1|# "{0}% increased Intelligence"
+		#|-1 "{0}% reduced Intelligence" negate 1
+	lang "Korean"
+	2
+		1|# "지능 {0}% 증가"
+		#|-1 "지능 {0}% 감소" negate 1
+description
+	1 mana_regeneration_rate_per_minute_%
+	1
+		1|# "Regenerate {0}% of Mana per second" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		1|# "1초마다 마나의 {0}% 재생" per_minute_to_per_second 1
+description
+	1 mana_regeneration_rate_per_minute_%_per_power_charge
+	1
+		1|# "Regenerate {0}% of Mana per second per Power Charge" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		1|# "권능 충전 하나당 1초마다 마나의 {0}% 재생" per_minute_to_per_second 1
+description
+	1 max_endurance_charges
+	1
+		# "{0:+d} to Maximum Endurance Charges"
+	lang "Korean"
+	1
+		# "인내 충전 최대치 {0:+d}"
+description
+	1 max_frenzy_charges
+	1
+		# "{0:+d} to Maximum Frenzy Charges"
+	lang "Korean"
+	1
+		# "격분 충전 최대치 {0:+d}"
+description
+	1 max_power_charges
+	1
+		# "{0:+d} to Maximum Power Charges"
+	lang "Korean"
+	1
+		# "권능 충전 최대치 {0:+d}"
+description
+	1 physical_damage_+%_per_frenzy_charge
+	1
+		1|# "{0}% increased Physical Damage per Frenzy Charge"
+	lang "Korean"
+	1
+		1|# "격분 충전 하나당 물리 피해 {0}% 증가"
+description
+	1 add_frenzy_charge_on_kill
+	1
+		1|# "Gain a Frenzy Charge on Kill"
+	lang "Korean"
+	1
+		1|# "처치 시 격분 충전 획득"
+description
+	1 keystone_iron_reflexes
+	1
+		# "Converts all Evasion Rating to Armour. Dexterity provides no bonus to Evasion Rating"
+	lang "Korean"
+	1
+		# "모든 회피를 방어도로 전환, 민첩으로 회피에 적용되는 보너스 없음"
+description
+	1 keystone_avatar_of_fire
+	1
+		# "50% of Physical, Cold and Lightning Damage Converted to Fire Damage\nDeal no Non-Fire Damage"
+	lang "Korean"
+	1
+		# "물리, 냉기 및 번개 피해의 50%를 화염 피해로 전환\n화염 피해만 줄 수 있음"
+description
+	1 keystone_eldritch_battery
+	1
+		# "Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate"
+	lang "Korean"
+	1
+		# "스킬 사용 시 마나 대신 에너지 보호막 소모\n에너지 보호막이 생명력 대신 마나 보호\n에너지 보호막 재충전 속도 50% 감폭"
+description
+	1 keystone_ancestral_bond
+	1
+		# "You can't deal Damage with Skills yourself\n+1 to maximum number of Summoned Totems"
+	lang "Korean"
+	1
+		# "스킬을 사용하여 직접 피해를 줄 수 없음\n소환 가능한 토템 최대치 +1"
+description
+	1 convert_all_physical_damage_to_fire
+	1
+		# "Converts all Physical Damage to Fire Damage"
+	lang "Korean"
+	1
+		# "모든 물리 피해를 화염 피해로 전환"
+description
+	2 base_number_of_zombies_allowed quality_display_raise_zombie_is_gem
+	1
+		# # "{0:+d} to Maximum number of Raised Zombies"
+	lang "Korean"
+	1
+		# # "소환 가능한 좀비 최대치 {0:+d}"
+description
+	1 base_number_of_spectres_allowed
+	1
+		# "{0:+d} to Maximum number of Spectres"
+	lang "Korean"
+	1
+		# "망령 최대치 {0:+d}"
+description
+	2 base_number_of_skeletons_allowed quality_display_summon_skeleton_is_gem
+	1
+		# # "{0:+d} to Maximum number of Skeletons"
+	lang "Korean"
+	1
+		# # "해골 최대치 {0:+d}"
+description
+	1 base_number_of_raging_spirits_allowed
+	1
+		# "{0:+d} to Maximum number of Summoned Raging Spirits"
+	lang "Korean"
+	1
+		# "소환된 격노의 유령 최대치 {0:+d}"
+description
+	1 keystone_acrobatics
+	1
+		# "Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits is 75%"
+	lang "Korean"
+	1
+		# "주문 피해 억제 확률 속성 부여가 주문 피해 억제 확률이 아닌 주문 명중 완벽회피에 50%의 수치로 적용\n주문 명중 완벽회피 확률의 최대치는 75%"
+description
+	1 keystone_pain_attunement
+	1
+		# "30% more Spell Damage when on Low Life"
+	lang "Korean"
+	1
+		# "낮은 생명력 상태일 때 주문 피해 30% 증폭"
+description
+	1 keystone_strong_bowman
+	1
+		# "Strength's Damage bonus applies to Projectile Attack Damage as well as Melee Damage"
+	lang "Korean"
+	1
+		# "근접 피해뿐만 아니라 투사체 공격 피해에도 힘의 피해 보너스 적용"
+description
+	1 keystone_point_blank
+	1
+		# "Projectile Attack Hits deal up to 30% more Damage to targets at the start of their movement, dealing less Damage to targets as the projectile travels farther"
+	lang "Korean"
+	1
+		# "투사체 공격 적중 시, 투사체 발사 지점에서 대상이 가까울수록 받는 피해 최대 30% 증폭, 멀어질수록 받는 피해 감폭"
+description
+	1 keystone_conduit
+	1
+		# "Share Endurance, Frenzy and Power Charges with nearby party members"
+	lang "Korean"
+	1
+		# "주변의 파티원과 인내, 격분 및 권능 충전 공유"
+description
+	1 keystone_projectile_evasion
+	1
+		# "Evasion Rating is Doubled against Projectile Attacks\n25% less Evasion Rating against Melee Attacks"
+	lang "Korean"
+	1
+		# "투사체 공격에 대한 회피 2배로 증가\n근접 공격에 대한 회피 25% 감폭"
+description
+	1 keystone_blood_magic
+	1
+		# "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana"
+	lang "Korean"
+	1
+		# "모든 마나를 제거\n최대 생명력 10% 증폭\n스킬 사용 시 마나 대신 생명력 소모\n스킬 사용 시 마나 대신 생명력 점유"
+description
+	1 keystone_minion_instability
+	1
+		# "Minions Explode when reduced to Low Life, dealing 33% of their Life as Fire Damage to surrounding Enemies"
+	lang "Korean"
+	1
+		# "소환수가 낮은 생명력 상태가 될 경우 폭발하여, 주변 적에게 생명력의 33%를 화염 피해로 줌"
+description
+	1 keystone_elemental_equilibrium
+	1
+		# "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances"
+	lang "Korean"
+	1
+		# "명중으로 원소 피해를 주면 해당 원소의 노출을 제거하고 다른 원소의 노출 유발\n이렇게 유발된 노출은 저항 -25% 적용"
+description
+	1 keystone_chaos_inoculation
+	1
+		1|# "Maximum Life becomes 1, Immune to Chaos Damage"
+	lang "Korean"
+	1
+		1|# "최대 생명력을 1로 변경, 카오스 피해에 면역"
+description
+	1 keystone_vaal_pact
+	1
+		# "Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech"
+	lang "Korean"
+	1
+		# "근접 피해로 인한 생명력 흡수가 즉시 적용\n생명력 흡수로만 생명력 회복 가능"
+description
+	1 regenerate_energy_shield_instead_of_life
+	1
+		# "Life Regeneration is applied to Energy Shield instead"
+	lang "Korean"
+	1
+		# "생명력 재생이 에너지 보호막에 대신 적용"
+description
+	1 critical_strike_chance_+%
+	2
+		1|# "{0}% increased Critical Strike Chance"
+		#|-1 "{0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "치명타 확률 {0}% 증가"
+		#|-1 "치명타 확률 {0}% 감소" negate 1
+description
+	1 base_critical_strike_multiplier_+
+	1
+		1|# "{0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		1|# "치명타 피해 배율 {0:+d}%"
+description
+	1 staff_block_%
+	1
+		# "{0:+d}% Chance to Block Attack Damage while wielding a Staff" reminderstring ReminderTextStaffWarstaff
+	lang "Korean"
+	1
+		# "지팡이 장착 시 공격 피해 막기 확률 {0:+d}%" reminderstring ReminderTextStaffWarstaff
+description
+	1 spell_block_with_staff_%
+	1
+		# "{0:+d}% Chance to Block Spell Damage while wielding a Staff" reminderstring ReminderTextStaffWarstaff
+	lang "Korean"
+	1
+		# "지팡이 장착 시 주문 피해 막기 확률 {0:+d}%" reminderstring ReminderTextStaffWarstaff
+description
+	1 keystone_mana_shield
+	1
+		# "40% of Damage is taken from Mana before Life"
+	lang "Korean"
+	1
+		# "피해의 40%를 생명력 대신 마나로 소모"
+description
+	1 resolute_technique
+	1
+		# "Your hits can't be Evaded\nNever deal Critical Strikes"
+	lang "Korean"
+	1
+		# "플레이어가 무조건 명중\n치명타가 발동하지 않음"
+description
+	1 keystone_unwavering_stance
+	1
+		# "Cannot Evade enemy Attacks\nCannot be Stunned"
+	lang "Korean"
+	1
+		# "적 공격을 회피할 수 없음\n기절 면역"
+description
+	1 passive_can_be_allocated_without_connection
+	1
+		# "Can be allocated without connection to the tree"
+	lang "Korean"
+	1
+		# "트리가 연결되지 않아도 할당할 수 있음"
+description
+	1 base_strength_and_dexterity
+	1
+		# "{0:+d} to Strength and Dexterity"
+	lang "Korean"
+	1
+		# "힘 및 민첩 {0:+d}"
+description
+	1 base_strength_and_intelligence
+	1
+		# "{0:+d} to Strength and Intelligence"
+	lang "Korean"
+	1
+		# "힘 및 지능 {0:+d}"
+description
+	1 base_dexterity_and_intelligence
+	1
+		# "{0:+d} to Dexterity and Intelligence"
+	lang "Korean"
+	1
+		# "민첩 및 지능 {0:+d}"
+description
+	1 global_chance_to_blind_on_hit_%
+	2
+		#|99 "{0}% chance to Blind Enemies on Hit" reminderstring ReminderTextBlind
+		100|# "Blind Enemies on Hit" reminderstring ReminderTextBlind
+	lang "Korean"
+	2
+		#|99 "명중 시 {0}%의 확률로 적 실명 유발" reminderstring ReminderTextBlind
+		100|# "명중 시 적 실명 유발" reminderstring ReminderTextBlind
+description
+	1 number_of_additional_projectiles
+	2
+		1 "Skills fire an additional Projectile"
+		2|# "Skills fire {0} additional Projectiles"
+	lang "Korean"
+	2
+		1 "스킬이 투사체 1개 추가 발사"
+		2|# "스킬이 투사체 {0}개를 추가 발사"
+description
+	1 base_number_of_golems_allowed
+	1
+		# "{0:+d} to maximum number of Summoned Golems"
+	lang "Korean"
+	1
+		# "골렘 최대치 {0:+d}"
+description
+	1 display_can_take_character_start_point
+	6
+		1 "Can Allocate Passives from the Marauder's starting point"
+		2 "Can Allocate Passives from the Ranger's starting point"
+		3 "Can Allocate Passives from the Witch's starting point"
+		4 "Can Allocate Passives from the Duelist's starting point"
+		5 "Can Allocate Passives from the Templar's starting point"
+		6 "Can Allocate Passives from the Shadow's starting point"
+	lang "Korean"
+	6
+		1 "머라우더의 시작 포인트에서 패시브 스킬 할당 가능"
+		2 "레인저의 시작 포인트에서 패시브 스킬 할당 가능"
+		3 "위치의 시작 포인트에서 패시브 스킬 할당 가능"
+		4 "듀얼리스트의 시작 포인트에서 패시브 스킬 할당 가능"
+		5 "템플러의 시작 포인트에서 패시브 스킬 할당 가능"
+		6 "쉐도우의 시작 포인트에서 패시브 스킬 할당 가능"
+description
+	1 consecrate_ground_on_kill_%_for_3_seconds
+	2
+		1|99 "{0}% chance to create Consecrated Ground on Kill, lasting 8 seconds"
+		100|# "Create Consecrated Ground on Kill, lasting 8 seconds"
+	lang "Korean"
+	2
+		1|99 "처치 시 {0}%의 확률로 8초간 지속되는 신성화 지대 생성"
+		100|# "처치 시 8초간 지속되는 신성화 지대 생성"
+description
+	1 accuracy_rating_+%
+	2
+		1|# "{0}% increased Accuracy Rating"
+		#|-1 "{0}% reduced Accuracy Rating" negate 1
+	lang "Korean"
+	2
+		1|# "정확도 {0}% 증가"
+		#|-1 "정확도 {0}% 감소" negate 1
+description
+	1 display_abberaths_hooves_skill_level
+	1
+		# "Triggers Level {0} Abberath's Fury"
+	lang "Korean"
+	1
+		# "{0}레벨 아버라스의 광분 발동"
+description
+	1 global_critical_strike_multiplier_+_while_you_have_no_frenzy_charges
+	1
+		# "{0:+d}% to Critical Strike Multiplier while you have no Frenzy Charges"
+	lang "Korean"
+	1
+		# "격분 충전이 없는 동안 치명타 피해 배율 {0:+d}%"
+description
+	1 global_defences_+%
+	2
+		1|# "{0}% increased Defences" reminderstring ReminderTextDefences
+		#|-1 "{0}% reduced Defences" negate 1 reminderstring ReminderTextDefences
+	lang "Korean"
+	2
+		1|# "방어력 {0}% 증가" reminderstring ReminderTextDefences
+		#|-1 "방어력 {0}% 감소" negate 1 reminderstring ReminderTextDefences
+description
+	1 armour_evasion_rating_+%_final_per_fortification_above_20
+	2
+		1|# "{0}% more Armour and Evasion Rating per Fortification above 20"
+		#|-1 "{0}% less Armour and Evasion Rating per Fortification above 20" negate 1
+	lang "Korean"
+	2
+		1|# "20을 초과하는 방어 상승 하나당 방어도 및 회피 {0}% 증폭"
+		#|-1 "20을 초과하는 방어 상승 하나당 방어도 및 회피 {0}% 감폭" negate 1
+description
+	1 attack_speed_+%_per_fortification_above_20
+	2
+		1|# "{0}% increased Attack Speed per Fortification above 20"
+		#|-1 "{0}% reduced Attack Speed per Fortification above 20" negate 1
+	lang "Korean"
+	2
+		1|# "20을 초과하는 방어 상승 하나당 공격 속도 {0}% 증가"
+		#|-1 "20을 초과하는 방어 상승 하나당 공격 속도 {0}% 감소" negate 1
+description
+	1 berserker_maximum_physical_attack_damage_on_crit_+%_final
+	2
+		1|# "{0}% more Maximum Physical Attack Damage with Critical Strikes"
+		#|-1 "{0}% less Maximum Physical Attack Damage with Critical Strikes" negate 1
+	lang "Korean"
+	2
+		1|# "치명타로 주는 최대 물리 공격 피해 {0}% 증폭"
+		#|-1 "치명타로 주는 최대 물리 공격 피해 {0}% 감폭" negate 1
+description
+	1 berserker_minimum_physical_attack_damage_on_crit_+%_final
+	2
+		1|# "{0}% more Minimum Physical Attack Damage with Critical Strikes"
+		#|-1 "{0}% less Minimum Physical Attack Damage with Critical Strikes" negate 1 canonical_line
+	lang "Korean"
+	2
+		1|# "치명타로 주는 최소 물리 공격 피해 {0}% 증폭"
+		#|-1 "치명타로 주는 최소 물리 공격 피해 {0}% 감폭" negate 1 canonical_line
+description
+	1 chill_effect_+%
+	2
+		1|# "{0}% increased Effect of Chill"
+		#|-1 "{0}% reduced Effect of Chill" negate 1
+	lang "Korean"
+	2
+		1|# "냉각 효과 {0}% 증가"
+		#|-1 "냉각 효과 {0}% 감소" negate 1
+description
+	1 display_nearby_enemies_are_taunted
+	1
+		# "Enemies in Close Range are Taunted" reminderstring ReminderTextTaunt reminderstring ReminderTextCloseRange
+	lang "Korean"
+	1
+		# "근거리에 있는 적 도발" reminderstring ReminderTextTaunt reminderstring ReminderTextCloseRange
+description
+	1 display_you_have_x_fortification
+	1
+		1|# "You have {0} Fortification" reminderstring ReminderTextFortificationNoDuration
+	lang "Korean"
+	1
+		1|# "방어 상승 {0}" reminderstring ReminderTextFortificationNoDuration
+description
+	1 every_1_second_nearby_enemies_withered_for_X_ms
+	1
+		# "Every second, inflict Withered on nearby Enemies for {0} seconds" milliseconds_to_seconds 1 reminderstring ReminderTextWithered
+	lang "Korean"
+	1
+		# "매 초마다 {0}초 동안 주변의 적에게 위축 유발" milliseconds_to_seconds 1 reminderstring ReminderTextWithered
+description
+	1 keystone_crimson_dance
+	1
+		# "You can inflict Bleeding on an Enemy up to 8 times\nYour Bleeding does not deal extra Damage while the Enemy is moving and cannot be Aggravated\n50% less Damage with Bleeding"
+	lang "Korean"
+	1
+		# "적에게 최대 8회 출혈 유발 가능\n적이 이동하는 동안 당신이 유발한 출혈의 추가 피해를 받지 않음\n출혈 피해 50% 감폭"
+description
+	1 life_mastery_nearby_enemy_life_regeneration_rate_+%
+	2
+		1|# "Nearby Enemies have {0}% increased Life Regeneration Rate"
+		#|-1 "Nearby Enemies have {0}% reduced Life Regeneration Rate" negate 1
+	lang "Korean"
+	2
+		1|# "주변의 적의 생명력 재생 속도 {0}% 증가"
+		#|-1 "주변의 적의 생명력 재생 속도 {0}% 감소" negate 1
+description
+	1 no_barrage_projectile_spread
+	1
+		1|# "Projectile Barrages have no spread"
+	lang "Korean"
+	1
+		1|# "투사체 연발 사격이 확산되지 않음"
+description
+	1 physical_damage_+%
+	2
+		1|# "{0}% increased Physical Damage"
+		#|-1 "{0}% reduced Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "물리 피해 {0}% 증가"
+		#|-1 "물리 피해 {0}% 감소" negate 1
+description
+	1 shock_effect_+%
+	2
+		1|# "{0}% increased Effect of Shock"
+		#|-1 "{0}% reduced Effect of Shock" negate 1
+	lang "Korean"
+	2
+		1|# "감전 효과 {0}% 증가"
+		#|-1 "감전 효과 {0}% 감소" negate 1
+description
+	1 trigger_detonate_mines_while_moving
+	1
+		# "Detonate Mines is Triggered while you are moving"
+	lang "Korean"
+	1
+		# "이동하는 동안 지뢰 폭발 발동"
+description
+	1 base_phasing_without_visual
+	1
+		# "Phasing" reminderstring ReminderTextPhasing
+	lang "Korean"
+	1
+		# "차원 능력" reminderstring ReminderTextPhasing
+description
+	1 light_radius_+%
+	2
+		1|# "{0}% increased Light Radius"
+		#|-1 "{0}% reduced Light Radius" negate 1
+	lang "Korean"
+	2
+		1|# "시야 반경 {0}% 증가"
+		#|-1 "시야 반경 {0}% 감소" negate 1
+description
+	1 local_jewel_display_number_of_allocated_passives_between_jewel_and_class_start
+	2
+		-1 "No path found to your Class' starting location" reminderstring ReminderTextShortestPathToClassStart
+		1|# "{0} Allocated Passive Skills between this Socket and your Class' starting location" reminderstring ReminderTextShortestPathToClassStart
+	lang "Korean"
+	2
+		-1 "현재 직업의 시작 지점에 대한 경로를 찾을 수 없음" reminderstring ReminderTextShortestPathToClassStart
+		1|# "이 슬롯과 현재 직업의 시작 지점 사이에 할당된 패시브 스킬 {0}개" reminderstring ReminderTextShortestPathToClassStart
+description
+	1 keystone_abyss_ghastly
+	1
+		# "Minions take 10% less Damage while you have a Zombie\nMinions deal 10% more Damage while you have a Skeleton\nMinions gain 10% of Non-Chaos Damage as extra Chaos Damage while you have a Spectre\nMaximum number of raised Spectres, Skeletons and Zombies is 1"
+	lang "Korean"
+	1
+		# "플레이어가 좀비를 보유하고 있는 동안 소환수가 받는 피해 10% 감폭\n플레이어가 해골을 보유하고 있는 동안 소환수가 주는 피해 10% 증폭\n플레이어가 망령을 보유하고 있는 동인 소환수가 비-카오스 피해의 10%를 추가 카오스 피해로 획득\n소환 가능한 망령, 해골, 좀비의 최대치 1"
+description
+	1 keystone_abyss_hypnotic
+	1
+		# "Life Recoup also recovers Mana\n50% less recovery from Recoup"
+	lang "Korean"
+	1
+		# "생명력 회생이 마나도 회복\n회생의 회복량 50% 감폭"
+description
+	1 keystone_abyss_murderous
+	1
+		# "20% less maximum Life\nIncreases and reductions to Maximum Life also apply to Maximum Rage at 20% Value" reminderstring ReminderTextRage
+	lang "Korean"
+	1
+		# "생명력 최대치 20% 감폭\n생명력 최대치 증가 및 감소가 해당 값의 20%만큼 격노 최대치에도 적용" reminderstring ReminderTextRage
+description
+	1 keystone_abyss_searching
+	1
+		# "Take 15% more damage from Non-Critical Strikes\nTake 30% less damage from Critical Strikes"
+	lang "Korean"
+	1
+		# "비-치명타로 받는 피해 15% 증폭\n치명타로 받는 피해 30% 감폭"
+description
+	1 keystone_ailment_crit
+	1
+		# "Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments" reminderstring ReminderTextAilments
+	lang "Korean"
+	1
+		# "상태 이상 지속 피해 배율이 치명타 피해 배율과 동일\n치명타가 추가 피해를 주지 않음\n비-치명타가 상태 이상 유발 불가" reminderstring ReminderTextAilments
+description
+	1 keystone_barbed_tips
+	1
+		# "Attack Projectiles always inflict Bleeding and Maim, and Knock Back Enemies\nProjectiles cannot Pierce, Fork or Chain" reminderstring ReminderTextBleeding reminderstring ReminderTextMaim
+	lang "Korean"
+	1
+		# "공격 투사체가 항상 출혈 및 힘줄 절단을 유발하고 적을 밀어냄\n투사체는 관통, 갈래, 연쇄 불가" reminderstring ReminderTextBleeding reminderstring ReminderTextMaim
+description
+	1 keystone_blind_monk
+	1
+		# "You are Blind\nBlind does not affect your Light Radius\n25% more Melee Critical Strike Chance while Blinded" reminderstring ReminderTextBlindNoDuration
+	lang "Korean"
+	1
+		# "플레이어 실명됨\n실명은 플레이어의 시야 반경과 무관\n실명 상태에서 근접 치명타 확률 25% 증폭" reminderstring ReminderTextBlindNoDuration
+description
+	1 keystone_call_to_arms
+	1
+		# "Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration"
+	lang "Korean"
+	1
+		# "플레이어의 함성이 플레이어에게 버프 또는 충전을 부여하지 않음\n함성 지속시간 100% 증폭"
+description
+	1 keystone_cold_purist
+	1
+		# "Enemies Chilled by your Hits have Cold Damage taken increased by Chill Effect\nEnemies in your Chilling Areas have Cold Damage taken increased by Chill Effect\nCannot deal non-Cold Damage"
+	lang "Korean"
+	1
+		# "플레이어에게 피격되어 냉각된 적이 받는 냉기 피해가 냉각 효과만큼 증가\n플레이어의 냉각 지역 안에 있는 적이 받는 냉기 피해가 냉각 효과만큼 증가\n비-냉기 피해를 줄 수 없음"
+description
+	1 keystone_corrupted_defences
+	1
+		# "50% of Non-Chaos Damage taken bypasses Energy Shield\nGain 15% of Maximum Life as Extra Maximum Energy Shield"
+	lang "Korean"
+	1
+		# "비-카오스 피해의 50%가 에너지 보호막을 무시함\n최대 생명력의 15%를 추가 에너지 보호막 최대치로 획득"
+description
+	1 keystone_disciple_of_kitava
+	1
+		# "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently" reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		# "1초마다 주변의 시체 1구를 소모해 생명력 및 마나의 5% 회복\n최근 4초 이내 시체를 소모하지 못했을 경우 받는 피해 10% 증폭" reminderstring ReminderTextRecently
+description
+	1 keystone_divine_flesh
+	1
+		# "All Damage taken bypasses Energy Shield\n50% of Elemental Damage taken as Chaos Damage\n+5% to maximum Chaos Resistance" reminderstring ReminderTextMaximumResistance
+	lang "Korean"
+	1
+		# "모든 받는 피해가 에너지 보호막을 무시함\n받는 원소 피해의 50%를 카오스 피해로 전환\n카오스 저항 최대치 +5%" reminderstring ReminderTextMaximumResistance
+description
+	1 keystone_divine_shield
+	1
+		# "Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second" reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		# "에너지 보호막 회복량은 방어도를 넘어갈 수 없음\n1초당 최근 4초 이내의 피격에서 방지한 물리 피해의 3%를 에너지 보호막으로 재생" reminderstring ReminderTextRecently
+description
+	1 keystone_elemental_overload
+	1
+		# "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes"
+	lang "Korean"
+	1
+		# "지난 8초 이내에 치명타 명중 시 해당 스킬의 명중 및 상태 이상 원소 피해 40% 증폭\n플레이어의 치명타가 추가 피해를 주지 않음\n상태 이상은 치명타로 유발하는 것으로 간주하지 않음"
+description
+	1 keystone_emperors_heart
+	1
+		# "Life Recovery from Flasks also applies to Energy Shield\n30% less Life Recovery from Flasks" reminderstring ReminderTextLifeFlasksStillRemovedOnFullLife
+	lang "Korean"
+	1
+		# "플라스크의 생명력 회복이 에너지 보호막에도 적용\n플라스크로 회복되는 생명력 30% 감폭" reminderstring ReminderTextLifeFlasksStillRemovedOnFullLife
+description
+	1 keystone_eternal_youth
+	1
+		# "50% less Life Regeneration Rate\n50% less maximum Total Life Recovery per Second from Leech\nEnergy Shield Recharge instead applies to Life"
+	lang "Korean"
+	1
+		# "생명력 재생 속도 50% 감폭\n흡수 시 초당 총 생명력 회복량 최대치 50% 감폭\n에너지 보호막 재충전이 생명력에 대신 적용"
+description
+	1 keystone_fire_purist
+	1
+		# "You can inflict an additional Ignite on each Enemy\nBase Ignite Duration is 1 second\n25% less Damage with Ignite\nCannot deal non-Fire Damage" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		# "각각의 적에게 추가 점화 1개 유발 가능\n기본 점화 지속시간 1초\n점화 피해 25% 감폭\n비-화염 피해를 줄 수 없음" reminderstring ReminderTextIgnite
+description
+	1 keystone_focused_rage
+	1
+		# "Mana Recovery from Regeneration is not applied\n1 Rage Regenerated for every 25 Mana Regeneration per Second\nDoes not delay Inherent Loss of Rage\nSkills Cost +3 Rage"
+	lang "Korean"
+	1
+		# "재생으로 인한 마나 회복이 적용되지 않음\n초당 마나 재생 25당 격노 1 생성\n기본 격노 상실을 지연시키지 않음\n스킬의 격노 소모 +3"
+description
+	1 keystone_ghost_dance
+	1
+		# "Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating"
+	lang "Korean"
+	1
+		# "에너지 보호막 회복량은 회피를 넘어갈 수 없음\n2초마다 유령 연막을 1개 획득, 최대 3개\n피격 시 유령 연막을 1개 잃고 회피의 3%와 동일한 에너지 보호막 회복"
+description
+	1 keystone_ghost_reaver
+	1
+		# "Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\nCannot Recharge Energy Shield"
+	lang "Korean"
+	1
+		# "생명력 대신 에너지 보호막을 흡수\n흡수 시 1초당 총 에너지 보호막 회복량 최대치가 2배로 증가\n에너지 보호막 재충전 불가"
+description
+	1 keystone_glancing_blows
+	1
+		# "Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits"
+	lang "Korean"
+	1
+		# "공격 피해 막기 확률 2배\n주문 피해 막기 확률 2배\n피격을 막아낼 시 65%의 피해를 받음"
+description
+	1 keystone_herald_of_doom
+	1
+		# "You can only have one Herald\n50% more Effect of Herald Buffs on you\n100% more Damage with Hits from Herald Skills\n50% more Damage Over Time with Herald Skills\nMinions from Herald Skills deal 25% more Damage\nYour Aura Skills are Disabled"
+	lang "Korean"
+	1
+		# "전령 1마리만 보유 가능\n플레이어에게 적용되는 전령의 버프 효과 50% 증폭\n전령 스킬로 명중 시 피해 100% 증폭\n전령 스킬의 지속 피해 50% 증폭\n전령 스킬로 소환된 소환수가 주는 피해 25% 증폭\n플레이어의 오라 스킬 사용 불가"
+description
+	1 keystone_hex_master
+	1
+		# "Your Hexes have infinite Duration\n20% less Effect of your Curses"
+	lang "Korean"
+	1
+		# "사술이 무한한 지속시간 보유\n플레이어의 저주 효과 20% 감폭"
+description
+	1 keystone_impale
+	1
+		# "When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"
+	lang "Korean"
+	1
+		# "플레이어가 명중시켜 적을 꿰뚫을 경우 근처의 다른 적도 꿰뚫음\n플레이어가 꿰뚫은 적에게 꿰뚫기 5회 추가 부여\n적을 꿰뚫은 후 5초 동안은 해당 적을 꿰뚫을 수 없으며 강철의 부름으로 해당 적의 꿰뚫기를 제거할 수 없음"
+description
+	1 keystone_lethe_shade
+	1
+		# "Take 50% less Damage over Time if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you" reminderstring ReminderTextAilments
+	lang "Korean"
+	1
+		# "지난 1초 내에 지속 피해를 받기 시작한 경우 지속 피해 50% 감폭\n플레이어에게 적용된 상태 이상의 지속시간 100% 증폭" reminderstring ReminderTextAilments
+description
+	1 keystone_lightning_purist
+	1
+		# "25% more Maximum Lightning Damage\n50% less Minimum Lightning Damage\nCannot deal non-Lightning Damage"
+	lang "Korean"
+	1
+		# "최대 번개 피해 25% 증폭\n최소 번개 피해 50% 감폭\n비-번개 피해를 줄 수 없음"
+description
+	1 keystone_magebane
+	1
+		# "Dexterity provides no inherent bonus to Evasion Rating\n+1% Chance to Suppress Spell Damage per 15 Dexterity" reminderstring ReminderTextSuppression
+	lang "Korean"
+	1
+		# "민첩이 회피에 직접적인 보너스를 주지 않음\n민첩 15당 주문 피해 억제 확률 +1%" reminderstring ReminderTextSuppression
+description
+	1 keystone_magnetic_charge
+	1
+		# "Nearby Allies and Enemies Share Charges with you\nEnemies Hitting you have 10% chance to gain an Endurance, \nFrenzy or Power Charge"
+	lang "Korean"
+	1
+		# "주변 동료들과 적이 플레이어에게 충전을 공유\n플레이어를 명중한 적이 10% 확률로\n인내, 격분, 또는 권능 충전 획득"
+description
+	1 keystone_medveds_exchange
+	1
+		# "40% less Ward\nWard has a 60% chance to not Break"
+	lang "Korean"
+	1
+		# "수호 40% 감폭\n수호가 60% 확률로 부서지지 않음"
+description
+	2 keystone_mental_conditioning display_mode_is_behemoth_ascendancy
+	2
+		# 1 "Power of Purpose" reminderstring ReminderTextKeystonePowerOfPupose
+		# # "80% of Maximum Mana is Converted to twice that much Armour"
+	lang "Korean"
+	2
+		# 1 "의지력의 힘" reminderstring ReminderTextKeystonePowerOfPupose
+		# # "최대 마나의 80%를 그 2배만큼의 방어도로 전환"
+description
+	1 keystone_miracle_of_thaumaturgy
+	1
+		# "Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+	lang "Korean"
+	1
+		# "모든 에너지 보호막 제거\n생명력이 최대가 아닐 경우, 1초마다 마나의 20%를 희생하여 그와 동일한 수치의 생명력 회복"
+description
+	1 keystone_natures_presence
+	1
+		# "Gain 2 Grasping Vines each second while stationary\n2% chance to deal Double Damage per Grasping Vine\n1% less Damage taken per Grasping Vine" reminderstring ReminderTextGraspingVines
+	lang "Korean"
+	1
+		# "정지 상태일 때 1초마다 탐욕스러운 덩굴 2개 획득\n탐욕스러운 덩굴 1개당 2%의 확률로 2배의 피해를 줌\n탐욕스러운 덩굴 1개당 받는 피해 1% 감폭" reminderstring ReminderTextGraspingVines
+description
+	1 keystone_oasis
+	1
+		# "Flasks Gain 4 Charges per empty Flask Slot every 5 seconds"
+	lang "Korean"
+	1
+		# "5초마다 빈 플라스크 슬롯 1개당 플라스크 4 충전"
+description
+	1 keystone_precise_technique
+	1
+		# "40% more Attack Damage if Accuracy Rating is higher than Maximum Life\nNever deal Critical Strikes"
+	lang "Korean"
+	1
+		# "정확도가 최대 생명력보다 높으면 공격 피해 40% 증폭\n치명타가 발동하지 않음"
+description
+	1 keystone_pressure_points
+	1
+		# "[DNT] Always deal Critical Strikes\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes\n50% less Cooldown Recovery Rate"
+description
+	1 keystone_prismatic_bulwark
+	1
+		# "Armour applies to Fire, Cold and Lightning Damage taken from Hits instead of Physical Damage\n-15% to all maximum Elemental Resistances"
+	lang "Korean"
+	1
+		# "피격 시 물리 피해 대신 화염, 냉기, 번개 피해에 방어도 적용\n모든 최대 원소 저항 -15%"
+description
+	1 keystone_pure_elementalist
+	1
+		# "Fire Spells cannot deal non-Fire Damage\nCold Spells cannot deal non-Cold Damage\nLightning Spells cannot deal non-Lightning Damage\nElemental Spells deal 30% more Damage with Ailments and\nhave 30% more Effect of non-Damaging Ailments" reminderstring ReminderTextDamagingAilments reminderstring ReminderTextNonDamagingAilments
+	lang "Korean"
+	1
+		# "화염 주문이 비-화염 피해를 줄 수 없음\n냉기 주문이 비-냉기 피해를 줄 수 없음\n번개 주문이 비-번개 피해를 줄 수 없음\n원소 주문이 상태 이상으로 주는 피해 30% 증폭 및\n비-피해 상태 이상의 효과 30% 증폭" reminderstring ReminderTextDamagingAilments reminderstring ReminderTextNonDamagingAilments
+description
+	1 keystone_quiet_might
+	1
+		# "3% more Spell Damage per Power Charge\nGain Power Charges instead of Frenzy Charges"
+	lang "Korean"
+	1
+		# "권능 충전 하나당 주문 피해 3% 증폭\n격분 충전 대신 권능 충전 획득"
+description
+	1 keystone_retaliation_hits
+	1
+		# "Damaging Retaliation Skills become Usable every sixth Hit from Enemies instead"
+	lang "Korean"
+	1
+		# "적에게 여섯 번째 피격될 때마다 피해를 주는 보복 스킬 사용 가능"
+description
+	1 keystone_runebinder
+	1
+		# "-1 to maximum number of Summoned Totems\nYou can have an additional Brand Attached to an Enemy"
+	lang "Korean"
+	1
+		# "소환 가능한 토템 최대치 -1\n적에게 낙인 1개 추가 부착 가능"
+description
+	1 keystone_sacred_bastion
+	1
+		# "100% chance to Defend with 200% of Armour\nMaximum Damage Reduction for any Damage Type is 50%" reminderstring ReminderTextDefendPercentArmour
+	lang "Korean"
+	1
+		# "100% 확률로 200%의 방어도로 방어\n모든 피해 유형에 대한 피해 감소의 최대치는 50%" reminderstring ReminderTextDefendPercentArmour
+description
+	1 keystone_secrets_of_suffering
+	1
+		# "Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped" reminderstring ReminderTextScorch reminderstring ReminderTextBrittle reminderstring ReminderTextSapped
+	lang "Korean"
+	1
+		# "점화, 냉각, 동결, 혹은 감전 유발 불가\n치명타가 그을림, 허약, 활력 감소 유발" reminderstring ReminderTextScorch reminderstring ReminderTextBrittle reminderstring ReminderTextSapped
+description
+	1 keystone_shared_suffering
+	1
+		# "All Damage will cause Elemental Ailments you are suffering\nRemove Elemental Ailments from you when you inflict them" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "모든 피해로 자신이 겪고 있는 상태 이상을 유발\n원소 상태 이상 유발 시 자신에게 적용된 해당 상태 이상 제거" reminderstring ReminderTextElementalAilments
+description
+	1 keystone_sharp_and_brittle
+	1
+		# "Can't use Helmets\nYour Critical Strike Chance is Lucky\nYour Damage with Critical Strikes is Lucky\nEnemies' Damage with Critical Strikes against you is Lucky" reminderstring ReminderTextLucky
+	lang "Korean"
+	1
+		# "투구 사용 불가\n치명타 확률에 행운 적용\n치명타 피해에 행운 적용\n적이 주는 치명타 피해에 행운 적용" reminderstring ReminderTextLucky
+description
+	1 keystone_solipsism
+	1
+		# "Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "지능이 에너지 보호막에 직접적인 보너스를 주지 않음\n플레이어에게 적용되는 원소 상태 이상의 지속시간이 지능 15당 2% 감소" reminderstring ReminderTextElementalAilments
+description
+	2 keystone_soul_tether start_at_zero_energy_shield
+	2
+		!0 # "Energy Shield starts at zero\nCannot Recharge or Regenerate Energy Shield\nLose 5% of Energy Shield per second\nLife Leech effects are not removed when Unreserved Life is Filled\nLife Leech effects Recover Energy Shield instead while on Full Life"
+		0 !0 "Your Energy Shield starts at zero"
+	lang "Korean"
+	2
+		!0 # "에너지 보호막이 0에서 시작\n에너지 보호막 재충전 또는 재생 불가\n1초당 에너지 보호막 5% 상실\n점유되지 않은 생명력이 찼을 때 생명력 흡수 효과가 제거되지 않음\n최대 생명력일 때 생명력 흡수 시 생명력이 아닌 에너지 보호막 회복"
+		0 !0 "에너지 보호막이 0에서 시작"
+description
+	1 keystone_strength_of_blood
+	1
+		# "Life Recovery from Non-Instant Leech is not applied\n2% additional Physical Damage Reduction for every 3% Life Recovery per second from Leech"
+	lang "Korean"
+	1
+		# "비-즉시 흡수로 인한 생명력 회복이 적용되지 않음\n흡수 시 1초당 생명력 회복량의 3%마다 받는 물리 피해 2% 추가 감소"
+description
+	1 keystone_supreme_ego
+	1
+		# "Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Aura Skills"
+	lang "Korean"
+	1
+		# "자신의 스킬로 발생하는 오라가 자신에게만 영향을 미침\n오라 스킬이 점유하는 최대 마나의 2%마다 오라 효과가 1% 증폭\n오라 스킬의 마나 점유 40% 증폭"
+description
+	1 keystone_supreme_prodigy
+	1
+		# "Ignore Attribute Requirements\nGain no inherent bonuses from Attributes"
+	lang "Korean"
+	1
+		# "능력치 요구사항 무시\n능력치로 인한 보너스 받지 않음"
+description
+	1 keystone_tempered_by_war
+	1
+		# "50% of Cold and Lightning Damage taken as Fire Damage\n50% less Cold Resistance\n50% less Lightning Resistance"
+	lang "Korean"
+	1
+		# "냉기 및 번개 피해의 50%를 화염 피해로 받음\n냉기 저항 50% 감폭\n번개 저항 50% 감폭"
+description
+	1 keystone_tinctures_drain_life
+	1
+		# "Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead" reminderstring ReminderTextTinctureWeepingWounds
+	lang "Korean"
+	1
+		# "팅크가 마나 연소가 아닌 진물 나는 상처 유발\n마나 연소와 상호작용하는 효과가 마나 연소가 아닌 진물 나는 상처와 상호작용" reminderstring ReminderTextTinctureWeepingWounds
+description
+	1 keystone_hollow_palm_technique
+	1
+		# "You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered" reminderstring ReminderTextUnencumbered
+	lang "Korean"
+	1
+		# "홀가분 상태에서는 쌍수 사용 취급\n홀가분 상태에서 공격 속도 40% 증폭\n홀가분 상태에서 민첩 10당 공격 물리 피해 14~20 추가" reminderstring ReminderTextUnencumbered
+description
+	1 keystone_uhtreds_fury
+	1
+		# "While you have Unbroken Ward, your next non-channelling Attack you Use yourself breaks your Ward to gain Added Cold Damage equal to 25% of Ward"
+	lang "Korean"
+	1
+		# "부서지지 않은 수호를 보유한 동안 플레이어가 사용하는 다음 비-집중 유지 공격이 수호를 부수고 수호의 25%와 동일한 추가 냉기 피해 획득"
+description
+	1 keystone_versatile_combatant
+	1
+		# "-10% to maximum Chance to Block Attack Damage\n-10% to maximum Chance to Block Spell Damage\n+2% Chance to Block Spell Damage for each 1% Overcapped Chance to Block Attack Damage" reminderstring ReminderTextOvercappedBlockChance reminderstring ReminderTextUncappedBlockChance
+	lang "Korean"
+	1
+		# "공격 피해 막기 확률 최대치 -10%\n주문 피해 막기 확률 최대치 -10%\n제한 초과 공격 피해 막기 확률 1%당 주문 피해 막기 확률 +2%" reminderstring ReminderTextOvercappedBlockChance reminderstring ReminderTextUncappedBlockChance
+description
+	1 keystone_veterans_awareness
+	1
+		# "+10% to all Elemental Resistances and maximum Elemental Resistances while affected by a Non-Vaal Guard Skill\n20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill\n20% more Damage taken if a Non-Vaal Guard Buff was lost Recently" reminderstring ReminderTextMaximumResistance reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		# "비-바알 수호 스킬의 영향을 받는 동안 모든 원소 저항 및 원소 저항 최대치 +10%\n비-바알 수호 스킬의 영향을 받는 동안 받는 물리 피해 20% 추가 감소\n최근 4초 이내 비-바알 수호 버프를 상실한 경우 받는 피해 20% 증폭" reminderstring ReminderTextMaximumResistance reminderstring ReminderTextRecently
+description
+	1 keystone_voranas_adaption
+	1
+		# "Removes all Energy Shield\nChance to Evade Hits is based off of 200% of your Ward instead of your Evasion Rating\nPhysical Damage Reduction from Hits is based off of 200% of your Ward instead of your Armour"
+	lang "Korean"
+	1
+		# "모든 에너지 보호막 제거\n명중 회피 확률이 회피가 아닌 수호의 200%에 따라 결정됨\n명중의 물리 피해 감소가 방어도가 아닌 수호의 200%에 따라 결정됨"
+description
+	1 keystone_wicked_ward
+	1
+		# "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate"
+	lang "Korean"
+	1
+		# "에너지 보호막 재충전을 최근 4초 이내 시작했을 경우 피해를 받아도 중단되지 않음\n에너지 보호막 재충전 속도 40% 감폭"
+description
+	1 keystone_wind_dancer
+	1
+		# "20% less Attack Damage taken if you haven't been Hit by an Attack Recently\n10% more chance to Evade Attacks if you have been Hit by an Attack Recently\n20% more Attack Damage taken if you have been Hit by an Attack Recently" reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		# "최근 4초 이내 공격에 피격되지 않은 경우 받는 공격 피해 20% 감폭\n최근 4초 이내 공격에 피격된 경우 공격 회피 확률 10% 증폭\n최근 4초 이내 공격에 피격된 경우 받는 공격 피해 20% 증폭" reminderstring ReminderTextRecently
+description
+	1 reclaimed_malevolence_notable_abyss_ghastly
+	1
+		# "Minions Impale on Hit" reminderstring ReminderTextImpale
+	lang "Korean"
+	1
+		# "소환수가 명중 시 꿰뚫음" reminderstring ReminderTextImpale
+description
+	1 reclaimed_malevolence_notable_abyss_hypnotic
+	1
+		# "Insufficient Mana doesn't prevent your Spells\nCannot recover Mana"
+	lang "Korean"
+	1
+		# "마나가 부족해도 주문 사용 가능\n마나 회복 불가"
+description
+	1 reclaimed_malevolence_notable_abyss_murderous
+	1
+		# "Attacks gain 1% more damage for each 2% of your Maximum Life they cost if Life Cost is not higher than the maximum you could spend\nAttack Skills cost Life instead of Mana"
+	lang "Korean"
+	1
+		# "공격의 생명력 소모량이 소모할 수 있는 생명력 최대치보다 크지 않을 경우, 공격으로 소모되는 생명력 최대치의 2%당 공격의 피해 1% 증폭\n공격 스킬이 마나가 아닌 생명력 소모"
+description
+	1 reclaimed_malevolence_notable_abyss_searching
+	1
+		# "Projectiles have 5 metres maximum [DirectFlight|Direct Flight]\n40% more Projectile Speed"
+	lang "Korean"
+	1
+		# "투사체의 최대 [DirectFlight|직접 비행] 5미터\n투사체 속도 40% 증폭"
+description
+	1 strong_casting
+	1
+		# "Strength's Damage bonus applies to all Spell Damage as well"
+	lang "Korean"
+	1
+		# "모든 주문 피해에 힘의 피해 보너스 적용"

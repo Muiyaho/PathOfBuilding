@@ -1,0 +1,34 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description beam_split_num
+	1 beam_number_of_targets_to_split_to
+	2
+		1 "Beam Splits towards {0} additional target"
+		# "Beam Splits towards {0} additional targets"
+	lang "Korean"
+	2
+		1 "광선이 추가 대상 {0}개를 향해 분할"
+		# "광선이 추가 대상 {0}개를 향해 분할"
+description base_split_num
+	1 projectile_number_to_split
+	4
+		1 gem_quality "Beam Splits towards {0:+d} additional target"
+		# gem_quality "Beam Splits towards {0:+d} additional targets"
+		1 "Beam Splits towards {0} additional target"
+		# "Beam Splits towards {0} additional targets"
+	lang "Korean"
+	4
+		1 gem_quality "광선이 추가 대상 {0:+d}개를 향해 분할"
+		# gem_quality "광선이 추가 대상 {0:+d}개를 향해 분할"
+		1 "광선이 추가 대상 {0}개를 향해 분할"
+		# "광선이 추가 대상 {0}개를 향해 분할"
+description beam_splits_instead_of_chain
+	1 active_skill_beam_splits_instead_of_chaining
+	1
+		# "Modifiers to the number of times to Chain instead apply\nto the number of targets Beam Splits towards"
+	lang "Korean"
+	1
+		# "연쇄 횟수 속성이 연쇄 횟수가 아닌\n광선이 분할되는 대상 수에 적용"

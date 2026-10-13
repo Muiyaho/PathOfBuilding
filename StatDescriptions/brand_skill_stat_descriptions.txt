@@ -1,0 +1,103 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+		
+has_identifiers		
+		
+no_description base_number_of_sigils_allowed_per_target
+description armageddon_brand_reattach_each_activation_chance
+	1 armageddon_brand_brands_attach_to_new_enemy_each_activation_%_chance
+	1
+		1|# "{0}% chance for Brands to Attach to a new Enemy each time they Activate"
+	lang "Korean"
+	1
+		1|# "낙인이 활성화될 때마다 {0}%의 확률로 새로운 적에게 부착"
+description base_secondary_duration_identifier
+	1 base_secondary_skill_effect_duration
+	1
+		# "Can be Detached for a total Duration of {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		# "총 {0}초의 지속시간 동안 분리 가능" milliseconds_to_seconds_2dp 1
+description base_duration_identifier
+	1 base_skill_effect_duration
+	1
+		# "Can be Attached for a total Duration of {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		# "총 {0}초의 지속시간 동안 부착 가능" milliseconds_to_seconds_2dp 1
+description base_tertiary_duration_identifier
+	1 base_tertiary_skill_effect_duration
+	1
+		# "Base Debuff Duration is {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		# "기본 디버프 지속시간 {0}초" milliseconds_to_seconds_2dp 1
+description brand_removed_after_activating
+	1 brand_removed_after_activating
+	1
+		# "Activates once when Attached, then is Destroyed"
+	lang "Korean"
+	1
+		# "부착 시 1회 활성화한 후 파괴"
+description brand_target_limit
+	1 brands_per_target_limit
+	2
+		1 "Can have {0} Brand Attached to an Enemy"
+		2|# "Can have {0} Brands Attached to an Enemy"
+	lang "Korean"
+	2
+		1 "적에게 낙인 {0}개 부착 가능"
+		2|# "적에게 낙인 {0}개 부착 가능"
+description storm_brand_beam_num
+	2 conduit_sigil_number_of_beam_targets quality_display_storm_brand_is_gem
+	4
+		1   0 "Sends beams to {0:+d} Enemy"
+		2|#  0 "Sends beams to {0:+d} Enemies"
+		1  !0 "Sends a beam to the Branded Enemy"
+		2|# !0 "Sends beams to {0} Enemies, including the Branded Enemy"
+	lang "Korean"
+	4
+		1   0 "적 {0:+d}명에게 광선 발사"
+		2|#  0 "적 {0:+d}명에게 광선 발사"
+		1  !0 "낙인이 부착된 적에게 광선 발사"
+		2|# !0 "낙인이 부착된 적 포함, 적 {0}명에게 광선 발사"
+description secondary_skill_duration
+	1 secondary_skill_effect_duration
+	1
+		1|# "Can be Detached for a total Duration of {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "총 {0}초의 지속시간 동안 분리 가능" milliseconds_to_seconds_2dp 1
+description sigil_attached_target_damage_final
+	2 sigil_attached_target_hit_damage_+%_final quality_display_sigil_attached_target_damage_is_gem
+	3
+		# 0 "Deals {0:+d}% more Damage with Hits against Branded Enemy"
+		1|# # "Deals {0}% more Damage with Hits against Branded Enemy"
+		#|-1 # "Deals {0}% less Damage with Hits against Branded Enemy" negate 1
+	lang "Korean"
+	3
+		# 0 "낙인이 부착된 적 명중 시 주는 피해 {0:+d}% 증폭"
+		1|# # "낙인이 부착된 적 명중 시 주는 피해 {0}% 증폭"
+		#|-1 # "낙인이 부착된 적 명중 시 주는 피해 {0}% 감폭" negate 1
+description sigil_activate_frequency
+	1 sigil_repeat_frequency_ms
+	2
+		1000 "Activates every second while Attached" milliseconds_to_seconds_2dp 1
+		# "Activates every {0} seconds while Attached" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	2
+		1000 "낙인이 부착된 동안 1초마다 활성화" milliseconds_to_seconds_2dp 1
+		# "낙인이 부착된 동안 {0}초마다 활성화" milliseconds_to_seconds_2dp 1
+description skill_duration
+	1 skill_effect_duration
+	1
+		1|# "Can be Attached for a total Duration of {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "총 {0}초의 지속시간 동안 부착 가능" milliseconds_to_seconds_2dp 1
+description tertiary_buff_duration
+	1 tertiary_buff_effect_duration
+	1
+		1|# "Debuff Lasts {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "{0}초간 디버프 지속" milliseconds_to_seconds_2dp 1

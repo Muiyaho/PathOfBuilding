@@ -1,0 +1,613 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+		
+has_identifiers		
+		
+
+description buff_duration
+	1 buff_effect_duration
+	1
+		1|# "Curse lasts {0} seconds" milliseconds_to_seconds 1
+	lang "Korean"
+	1
+		1|# "{0}초간 저주 지속" milliseconds_to_seconds 1
+description action_speed_reduction
+	1 temporal_chains_action_speed_+%_final
+	2
+		1|# "Cursed Normal and Magic Enemies have {0}% more Action Speed"
+		#|-1 "Cursed Normal and Magic Enemies have {0}% less Action Speed" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 일반 및 마법 등급 적의 동작 속도 {0}% 증폭"
+		#|-1 "저주받은 일반 및 마법 등급 적의 동작 속도 {0}% 감폭" negate 1
+description buff_time_passed_reduction
+	1 buff_time_passed_+%_other_than_temporal_chains
+	2
+		1|# "Other effects on Cursed enemies expire {0}% faster"
+		#|-1 "Other effects on Cursed enemies expire {0}% slower" negate 1 reminderstring ReminderTextSlowTimeEffects
+	lang "Korean"
+	2
+		1|# "저주받은 적에게 적용된 다른 효과들이 {0}% 빠르게 만료"
+		#|-1 "저주받은 적에게 적용된 다른 효과들이 {0}% 느리게 만료" negate 1 reminderstring ReminderTextSlowTimeEffects
+description elemental_resist
+	1 base_resist_all_elements_%
+	1
+		# "Cursed enemies have {0:+d}% to Elemental Resistances"
+	lang "Korean"
+	1
+		# "저주받은 적의 원소 저항 {0:+d}%"
+description fire_resist
+	1 base_fire_damage_resistance_%
+	1
+		# "Cursed enemies have {0:+d}% to Fire Resistance"
+	lang "Korean"
+	1
+		# "저주받은 적의 화염 저항 {0:+d}%"
+description cold_resist
+	1 base_cold_damage_resistance_%
+	1
+		# "Cursed enemies have {0:+d}% to Cold Resistance"
+	lang "Korean"
+	1
+		# "저주받은 적의 냉기 저항 {0:+d}%"
+description lightning_resist
+	1 base_lightning_damage_resistance_%
+	1
+		# "Cursed enemies have {0:+d}% to Lightning Resistance"
+	lang "Korean"
+	1
+		# "저주받은 적의 번개 저항 {0:+d}%"
+description chaos_res
+	1 base_chaos_damage_resistance_%
+	1
+		# "Cursed enemies have {0:+d}% to Chaos Resistance"
+	lang "Korean"
+	1
+		# "저주받은 적의 카오스 저항 {0:+d}%"
+description chance_to_be_frozen
+	1 chance_to_be_frozen_%
+	1
+		1|# "Hits against Cursed Enemies have {0:+d}% chance to Freeze" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시 동결 확률 {0:+d}%" reminderstring ReminderTextFreeze
+description chance_to_be_ignited
+	1 chance_to_be_ignited_%
+	1
+		1|# "Hits against Cursed Enemies have {0:+d}% chance to Ignite" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시 점화 확률 {0:+d}%" reminderstring ReminderTextIgnite
+description chance_to_be_shocked
+	1 chance_to_be_shocked_%
+	1
+		1|# "Hits against Cursed Enemies have {0:+d}% chance to Shock" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시 감전 확률 {0:+d}%" reminderstring ReminderTextShock
+description monster_flask_charges_incr
+	1 monster_slain_flask_charges_granted_+%
+	1
+		1|# "Cursed enemies grant {0}% increased Flask Charges"
+	lang "Korean"
+	1
+		1|# "저주받은 적에게 받는 플라스크 충전량 {0}% 증가"
+description life_leeched_when_hit_by_attack
+	1 life_leech_on_any_damage_when_hit_by_attack_permyriad
+	1
+		1|# "Cursed enemies grant {0}% Life Leech when Hit by Attacks" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "저주받은 적을 공격으로 명중 시, {0}% 생명력 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description life_leeched_when_hit
+	1 life_leech_on_any_damage_when_hit_permyriad
+	1
+		1|# "Cursed enemies grant {0}% Life Leech when Hit" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시, {0}% 생명력 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description mana_leeched_when_hit_by_attack
+	1 mana_leech_on_any_damage_when_hit_by_attack_permyriad
+	1
+		1|# "Cursed enemies grant {0}% Mana Leech when Hit by Attacks" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+	lang "Korean"
+	1
+		1|# "저주받은 적을 공격으로 명중 시, {0}% 마나 흡수" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+description mana_leeched_when_hit
+	1 mana_leech_on_any_damage_when_hit_permyriad
+	1
+		1|# "Cursed enemies grant {0}% Mana Leech when Hit" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시, {0}% 마나 흡수" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+description chance_to_grant_endurance_charge_on_death
+	1 chance_to_grant_endurance_charge_on_death_%
+	1
+		1|# "Cursed enemies have a {0}% chance to grant an Endurance Charge when slain"
+	lang "Korean"
+	1
+		1|# "저주받은 적 처치 시 {0}%의 확률로 인내 충전 획득"
+description chance_to_grant_frenzy_charge_on_death
+	1 chance_to_grant_frenzy_charge_on_death_%
+	1
+		1|# "Cursed enemies have a {0}% chance to grant a Frenzy Charge when slain"
+	lang "Korean"
+	1
+		1|# "저주받은 적 처치 시 {0}%의 확률로 격분 충전 획득"
+description chance_to_grant_power_charge_on_death
+	1 chance_to_grant_power_charge_on_death_%
+	1
+		1|# "Cursed enemies have a {0}% chance to grant a Power Charge when slain"
+	lang "Korean"
+	1
+		1|# "저주받은 적 처치 시 {0}%의 확률로 권능 충전 획득"
+description accuracy_rating_incr
+	1 accuracy_rating_+%
+	2
+		1|# "Cursed enemies have {0}% increased Accuracy Rating"
+		#|-1 "Cursed enemies have {0}% reduced Accuracy Rating" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적의 정확도 {0}% 증가"
+		#|-1 "저주받은 적의 정확도 {0}% 감소" negate 1
+description critical_strike_chance_incr
+	1 critical_strike_chance_+%
+	2
+		1|# "Cursed enemies have {0}% increased Critical Strike Chance"
+		#|-1 "Cursed enemies have {0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적의 치명타 확률이 {0}% 증가"
+		#|-1 "저주받은 적의 치명타 확률이 {0}% 감소" negate 1
+description critical_strike_multiplier_incr
+	1 base_critical_strike_multiplier_+
+	1
+		# "Cursed enemies have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "저주받은 적의 치명타 피해 배율 {0:+d}%"
+description enfeeble_damage_scale
+	1 enfeeble_damage_+%_final
+	2
+		1|# "Cursed Normal or Magic enemies deal {0}% more Damage"
+		#|-1 "Cursed Normal or Magic enemies deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 일반 및 마법 적이 주는 피해 {0}% 증폭"
+		#|-1 "저주받은 일반 및 마법 적이 주는 피해 {0}% 감폭" negate 1
+description chance_to_take_critical_strike
+	1 enemy_additional_critical_strike_chance_against_self
+	1
+		# "Hits against Cursed Enemies have {0:+d}% to Critical Strike Chance" divide_by_one_hundred 1
+	lang "Korean"
+	1
+		# "저주받은 적 명중 시 치명타 확률 {0:+d}%" divide_by_one_hundred 1
+description enemy_critical_strike_multiplier_against_self
+	1 enemy_additional_critical_strike_multiplier_against_self
+	1
+		# "Hits against Cursed Enemies have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "저주받은 적 명중 시 치명타 피해 배율 {0:+d}%"
+description self_critical_strike_multiplier_reduction
+	1 base_self_critical_strike_multiplier_-%
+	2
+		1|# "Cursed enemies take {0}% reduced Extra Damage from Critical Strikes"
+		#|-1 "Cursed enemies take {0}% increased Extra Damage from Critical Strikes" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적이 치명타로 받는 추가 피해 {0}% 감소"
+		#|-1 "저주받은 적이 치명타로 받는 추가 피해 {0}% 증가" negate 1
+description be_pierced
+	1 projectiles_always_pierce_you
+	1
+		# "Projectiles Pierce Cursed Enemies"
+	lang "Korean"
+	1
+		# "투사체들이 저주받은 적을 관통"
+description chance_to_be_knocked_back
+	1 chance_to_be_knocked_back_%
+	1
+		1|# "Hits on Cursed Enemies have an additional {0}% chance to Knockback" reminderstring ReminderTextKnockback
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시 밀어내기 확률 {0}% 추가" reminderstring ReminderTextKnockback
+description evasion_rating_poachers_mark
+	1 evasion_rating_+%_final_from_poachers_mark
+	2
+		1|# "Cursed enemies have {0}% more Evasion Rating"
+		#|-1 "Cursed enemies have {0}% less Evasion Rating" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적의 회피가 {0}% 증폭"
+		#|-1 "저주받은 적의 회피가 {0}% 감폭" negate 1
+description projectile_damage_taken_incr
+	1 projectile_damage_taken_+%
+	1
+		1|# "Cursed enemies take {0}% increased Damage from Projectile Hits"
+	lang "Korean"
+	1
+		1|# "저주받은 적이 투사체 피격 시 받는 피해 {0}% 증가"
+description chance_to_be_stunned
+	1 chance_to_be_stunned_%
+	1
+		1|# "Cursed Enemies have an additional {0}% chance to be Stunned"
+	lang "Korean"
+	1
+		1|# "저주받은 적이 기절할 확률 {0}% 추가"
+description stun_recovery_incr
+	1 base_stun_recovery_+%
+	2
+		1|# "Cursed enemies have {0}% increased Stun and Block Recovery"
+		#|-1 "Cursed enemies have {0}% reduced Stun and Block Recovery" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적의 기절 및 막기 회복 확률 {0}% 증가"
+		#|-1 "저주받은 적의 기절 및 막기 회복 확률 {0}% 감소" negate 1
+description physical_damage_taken_incr
+	1 physical_damage_taken_+%
+	1
+		1|# "Cursed enemies take {0}% increased Physical Damage"
+	lang "Korean"
+	1
+		1|# "저주받은 적이 받는 물리 피해 {0}% 증가"
+description degen_effect_incr
+	1 degen_effect_+%
+	1
+		1|# "Cursed enemies take {0}% increased Damage from Damage Over Time effects"
+	lang "Korean"
+	1
+		1|# "저주받은 적이 지속 피해 효과로 받는 피해 {0}% 증가"
+description self_burn_duration
+	1 base_self_ignite_duration_-%
+	2
+		1|# "Ignite on Cursed enemies has {0}% reduced Duration"
+		#|-1 "Ignite on Cursed enemies has {0}% increased Duration" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적을 {0}% 감소한 지속시간 동안 점화"
+		#|-1 "저주받은 적을 {0}% 증가한 지속시간 동안 점화" negate 1
+description self_freeze_duration
+	1 base_self_freeze_duration_-%
+	2
+		1|# "Freezes on Cursed enemies have {0}% reduced Duration"
+		#|-1 "Freezes on Cursed enemies have {0}% increased Duration" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적을 {0}% 감소한 지속시간 동안 동결"
+		#|-1 "저주받은 적을 {0}% 증가한 지속시간 동안 동결" negate 1
+description self_shock_duration
+	1 base_self_shock_duration_-%
+	2
+		1|# "Shocks on Cursed enemies have {0}% reduced Duration"
+		#|-1 "Shocks on Cursed enemies have {0}% increased Duration" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적을 {0}% 감소한 지속시간 동안 감전"
+		#|-1 "저주받은 적을 {0}% 증가한 지속시간 동안 감전" negate 1
+description cannot_cast_curses
+	1 cannot_cast_curses
+	1
+		# "You cannot Cast this Spell directly"
+	lang "Korean"
+	1
+		# "이 주문은 직접 시전할 수 없음"
+description life_granted_when_hit
+	1 life_granted_when_hit_by_attacks
+	1
+		# "Cursed enemies grant {0} Life when Hit by Attacks"
+	lang "Korean"
+	1
+		# "저주받은 적을 공격으로 명중 시, {0} 생명력 회복"
+description mana_granted_when_hit
+	1 mana_granted_when_hit_by_attacks
+	1
+		# "Cursed enemies grant {0} Mana when Hit by Attacks"
+	lang "Korean"
+	1
+		# "저주받은 적을 공격으로 명중 시, {0} 마나 회복"
+description life_granted_when_killed
+	1 life_granted_when_killed
+	1
+		# "Cursed enemies grant {0} Life when Killed"
+	lang "Korean"
+	1
+		# "저주받은 적 처치 시 {0}의 생명력 획득"
+description mana_granted_when_killed
+	1 mana_granted_when_killed
+	1
+		# "Cursed enemies grant {0} Mana when Killed"
+	lang "Korean"
+	1
+		# "저주받은 적 처치 시 {0}의 마나 획득"
+description curse_area
+	1 curse_area_of_effect_+%
+	2
+		1|# "{0}% increased Area of Effect"
+		#|-1 "{0}% reduced Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "효과 범위 {0}% 증가"
+		#|-1 "효과 범위 {0}% 감소" negate 1
+description curse_aura
+	1 curse_apply_as_aura
+	1
+		# "This Curse is Cast as an Aura applying to nearby Enemies"
+	lang "Korean"
+	1
+		# "주변 적들에게 오라의 형태로 시전되는 저주"
+description alchemists_mark_flask_on_hit
+	1 alchemists_mark_grant_attacker_x_flask_charges_when_hit_once_per_3s
+	2
+		1 "Gain {0} Flask Charge when you Hit a Cursed Enemy, no more than once every 3 seconds"
+		2|# "Gain {0} Flask Charges when you Hit a Cursed Enemy, no more than once every 3 seconds"
+	lang "Korean"
+	2
+		1 "저주받은 적 명중 시 플라스크 {0} 충전, 3초마다 최대 1번 충전"
+		2|# "저주받은 적 명중 시 플라스크 {0} 충전, 3초마다 최대 1번 충전"
+description phys_reduction
+	1 base_additional_physical_damage_reduction_%
+	1
+		# "Cursed enemies have {0:+d}% to Physical Damage Reduction"
+	lang "Korean"
+	1
+		# "저주받은 적이 받는 물리 피해 감소 {0:+d}%"
+description damage_taken_incr
+	1 base_damage_taken_+%
+	2
+		1|# "Cursed enemies take {0}% increased Damage"
+		#|-1 "Cursed enemies take {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적이 받는 피해 {0}% 증가"
+		#|-1 "저주받은 적이 받는 피해 {0}% 감소" negate 1
+description hinder_when_hit_chance
+	1 chance_to_be_hindered_when_hit_by_spells_%
+	1
+		# "Spell Hits have {0}% chance to Hinder Cursed Enemies" reminderstring ReminderTextHinder
+	lang "Korean"
+	1
+		# "주문 명중 시 {0}%의 확률로 저주받은 적을 이동 방해" reminderstring ReminderTextHinder
+description maim_when_hit_chance
+	1 chance_to_be_maimed_when_hit_%
+	1
+		1|# "Attack Hits have {0}% chance to Maim Cursed Enemies for 4 seconds" reminderstring ReminderTextMaim
+	lang "Korean"
+	1
+		1|# "공격 적중이 {0}%의 확률로 4초 동안 저주받은 적 힘줄 절단 유발" reminderstring ReminderTextMaim
+description low_life_damage_taken
+	1 damage_taken_+%_on_low_life
+	2
+		1|# "Cursed Enemies take {0}% increased Damage while on Low Life" reminderstring ReminderTextLowLife
+		#|-1 "Cursed Enemies take {0}% reduced Damage while on Low Life" negate 1 reminderstring ReminderTextLowLife
+	lang "Korean"
+	2
+		1|# "저주받은 적이 낮은 생명력 상태일 때 받는 피해 {0}% 증가" reminderstring ReminderTextLowLife
+		#|-1 "저주받은 적이 낮은 생명력 상태일 때 받는 피해 {0}% 감소" negate 1 reminderstring ReminderTextLowLife
+description debilitated_when_hit
+	2 debilitate_self_for_x_milliseconds_on_hit quality_display_debilitate_self_for_x_milliseconds_on_hit_is_gem
+	2
+		# 0 "Cursed Enemies are Debilitated for {0:+d} Seconds when they Hit" milliseconds_to_seconds_2dp 1
+		# # "Cursed Enemies are Debilitated for {0} Seconds when they Hit" milliseconds_to_seconds_2dp 1 reminderstring ReminderTextDebilitate
+	lang "Korean"
+	2
+		# 0 "저주받은 적이 명중 시 해당 적이 {0:+d}초 동안 쇠잔 상태가 됨" milliseconds_to_seconds_2dp 1
+		# # "저주받은 적이 명중 시 해당 적이 {0}초 동안 쇠잔 상태가 됨" milliseconds_to_seconds_2dp 1 reminderstring ReminderTextDebilitate
+description display_fixed_duration_buff
+	1 display_skill_fixed_duration_buff
+	1
+		# "Curse expiry rate cannot be modified"
+	lang "Korean"
+	1
+		# "저주 만료 속도 변경 불가"
+description self_aggravate_chance_when_hit
+	1 enemy_aggravate_bleeding_on_attack_hit_chance_%_against_self
+	1
+		1|# "Attack Hits against Cursed Enemies have {0}% chance to Aggravate Bleeding" reminderstring ReminderTextAggravatedBleeding
+	lang "Korean"
+	1
+		1|# "저주받은 적에게 공격 명중 시 {0}%의 확률로 출혈 가중" reminderstring ReminderTextAggravatedBleeding
+description double_stun_duration_curse
+	1 enemy_chance_to_double_stun_duration_%_vs_self
+	1
+		# "Hits against Cursed Enemies have {0}% chance to double Stun Duration"
+	lang "Korean"
+	1
+		# "저주받은 적 명중 시 {0}%의 확률로 기절 지속시간 2배"
+description vuln_curse_ailment_faster_damage
+	1 enemy_damaging_ailments_deal_damage_+%_faster_against_self
+	1
+		1|# "Ailments inflicted on Cursed Enemies deal Damage {0}% Faster" reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	1
+		1|# "저주받은 적에게 유발되는 상태 이상의 피해 {0}% 가속" reminderstring ReminderTextDamagingAilments
+description rage_gained_on_stun_curse
+	1 enemy_grant_X_rage_on_stun
+	1
+		# "Cursed Enemies grant {0} Rage when Stunned"
+	lang "Korean"
+	1
+		# "저주받은 적 기절 시 격노 {0} 획득"
+description rage_regeneration_on_stun_curse
+	1 enemy_rage_regeneration_on_stun
+	1
+		# "Cursed Enemies grant {0} Rage Regenerated over 1 second when Stunned"
+	lang "Korean"
+	1
+		# "저주받은 적 기절 시 1초 동안 격노 {0} 재생"
+description energy_shield_leeched_when_hit
+	1 energy_shield_leech_on_any_damage_when_hit_permyriad
+	1
+		1|# "Cursed enemies grant {0}% Energy Shield Leech when Hit" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+	lang "Korean"
+	1
+		1|# "저주받은 적 명중 시 {0}% 에너지 보호막 흡수" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+description enfeeble_damage_scale_rare_or_unique
+	1 enfeeble_damage_+%_vs_rare_or_unique_final
+	2
+		1|# "Cursed Rare or Unique enemies deal {0}% more Damage"
+		#|-1 "Cursed Rare or Unique enemies deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 희귀 또는 고유 적이 주는 피해 {0}% 증폭"
+		#|-1 "저주받은 희귀 또는 고유 적이 주는 피해 {0}% 감폭" negate 1
+description curse_endurance_on_hit
+	1 grant_attacker_endurance_charge_when_hit_%_chance
+	2
+		100 "Cursed Enemies grant an Endurance Charge when Hit"
+		#|99 "Cursed Enemies have a {0}% chance to grant an Endurance Charge when Hit"
+	lang "Korean"
+	2
+		100 "저주받은 적 명중 시 인내 충전 획득"
+		#|99 "저주받은 적 명중 시 {0}%의 확률로 인내 충전 획득"
+description curse_frenzy_on_hit
+	1 grant_attacker_frenzy_charge_when_hit_%_chance
+	2
+		100 "Cursed Enemies grant a Frenzy Charge when Hit"
+		#|99 "Cursed Enemies have a {0}% chance to grant a Frenzy Charge when Hit"
+	lang "Korean"
+	2
+		100 "저주받은 적 명중 시 격분 충전 획득"
+		#|99 "저주받은 적 명중 시 {0}%의 확률로 격분 충전 획득"
+description curse_power_on_hit
+	1 grant_attacker_power_charge_when_hit_%_chance
+	2
+		100 "Cursed Enemies grant a Power Charge when Hit"
+		#|99 "Cursed Enemies have a {0}% chance to grant a Power Charge when Hit"
+	lang "Korean"
+	2
+		100 "저주받은 적 명중 시 권능 충전 획득"
+		#|99 "저주받은 적 명중 시 {0}%의 확률로 권능 충전 획득"
+description alchemists_mark_life_flask_on_hit
+	1 grant_attacker_x_life_flask_charges_when_hit_once_per_500ms
+	2
+		1 "You gain a Life Flask Charge when you Hit Cursed Enemy, no more\nthan once every 0.5 seconds"
+		2|# "You gain {0} Life Flask Charges when you Hit Cursed Enemy, no more\nthan once every 0.5 seconds"
+	lang "Korean"
+	2
+		1 "저주받은 적 명중 시 생명력 플라스크 1 충전,\n0.5초마다 최대 1번 충전"
+		2|# "저주받은 적 명중 시 생명력 플라스크 {0} 충전,\n0.5초마다 최대 1번 충전"
+description alchemists_mark_mana_flask_on_hit
+	1 grant_attacker_x_mana_flask_charges_when_hit_once_per_500ms
+	2
+		1 "You gain a Mana Flask Charge when you Hit Cursed Enemy, no more\nthan once every 0.5 seconds"
+		2|# "You gain {0} Mana Flask Charges when you Hit Cursed Enemy, no more\nthan once every 0.5 seconds"
+	lang "Korean"
+	2
+		1 "저주받은 적 명중 시 마나 플라스크 1 충전,\n0.5초마다 최대 1번 충전"
+		2|# "저주받은 적 명중 시 마나 플라스크 {0} 충전,\n0.5초마다 최대 1번 충전"
+description mark_effect_incr
+	1 mark_skills_curse_effect_+%
+	2
+		1|# "{0}% increased Effect of Mark"
+		#|-1 "{0}% reduced Effect of Mark" negate 1
+	lang "Korean"
+	2
+		1|# "징표 효과 {0}% 증가"
+		#|-1 "징표 효과 {0}% 감소" negate 1
+description chaos_weakness_damage
+	2 minimum_added_chaos_damage_taken maximum_added_chaos_damage_taken
+	1
+		# # "Adds {0} to {1} Chaos Damage to Hits against Cursed Enemies"
+	lang "Korean"
+	1
+		# # "저주받은 적 명중 시 카오스 피해 {0}~{1} 추가"
+description physical_damage_enemies_cursed
+	2 minimum_added_physical_damage_taken maximum_added_physical_damage_taken
+	1
+		# # "Adds {0} to {1} Physical Damage to Hits against Cursed Enemies"
+	lang "Korean"
+	1
+		# # "저주받은 적 명중 시 물리 피해 {0}~{1} 추가"
+description physical_dot_taken_incr
+	1 base_physical_damage_over_time_taken_+%
+	2
+		1|# "Cursed enemies take {0}% increased Physical Damage from Damage Over Time"
+		#|-1 "Cursed enemies take {0}% reduced Physical Damage from Damage Over Time" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적이 받는 지속 물리 피해 {0}% 증가"
+		#|-1 "저주받은 적이 받는 지속 물리 피해 {0}% 감소" negate 1
+description projectiles_split_against_self
+	1 projectiles_hitting_self_split_into_x
+	1
+		# "Projectiles which Hit Cursed Enemies Split towards {0} additional targets"
+	lang "Korean"
+	1
+		# "투사체가 저주받은 적 적중 시 추가 대상 {0}개를 향해 분할"
+description bleed_when_hit_chance
+	1 receive_bleeding_chance_%_when_hit_by_attack
+	1
+		1|# "Attack Hits against Cursed Enemies have {0}% chance to inflict Bleeding" reminderstring ReminderTextBleeding
+	lang "Korean"
+	1
+		1|# "저주받은 적에게 공격 적중 시 {0}%의 확률로 출혈 유발" reminderstring ReminderTextBleeding
+description reflect_overkill_damage_on_death
+	1 punishment_reflect_%_overkill_damage_to_nearby_allies_on_death
+	1
+		# "{0}% of Overkill Damage from Killing Blows on Cursed Enemies is Reflected to other Enemies as Physical Damage" reminderstring ReminderTextOverkill
+	lang "Korean"
+	1
+		# "저주받은 적에 대한 최후의 일격으로 발생하는 과잉살상 피해의 {0}%를 다른 적에게 물리 피해로 반사" reminderstring ReminderTextOverkill
+description self_bleeding_duration_incr
+	1 self_bleed_duration_+%
+	2
+		1|# "{0}% increased Duration of Bleeding on Cursed Enemies"
+		#|-1 "{0}% reduced Duration of Bleeding on Cursed Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 적의 출혈 지속시간 {0}% 증가"
+		#|-1 "저주받은 적의 출혈 지속시간 {0}% 감소" negate 1
+description self_elemental_status_duration
+	1 self_elemental_status_duration_-%
+	2
+		1|# "{0}% reduced Duration of Elemental Ailments on Cursed enemies" reminderstring ReminderTextElementalAilments
+		#|-1 "{0}% increased Duration of Elemental Ailments on Cursed enemies" negate 1 reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	2
+		1|# "저주받은 적의 원소 상태 이상 지속시간 {0}% 감소" reminderstring ReminderTextElementalAilments
+		#|-1 "저주받은 적의 원소 상태 이상 지속시간 {0}% 증가" negate 1 reminderstring ReminderTextElementalAilments
+description bane_curse_effect
+	1 support_bane_curse_effect_+%_final
+	2
+		1|# "{0}% more Effect of Curse"
+		#|-1 "{0}% less Effect of Curse" negate 1
+	lang "Korean"
+	2
+		1|# "저주 효과 {0}% 증폭"
+		#|-1 "저주 효과 {0}% 감폭" negate 1
+description blasphemy_curse_effect
+	1 support_blasphemy_curse_effect_+%_final
+	2
+		1|# "{0}% more Effect of Curse"
+		#|-1 "{0}% less Effect of Curse" negate 1
+	lang "Korean"
+	2
+		1|# "저주 효과 {0}% 증폭"
+		#|-1 "저주 효과 {0}% 감폭" negate 1
+description hextouch_curse_effect
+	1 support_hextouch_curse_effect_+%_final
+	2
+		1|# "{0}% more Effect of Curse"
+		#|-1 "{0}% less Effect of Curse" negate 1
+	lang "Korean"
+	2
+		1|# "저주 효과 {0}% 증폭"
+		#|-1 "저주 효과 {0}% 감폭" negate 1
+description action_speed_reduction_rare_or_unique
+	1 temporal_chains_action_speed_+%_vs_rare_or_unique_final
+	2
+		1|# "Cursed Rare and Unique Enemies have {0}% more Action Speed"
+		#|-1 "Cursed Rare and Unique Enemies have {0}% less Action Speed" negate 1
+	lang "Korean"
+	2
+		1|# "저주받은 희귀 및 고유 적의 동작 속도 {0}% 증폭"
+		#|-1 "저주받은 희귀 및 고유 적의 동작 속도 {0}% 감폭" negate 1
+description curse_triggers_doom_blast
+	1 trigger_vicious_hex_explosion_when_curse_ends
+	2
+		1|99 "Trigger Doom Blast when Curse ends"
+		100|# "Trigger Doom Blast when Curse ends"
+	lang "Korean"
+	2
+		1|99 "저주 종료 시 멸망 폭발 발동"
+		100|# "저주 종료 시 멸망 폭발 발동"

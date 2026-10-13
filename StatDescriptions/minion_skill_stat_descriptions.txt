@@ -1,0 +1,2935 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description num_additional_traps
+	1 number_of_additional_traps_to_throw
+	2
+		1 "Minions throw up to 1 additional Trap"
+		# "Minions throw up to {0} additional Traps"
+	lang "Korean"
+	2
+		1 "소환수가 덫 최대 1개 추가 투척"
+		# "소환수가 덫 최대 {0}개 추가 투척"
+description num_additional_mines
+	1 number_of_additional_mines_to_place
+	2
+		1 "Minions throw up to 1 additional Mine" reminderstring ReminderTextMultipleMines
+		# "Minions throw up to {0} additional Mines" reminderstring ReminderTextMultipleMines
+	lang "Korean"
+	2
+		1 "소환수가 지뢰 최대 1개 추가 투척" reminderstring ReminderTextMultipleMines
+		# "소환수가 지뢰 최대 {0}개 추가 투척" reminderstring ReminderTextMultipleMines
+description num_additional_traps_allowed
+	1 number_of_additional_traps_allowed
+	2
+		1 "Minions can have an additional Trap placed at a time"
+		# "Minions can have {0} additional Traps placed at a time"
+	lang "Korean"
+	2
+		1 "소환수가 한 번에 덫 1개 추가 설치"
+		# "소환수가 한 번에 덫 {0}개 추가 설치"
+description num_additional_mines_allowed
+	1 number_of_additional_remote_mines_allowed
+	2
+		1 "Minions can have an additional Mine placed at a time"
+		# "Minions can have {0} additional Mines placed at a time"
+	lang "Korean"
+	2
+		1 "소환수가 한 번에 지뢰 1개 추가 설치"
+		# "소환수가 한 번에 지뢰 {0}개 추가 설치"
+description trap_throw_random
+	1 throw_traps_in_circle_radius
+	1
+		1|# "Traps are thrown randomly"
+	lang "Korean"
+	1
+		1|# "덫이 무작위로 투척됨"
+description cast_speed_incr
+	1 base_cast_speed_+%
+	2
+		1|# "Minions have {0}% increased Cast Speed"
+		#|-1 "Minions have {0}% reduced Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 시전 속도 {0}% 증가"
+		#|-1 "소환수의 시전 속도 {0}% 감소" negate 1
+description multicast_cast_speed_incr
+	1 support_multicast_cast_speed_+%_final
+	2
+		1|# "Minions have {0}% more Cast Speed"
+		#|-1 "Minions have {0}% less Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 시전 속도 {0}% 증폭"
+		#|-1 "소환수의 시전 속도 {0}% 감폭" negate 1
+description attack_speed_incr
+	1 attack_speed_+%
+	2
+		1|# "Minions have {0}% increased Attack Speed"
+		#|-1 "Minions have {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격 속도 {0}% 증가"
+		#|-1 "소환수의 공격 속도 {0}% 감소" negate 1
+description accuracy_rating
+	1 accuracy_rating
+	2
+		1|# "Minions have {0} additional Accuracy Rating"
+		#|-1 "Minions lose {0} Accuracy Rating" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 정확도 {0} 추가"
+		#|-1 "소환수의 정확도 {0} 상실" negate 1
+description accuracy_rating_incr
+	1 accuracy_rating_+%
+	2
+		1|# "Minions have {0}% increased Accuracy Rating"
+		#|-1 "Minions have {0}% reduced Accuracy Rating" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 정확도 {0}% 증가"
+		#|-1 "소환수의 정확도 {0}% 감소" negate 1
+description critical_strike_chance_incr
+	1 critical_strike_chance_+%
+	2
+		1|# "Minions have {0}% increased Critical Strike Chance"
+		#|-1 "Minions have {0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 치명타 확률 {0}% 증가"
+		#|-1 "소환수의 치명타 확률 {0}% 감소" negate 1
+description controlled_destruction_critical_strike_chance
+	1 support_controlled_destruction_critical_strike_chance_+%_final
+	2
+		1|# "Minions have {0}% more Critical Strike Chance"
+		#|-1 "Minions have {0}% less Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 치명타 확률 {0}% 증폭"
+		#|-1 "소환수의 치명타 확률 {0}% 감폭" negate 1
+description critical_strike_multiplier_incr
+	1 base_critical_strike_multiplier_+
+	1
+		# "Minions have {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "소환수의 치명타 피해 배율 {0:+d}%"
+description life_gain_per_target
+	1 base_life_gain_per_target
+	2
+		1|# "Minions gain {0} Life per Enemy they Hit"
+		#|-1 "Minions lose {0} Life per Enemy they Hit" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 명중한 적 하나당 소환수가 생명력 {0} 획득"
+		#|-1 "소환수가 명중한 적 하나당 소환수가 생명력 {0} 상실" negate 1
+description life_leech_from_any
+	1 life_leech_from_any_damage_permyriad
+	1
+		1|# "Minions Leech {0}% of Damage as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "소환수가 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description energy_shield_leech_from_any
+	1 energy_shield_leech_from_any_damage_permyriad
+	1
+		1|# "Minions Leech {0}% of Damage as Energy Shield" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+	lang "Korean"
+	1
+		1|# "소환수가 피해의 {0}%를 에너지 보호막으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextEnergyShieldLeech
+description knockback_chance
+	1 base_global_chance_to_knockback_%
+	2
+		1|99 "Minions have an additional {0}% chance to Knock Enemies Back on Hit" reminderstring ReminderTextKnockback
+		100|# "Minions knock Enemies Back on Hit" reminderstring ReminderTextKnockback
+	lang "Korean"
+	2
+		1|99 "명중 시 소환수가 적을 밀어낼 확률 {0}% 추가" reminderstring ReminderTextKnockback
+		100|# "명중 시 소환수가 적을 밀어냄" reminderstring ReminderTextKnockback
+description knockback_distance
+	1 knockback_distance_+%
+	2
+		1|# "Minions have {0}% increased Knockback Distance"
+		#|-1 "Minions have {0}% reduced Knockback Distance" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 밀어내기 거리 {0}% 증가"
+		#|-1 "소환수의 밀어내기 거리 {0}% 감소" negate 1
+description stun_threshold_reduction_incr
+	1 base_stun_threshold_reduction_+%
+	2
+		1|# "Minions have {0}% reduced Enemy Stun Threshold" reminderstring ReminderTextStunThreshold
+		#|-1 "Minions have {0}% increased Enemy Stun Threshold" negate 1 reminderstring ReminderTextStunThreshold
+	lang "Korean"
+	2
+		1|# "소환수의 적 기절 한계치 {0}% 감소" reminderstring ReminderTextStunThreshold
+		#|-1 "소환수의 적 기절 한계치 {0}% 증가" negate 1 reminderstring ReminderTextStunThreshold
+description killed_monster_dropped_item_rarity_incr
+	1 killed_monster_dropped_item_rarity_+%
+	2
+		1|# "{0}% increased Rarity of Items Dropped by enemies Slain by Minions"
+		#|-1 "{0}% reduced Rarity of Items Dropped by enemies Slain by Minions" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 처치한 적이 떨어뜨리는 아이템 희귀도 {0}% 증가"
+		#|-1 "소환수가 처치한 적이 떨어뜨리는 아이템 희귀도 {0}% 감소" negate 1
+description killed_monster_dropped_item_quantity_incr
+	1 killed_monster_dropped_item_quantity_+%
+	2
+		1|# "{0}% increased Quantity of Items Dropped by enemies Slain by Minions"
+		#|-1 "{0}% reduced Quantity of Items Dropped by enemies Slain by Minions" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 처치한 적이 떨어뜨리는 아이템 수량 {0}% 증가"
+		#|-1 "소환수가 처치한 적이 떨어뜨리는 아이템 수량 {0}% 감소" negate 1
+description freeze_chance
+	2 base_chance_to_freeze_% always_freeze
+	3
+		# 1|# "Minions always Freeze Enemies" reminderstring ReminderTextFreeze
+		100|# 0 "Minions always Freeze Enemies" reminderstring ReminderTextFreeze
+		1|99  0 "Minions have {0}% chance to Freeze enemies" reminderstring ReminderTextFreeze
+	lang "Korean"
+	3
+		# 1|# "소환수가 항상 동결 유발" reminderstring ReminderTextFreeze
+		100|# 0 "소환수가 항상 동결 유발" reminderstring ReminderTextFreeze
+		1|99  0 "소환수가 {0}%의 확률로 적 동결 유발" reminderstring ReminderTextFreeze
+description shock_chance
+	1 base_chance_to_shock_%
+	1
+		1|# "Minions have {0}% chance to Shock enemies" reminderstring ReminderTextShock
+	lang "Korean"
+	1
+		1|# "소환수가 {0}%의 확률로 적 감전 유발" reminderstring ReminderTextShock
+description burn_chance
+	1 base_chance_to_ignite_%
+	1
+		1|# "Minions have {0}% chance to Ignite enemies" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "소환수가 {0}%의 확률로 적 점화 유발" reminderstring ReminderTextIgnite
+description chance_to_flee
+	1 global_hit_causes_monster_flee_%
+	1
+		1|# "Minions have {0}% chance to cause Monsters to Flee when Hit" reminderstring ReminderTextFlee
+	lang "Korean"
+	1
+		1|# "소환수는 피격 시 {0}%의 확률로 몬스터를 도망치게 함" reminderstring ReminderTextFlee
+description area_of_effect_incr
+	1 base_skill_area_of_effect_+%
+	2
+		1|# "Minions have {0}% increased Area of Effect"
+		#|-1 "Minions have {0}% reduced Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 효과 범위 {0}% 증가"
+		#|-1 "소환수의 효과 범위 {0}% 감소" negate 1
+description concentrated_area_of_effect
+	1 support_concentrated_effect_skill_area_of_effect_+%_final
+	2
+		1|# "Minions have {0}% more Area of Effect"
+		#|-1 "Minions have {0}% less Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 효과 범위 {0}% 증폭"
+		#|-1 "소환수의 효과 범위 {0}% 감폭" negate 1
+description aura_area_of_effect_incr
+	1 base_aura_area_of_effect_+%
+	2
+		1|# "Minions have {0}% increased Aura Area of Effect"
+		#|-1 "Minions have {0}% reduced Aura Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 오라 효과 범위 {0}% 증가"
+		#|-1 "소환수의 오라 효과 범위 {0}% 감소" negate 1
+description aura_effect_incr
+	1 aura_effect_+%
+	2
+		1|# "Minions have {0}% increased effect of their Auras"
+		#|-1 "Minions have {0}% reduced effect of their Auras" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 오라 효과 {0}% 증가"
+		#|-1 "소환수의 오라 효과 {0}% 감소" negate 1
+description projectile_speed_incr
+	1 base_projectile_speed_+%
+	2
+		1|# "Minions have {0}% increased Projectile Speed"
+		#|-1 "Minions have {0}% reduced Projectile Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 투사체 속도 {0}% 증가"
+		#|-1 "소환수의 투사체 속도 {0}% 감소" negate 1
+description additional_projectiles
+	1 number_of_additional_projectiles
+	2
+		1 "Minions fire {0} additional Projectile"
+		2|# "Minions fire {0} additional Projectiles"
+	lang "Korean"
+	2
+		1 "소환수가 추가 투사체 {0}개 발사"
+		2|# "소환수가 추가 투사체 {0}개 발사"
+description stun_duration_incr
+	1 base_stun_duration_+%
+	2
+		1|# "Minions have {0}% increased Stun Duration on enemies"
+		#|-1 "Minions have {0}% reduced Stun Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 기절 지속시간 {0}% 증가"
+		#|-1 "소환수가 적에게 적용하는 기절 지속시간 {0}% 감소" negate 1
+description chill_effect
+	1 chill_effect_+%
+	2
+		1|# "Minions have {0}% increased Chill Effect"
+		#|-1 "Minions have {0}% reduced Chill Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 냉각 효과 {0}% 증가"
+		#|-1 "소환수의 냉각 효과 {0}% 감소" negate 1
+description shock_effect
+	1 shock_effect_+%
+	2
+		1|# "Minions have {0}% increased Shock Effect"
+		#|-1 "Minions have {0}% reduced Shock Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 감전 효과 {0}% 증가"
+		#|-1 "소환수의 감전 효과 {0}% 감소" negate 1
+description burn_duration
+	1 ignite_duration_+%
+	2
+		1|# "Minions have {0}% increased Ignite Duration on enemies"
+		#|-1 "Minions have {0}% reduced Ignite Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 점화 지속시간 {0}% 증가"
+		#|-1 "소환수가 적에게 적용하는 점화 지속시간 {0}% 감소" negate 1
+description chill_duration
+	1 chill_duration_+%
+	2
+		1|# "Minions have {0}% increased Chill Duration on enemies"
+		#|-1 "Minions have {0}% reduced Chill Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 냉각 지속시간 {0}% 증가"
+		#|-1 "소환수가 적에게 적용하는 냉각 지속시간 {0}% 감소" negate 1
+description freeze_duration
+	1 freeze_duration_+%
+	2
+		1|# "Minions have {0}% increased Freeze Duration on enemies"
+		#|-1 "Minions have {0}% reduced Freeze Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 동결 지속시간 {0}% 증가"
+		#|-1 "소환수가 적에게 적용하는 동결 지속시간 {0}% 감소" negate 1
+description shock_duration
+	1 shock_duration_+%
+	2
+		1|# "Minions have {0}% increased Shock Duration on enemies"
+		#|-1 "Minions have {0}% reduced Shock Duration on enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 감전 지속시간 {0}% 증가"
+		#|-1 "소환수가 적에게 적용하는 감전 지속시간 {0}% 감소" negate 1
+description elemental_status_aura
+	1 elemental_status_effect_aura_radius
+	1
+		# "Elemental Ailments caused by Minions also spread to nearby enemies" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "소환수에 의해 발생하는 원소 상태 이상이 주변의 적에게도 확산" reminderstring ReminderTextElementalAilments
+description ignite_aura
+	1 support_ignite_proliferation_radius
+	1
+		# "Ignites caused by Minions spread to other nearby Enemies"
+	lang "Korean"
+	1
+		# "소환수에 의해 발생하는 점화가 주변의 다른 적에게도 확산"
+description bleeding_chance
+	3 bleed_on_hit_with_attacks_% global_bleed_on_hit cannot_cause_bleeding
+	4
+		0|99 0 0 "Minions' Attacks have {0}% chance to cause Bleeding" reminderstring ReminderTextBleeding
+		100|# 0 0 "Minions' Attacks cause Bleeding" reminderstring ReminderTextBleeding
+		# # 0 "Minions' Attacks cause Bleeding" reminderstring ReminderTextBleeding
+		# # # "Minions cannot cause Bleeding"
+	lang "Korean"
+	4
+		0|99 0 0 "소환수의 공격이 {0}% 확률로 출혈 유발" reminderstring ReminderTextBleeding
+		100|# 0 0 "소환수의 공격 시 출혈 유발" reminderstring ReminderTextBleeding
+		# # 0 "소환수의 공격 시 출혈 유발" reminderstring ReminderTextBleeding
+		# # # "소환수는 출혈 유발 불가"
+description chance_to_bleed_damage_incr
+	1 support_chance_to_bleed_bleeding_damage_+%_final
+	2
+		1|# "Minion's Attacks deal {0}% more Damage with Bleeding"
+		#|-1 "Minion's Attacks deal {0}% less Damage with Bleeding" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격으로 주는 출혈 피해 {0}% 증폭"
+		#|-1 "소환수의 공격으로 주는 출혈 피해 {0}% 감폭" negate 1
+description support_melee_physical_damage_final_incr
+	1 support_melee_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Melee Physical Damage"
+		#|-1 "Minions deal {0}% less Melee Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 근접 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 근접 물리 피해 {0}% 감폭" negate 1
+description support_melee_physical_damage_ailment_damage_final_incr
+	1 support_melee_physical_damage_poison_and_bleeding_damage_+%_final_from_melee_hits
+	2
+		1|# "Minions deal {0}% more Damage with Bleeding and Poison caused by Melee Hits"
+		#|-1 "Minions deal {0}% less Damage with Bleeding and Poison caused by Melee Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 근접 명중에 의한 출혈 및 중독 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 근접 명중에 의한 출혈 및 중독 피해 {0}% 감폭" negate 1
+description trigger_link_damage
+	1 support_trigger_link_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description hysteria_damage_low_life
+	1 essence_hysteria_boots_damage_+%_final_while_on_low_life
+	2
+		1|# "Minions deal {0}% more Damage while they are on Low Life" reminderstring ReminderTextLowLife
+		#|-1 "Minions deal {0}% less Damage while they are on Low Life" negate 1 reminderstring ReminderTextLowLife
+	lang "Korean"
+	2
+		1|# "소환수가 낮은 생명력 상태일 때 주는 피해 {0}% 증폭" reminderstring ReminderTextLowLife
+		#|-1 "소환수가 낮은 생명력 상태일 때 주는 피해 {0}% 감폭" negate 1 reminderstring ReminderTextLowLife
+description support_damage_full_life_incr
+	1 support_damage_while_on_full_life_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Attack Skills while on Full Life"
+		#|-1 "Minions deal {0}% less Damage with Attack Skills while on Full Life" negate 1
+	lang "Korean"
+	2
+		1|# "생명력이 최대일 때 소환수가 주는 공격 스킬의 피해 {0}% 증폭"
+		#|-1 "생명력이 최대일 때 소환수가 주는 공격 스킬의 피해 {0}% 감폭" negate 1
+description attack_damage_incr
+	1 attack_damage_+%
+	2
+		1|# "Minions deal {0}% increased Attack Damage"
+		#|-1 "Minions deal {0}% reduced Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 공격 피해 {0}% 증가"
+		#|-1 "소환수가 주는 공격 피해 {0}% 감소" negate 1
+description unused_identifier_physical_damage
+	1 physical_damage_+%
+	2
+		1|# "Minions deal {0}% increased Physical Damage"
+		#|-1 "Minions deal {0}% reduced Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 피해 {0}% 증가"
+		#|-1 "소환수가 주는 물리 피해 {0}% 감소" negate 1
+description unused_identifier_physical_damage_final
+	1 active_skill_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Physical Damage"
+		#|-1 "Minions deal {0}% less Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 물리 피해 {0}% 감폭" negate 1
+description unused_identifier_elemental_damage_final
+	1 active_skill_elemental_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Elemental Damage"
+		#|-1 "Minions deal {0}% less Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 원소 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 원소 피해 {0}% 감폭" negate 1
+description multiple_projectile_damage_final
+	1 support_multiple_projectile_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description additional_poisons_vs_non_poisoned_enemies
+	1 additional_poisons_+_to_apply_vs_non_poisoned_enemies
+	2
+		1 "Minions that Poison non-Poisoned Enemies inflict an additional Poison" reminderstring ReminderTextPoison
+		# "Minions that Poison non-Poisoned Enemies inflict {0} additional Poisons" reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1 "소환수가 중독되지 않은 적을 중독시키면 추가 중독 1회 유발" reminderstring ReminderTextPoison
+		# "소환수가 중독되지 않은 적을 중독시키면 추가 중독 {0}회 유발" reminderstring ReminderTextPoison
+description lesser_multiple_projectile_damage_final
+	1 support_lesser_multiple_projectile_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description area_concentrate_damage_final
+	1 support_area_concentrate_area_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Area Damage"
+		#|-1 "Minions deal {0}% less Area Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 범위 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 범위 피해 {0}% 감폭" negate 1
+description added_physical_attack_damage
+	2 attack_minimum_added_physical_damage attack_maximum_added_physical_damage
+	1
+		# # "Minions' Attacks deal {0} to {1} additional Physical Damage"
+	lang "Korean"
+	1
+		# # "소환수의 공격으로 주는 물리 피해 {0}~{1} 추가"
+description animated_vestige_damage_add
+	2 attack_minimum_added_physical_damage_for_ethereal_blades attack_maximum_added_physical_damage_for_ethereal_blades
+	1
+		# # "Animated Lingering Blades deal {0} to {1} Added Attack Physical Damage" reminderstring ReminderTextLingeringBlades
+	lang "Korean"
+	1
+		# # "기동된 지속되는 칼날이 주는 공격 물리 피해 {0}~{1} 추가" reminderstring ReminderTextLingeringBlades
+description added_cold_damage
+	2 global_minimum_added_cold_damage global_maximum_added_cold_damage
+	1
+		# # "Minions deal {0} to {1} additional Cold Damage"
+	lang "Korean"
+	1
+		# # "소환수가 주는 냉기 피해 {0}~{1} 추가"
+description added_lightning_damage
+	2 global_minimum_added_lightning_damage global_maximum_added_lightning_damage
+	1
+		# # "Minions deal {0} to {1} additional Lightning Damage"
+	lang "Korean"
+	1
+		# # "소환수가 주는 번개 피해 {0}~{1} 추가"
+description added_chaos_damage
+	2 global_minimum_added_chaos_damage global_maximum_added_chaos_damage
+	1
+		# # "Minions deal {0} to {1} additional Chaos Damage"
+	lang "Korean"
+	1
+		# # "소환수가 주는 카오스 피해 {0}~{1} 추가"
+description melee_physical_damage_incr
+	1 melee_physical_damage_+%
+	2
+		1|# "Minions deal {0}% increased Physical Damage with Melee Attacks"
+		#|-1 "Minions deal {0}% reduced Physical Damage with Melee Attacks" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 근접 공격 물리 피해 {0}% 증가"
+		#|-1 "소환수가 주는 근접 공격 물리 피해 {0}% 감소" negate 1
+description physical_damage_to_add_as_fire
+	1 physical_damage_%_to_add_as_fire
+	1
+		1|# "Minions deal {0}% of their Physical Damage as Extra Fire Damage"
+	lang "Korean"
+	1
+		1|# "소환수가 물리 피해의 {0}%를 추가 화염 피해로 줌"
+description cold_damage_to_convert_to_fire
+	1 skill_cold_damage_%_to_convert_to_fire
+	1
+		1|# "{0}% of Minion Cold Damage Converted to Fire Damage"
+	lang "Korean"
+	1
+		1|# "소환수 냉기 피해의 {0}%를 화염 피해로 전환"
+description support_lethal_dose_poison_damage
+	1 support_lethal_dose_poison_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Poison" reminderstring ReminderTextPoison
+		#|-1 "Minions deal {0}% less Damage with Poison" negate 1 reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1|# "소환수가 주는 중독 피해 {0}% 증폭" reminderstring ReminderTextPoison
+		#|-1 "소환수가 주는 중독 피해 {0}% 감폭" negate 1 reminderstring ReminderTextPoison
+description physical_damage_to_add_as_chaos
+	1 physical_damage_%_to_add_as_chaos
+	1
+		1|# "Minions deal {0}% of their Physical Damage as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "소환수가 물리 피해의 {0}%를 추가 카오스 피해로 줌"
+description physical_damage_to_add_as_lightning
+	1 physical_damage_%_to_add_as_lightning
+	1
+		1|# "Minions deal {0}% of Physical Damage as Extra Lightning Damage"
+	lang "Korean"
+	1
+		1|# "소환수가 물리 피해의 {0}%를 추가 번개 피해로 줌"
+description physical_damage_to_convert_to_lightning
+	1 skill_physical_damage_%_to_convert_to_lightning
+	1
+		1|# "Minions Convert {0}% of Physical Damage to Lightning Damage"
+	lang "Korean"
+	1
+		1|# "소환수 물리 피해의 {0}%를 번개 피해로 전환"
+description damage_incr
+	1 damage_+%
+	2
+		1|# "Minions deal {0}% increased Damage"
+		#|-1 "Minions deal {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증가"
+		#|-1 "소환수가 주는 피해 {0}% 감소" negate 1
+description fire_damage_incr
+	1 fire_damage_+%
+	2
+		1|# "Minions deal {0}% increased Fire Damage"
+		#|-1 "Minions deal {0}% reduced Fire Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 화염 피해 {0}% 증가"
+		#|-1 "소환수가 주는 화염 피해 {0}% 감소" negate 1
+description cold_damage_incr
+	1 cold_damage_+%
+	2
+		1|# "Minions deal {0}% increased Cold Damage"
+		#|-1 "Minions deal {0}% reduced Cold Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 냉기 피해 {0}% 증가"
+		#|-1 "소환수가 주는 냉기 피해 {0}% 감소" negate 1
+description lightning_damage_incr
+	1 lightning_damage_+%
+	2
+		1|# "Minions deal {0}% increased Lightning Damage"
+		#|-1 "Minions deal {0}% reduced Lightning Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 번개 피해 {0}% 증가"
+		#|-1 "소환수가 주는 번개 피해 {0}% 감소" negate 1
+description chaos_damage_incr
+	1 chaos_damage_+%
+	2
+		1|# "Minions deal {0}% increased Chaos Damage"
+		#|-1 "Minions deal {0}% reduced Chaos Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 카오스 피해 {0}% 증가"
+		#|-1 "소환수가 주는 카오스 피해 {0}% 감소" negate 1
+description support_attack_elemental_damage_final
+	1 support_attack_skills_elemental_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Elemental Damage with Attack Skills"
+		#|-1 "Minions deal {0}% less Elemental Damage with Attack Skills" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 공격 스킬의 원소 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 공격 스킬의 원소 피해 {0}% 감폭" negate 1
+description weapon_elemental_damage_incr
+	1 weapon_elemental_damage_+%
+	2
+		1|# "Minions deal {0}% increased Elemental Damage with Weapons"
+		#|-1 "Minions deal {0}% reduced Elemental Damage with Weapons" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 무기 사용 시 원소 피해 {0}% 증가"
+		#|-1 "소환수가 주는 무기 사용 시 원소 피해 {0}% 감소" negate 1
+description elemental_damage_incr
+	1 elemental_damage_+%
+	2
+		1|# "Minions deal {0}% increased Elemental Damage"
+		#|-1 "Minions deal {0}% reduced Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 원소 피해 {0}% 증가"
+		#|-1 "소환수가 주는 원소 피해 {0}% 감소" negate 1
+description support_more_minion_damage
+	1 support_minion_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description controlled_destruction
+	1 support_controlled_destruction_spell_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Spell Damage"
+		#|-1 "Minions deal {0}% less Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 주문 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 주문 피해 {0}% 감폭" negate 1
+description support_efficacy_spell_damage
+	1 support_efficacy_spell_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Spell Damage"
+		#|-1 "Minions deal {0}% less Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 주문 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 주문 피해 {0}% 감폭" negate 1
+description spell_damage_incr
+	1 spell_damage_+%
+	2
+		1|# "Minions deal {0}% increased Spell Damage"
+		#|-1 "Minions deal {0}% reduced Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 주문 피해 {0}% 증가"
+		#|-1 "소환수가 주는 주문 피해 {0}% 감소" negate 1
+description support_better_ailments_bonus
+	1 support_better_ailments_ailment_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions deal {0}% less Damage with Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수가 주는 상태 이상 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "소환수가 주는 상태 이상 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description support_better_ailments_malus
+	1 support_better_ailments_hit_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Hits"
+		#|-1 "Minions deal {0}% less Damage with Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적 명중 시 피해 {0}% 증폭"
+		#|-1 "소환수가 적 명중 시 피해 {0}% 감폭" negate 1
+description support_chance_to_ignite_damage
+	1 support_chance_to_ignite_fire_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Fire Damage"
+		#|-1 "Minions deal {0}% less Fire Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 화염 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 화염 피해 {0}% 감폭" negate 1
+description support_cruelty_hit_damage
+	1 support_cruelty_hit_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Hits"
+		#|-1 "Minions deal {0}% less Damage with Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적 명중 시 피해 {0}% 증폭"
+		#|-1 "소환수가 적 명중 시 피해 {0}% 감폭" negate 1
+description ignite_prolif_damage
+	1 support_ignite_prolif_ignite_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Ignite"
+		#|-1 "Minions deal {0}% less Damage with Ignite" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 점화 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 점화 피해 {0}% 감폭" negate 1
+description rapid_decay
+	1 support_rapid_decay_damage_over_time_+%_final
+	2
+		1|# "Minions deal {0}% more Damage over Time"
+		#|-1 "Minions deal {0}% less Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 지속 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 지속 피해 {0}% 감폭" negate 1
+description support_efficacy_dot
+	1 support_efficacy_damage_over_time_+%_final
+	2
+		1|# "Minions deal {0}% more Damage over Time"
+		#|-1 "Minions deal {0}% less Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 지속 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 지속 피해 {0}% 감폭" negate 1
+description support_debilitate_hit_damage
+	2 support_debilitate_hit_damage_+%_final_per_poison_stack support_debilitate_hit_damage_max_poison_stacks
+	2
+		1|# # "Minions deal {0}% more Damage with Hits for each Poison on the Enemy, up to {1}"
+		#|-1 # "Minions deal {0}% less Damage with Hits for each Poison on the Enemy, up to {1}" negate 1
+	lang "Korean"
+	2
+		1|# # "소환수가 중독된 적 하나당 명중 시 피해 {0}% 증폭, 최대 {1}"
+		#|-1 # "소환수가 중독된 적 하나당 명중 시 피해 {0}% 감폭, 최대 {1}" negate 1
+description support_debilitate_poison_damage
+	1 support_debilitate_poison_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Poison"
+		#|-1 "Minions deal {0}% less Damage with Poison" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 중독 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 중독 피해 {0}% 감폭" negate 1
+description support_poison_poison_damage
+	1 support_poison_poison_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Poison"
+		#|-1 "Minions deal {0}% less Damage with Poison" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 중독 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 중독 피해 {0}% 감폭" negate 1
+description damage_over_time_incr
+	1 damage_over_time_+%
+	2
+		1|# "Minions deal {0}% increased Damage over Time"
+		#|-1 "Minions deal {0}% reduced Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 지속 피해 {0}% 증가"
+		#|-1 "소환수가 주는 지속 피해 {0}% 감소" negate 1
+description minion_damage_final
+	1 active_skill_minion_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description minion_physical_damage_final
+	1 active_skill_minion_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Physical Damage"
+		#|-1 "Minions deal {0}% less Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 물리 피해 {0}% 감폭" negate 1
+description number_of_zombies
+	1 number_of_zombies_allowed
+	2
+		1 "Maximum {0} Raised Zombie"
+		2|99 "Maximum {0} Raised Zombies"
+	lang "Korean"
+	2
+		1 "소환한 좀비 최대 {0}마리"
+		2|99 "소환한 좀비 최대 {0}마리"
+description number_of_spectres
+	1 number_of_spectres_allowed
+	2
+		1 "Maximum {0} Raised Spectre"
+		2|# "Maximum {0} Raised Spectres"
+	lang "Korean"
+	2
+		1 "소환한 망령 최대 {0}마리"
+		2|# "소환한 망령 최대 {0}마리"
+description number_of_raging_spirits
+	1 number_of_raging_spirits_allowed
+	2
+		1 "Maximum {0} Summoned Raging Spirit"
+		2|# "Maximum {0} Summoned Raging Spirits"
+	lang "Korean"
+	2
+		1 "소환된 격노의 유령 최대치 {0}"
+		2|# "소환된 격노의 유령 최대치 {0}"
+description number_of_animated_weapons
+	1 number_of_animated_weapons_allowed
+	3
+		# "{0:+d} to maximum number of Animated Weapons"
+		1 "Maximum {0} Animated Weapon"
+		2|# "Maximum {0} Animated Weapons"
+	lang "Korean"
+	3
+		# "기동된 무기 최대치 {0:+d}개"
+		1 "기동된 무기 최대 {0}개"
+		2|# "기동된 무기 최대 {0}개"
+description number_of_beasts
+	1 base_number_of_beast_minions_allowed
+	2
+		1 "Maximum {0} Summoned Bestial Minion"
+		2|# "Maximum {0} Summoned Bestial Minion"
+	lang "Korean"
+	2
+		1 "소환된 흉포한 소환수 최대 {0}마리"
+		2|# "소환된 흉포한 소환수 최대 {0}마리"
+description display_one_harbinger_allowed
+	1 display_one_harbinger_allowed
+	1
+		# "Maximum 1 Summoned Harbinger"
+	lang "Korean"
+	1
+		# "소환된 선구자 최대 1마리"
+description number_of_golems
+	1 number_of_golems_allowed
+	2
+		1 "Maximum {0} Summoned Golem"
+		2|# "Maximum {0} Summoned Golems"
+	lang "Korean"
+	2
+		1 "소환된 골렘 최대 {0}마리"
+		2|# "소환된 골렘 최대 {0}마리"
+description number_of_wolves_allowed
+	1 virtual_number_of_wolves_allowed
+	2
+		1 "Maximum {0} Summoned Spectral Wolf"
+		2|# "Maximum {0} Summoned Spectral Wolves"
+	lang "Korean"
+	2
+		1 "소환된 영체 늑대 최대 {0}마리"
+		2|# "소환된 영체 늑대 최대 {0}마리"
+description display_minion_life
+	1 display_minion_maximum_life
+	1
+		1|# "Minions have {0} maximum Life"
+	lang "Korean"
+	1
+		1|# "소환수의 최대 생명력 {0}"
+description number_of_skeletons_allowed
+	1 number_of_skeletons_allowed
+	2
+		1 "Maximum {0} Summoned Skeleton"
+		2|# "Maximum {0} Summoned Skeletons"
+	lang "Korean"
+	2
+		1 "소환된 해골 최대 {0}마리"
+		2|# "소환된 해골 최대 {0}마리"
+description number_of_spiders
+	1 virtual_number_of_spider_minions_allowed
+	2
+		1 "Maximum {0} Raised Spiders"
+		2|# "Maximum {0} Raised Spiders"
+	lang "Korean"
+	2
+		1 "소생한 거미 최대 {0}마리"
+		2|# "소생한 거미 최대 {0}마리"
+description melee_skeletons_to_summon
+	3 virtual_number_of_melee_skeletons_to_summon number_of_melee_skeletons_to_summon skeletons_are_vaal
+	8
+		1   #    0 "Summons {0} Skeleton Warrior"
+		2|# #    0 "Summons {0} Skeleton Warriors"
+		1   #   !0 "Summons {0} Skeleton Soldiers"
+		2|# #   !0 "Summons {0} Skeleton Soldiers"
+		0   1    0 "Summons {1} Skeleton Warrior"
+		0   2|#  0 "Summons {1} Skeleton Warriors"
+		0   1   !0 "Summons {1} Skeleton Soldiers"
+		0   2|# !0 "Summons {1} Skeleton Soldiers"
+	lang "Korean"
+	8
+		1   #    0 "해골 전사 {0}마리 소환"
+		2|# #    0 "해골 전사 {0}마리 소환"
+		1   #   !0 "해골 병사 {0}마리 소환"
+		2|# #   !0 "해골 병사 {0}마리 소환"
+		0   1    0 "해골 전사 {1}마리 소환"
+		0   2|#  0 "해골 전사 {1}마리 소환"
+		0   1   !0 "해골 병사 {1}마리 소환"
+		0   2|# !0 "해골 병사 {1}마리 소환"
+description archer_skeletons_to_summon
+	1 number_of_archer_skeletons_to_summon
+	2
+		1 "Summons {0} Skeleton Archer"
+		2|# "Summons {0} Skeleton Archers"
+	lang "Korean"
+	2
+		1 "해골 궁수 {0}마리 소환"
+		2|# "해골 궁수 {0}마리 소환"
+description mage_skeletons_to_summon
+	1 number_of_mage_skeletons_to_summon
+	2
+		1 "Summons {0} Skeleton Mage"
+		2|# "Summons {0} Skeleton Mages"
+	lang "Korean"
+	2
+		1 "해골 마법사 {0}마리 소환"
+		2|# "해골 마법사 {0}마리 소환"
+description leader_skeletons_to_summon
+	1 number_of_leader_skeletons_to_summon
+	2
+		1 "Summons {0} Skeleton General"
+		2|# "Summons {0} Skeleton Generals"
+	lang "Korean"
+	2
+		1 "해골 장군 {0}마리 소환"
+		2|# "해골 장군 {0}마리 소환"
+description culling_strike
+	1 kill_enemy_on_hit_if_under_10%_life
+	1
+		1|# "Minions have Culling Strike" reminderstring ReminderTextCullingStrike
+	lang "Korean"
+	1
+		1|# "소환수가 마무리 타격 가능" reminderstring ReminderTextCullingStrike
+description point_blank
+	1 keystone_point_blank
+	1
+		# "Minions have Point Blank"
+	lang "Korean"
+	1
+		# "소환수가 근접 사격"
+description chance_to_blind
+	1 virtual_chance_to_blind_on_hit_%
+	1
+		# "Minions have {0}% chance to Blind enemies on hit" reminderstring ReminderTextBlind
+	lang "Korean"
+	1
+		# "소환수가 명중 시 {0}%의 확률로 적 실명 유발" reminderstring ReminderTextBlind
+description blind_duration_incr
+	1 blind_duration_+%
+	2
+		1|# "Minions have {0}% increased Blinding duration"
+		#|-1 "Minions have {0}% reduced Blinding duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 실명 지속시간 {0}% 증가"
+		#|-1 "소환수의 실명 지속시간 {0}% 감소" negate 1
+description fire_penetration
+	1 base_reduce_enemy_fire_resistance_%
+	1
+		1|# "Minions Penetrate {0}% Fire Resistance"
+	lang "Korean"
+	1
+		1|# "소환수가 화염 저항 {0}% 관통"
+description cold_penetration
+	1 base_reduce_enemy_cold_resistance_%
+	1
+		1|# "Minions Penetrate {0}% Cold Resistance"
+	lang "Korean"
+	1
+		1|# "소환수가 냉기 저항 {0}% 관통"
+description elemental_penetration
+	1 reduce_enemy_elemental_resistance_%
+	1
+		1|# "Minions Penetrate {0}% Elemental Resistances"
+	lang "Korean"
+	1
+		1|# "소환수가 {0}%의 원소 저항 관통"
+description lightning_penetration
+	1 base_reduce_enemy_lightning_resistance_%
+	1
+		1|# "Minions Penetrate {0}% Lightning Resistance"
+	lang "Korean"
+	1
+		1|# "소환수가 번개 저항 {0}% 관통"
+description minion_chain_num
+	1 number_of_chains
+	1
+		# "Minions' Skills Chain {0:+d} Times"
+	lang "Korean"
+	1
+		# "소환수의 스킬 연쇄 {0:+d}회"
+description base_split_num
+	1 projectile_number_to_split
+	1
+		# "Minions' Projectiles Split towards {0} additional targets"
+	lang "Korean"
+	1
+		# "소환수의 투사체가 추가 대상 {0}개를 향해 분할"
+description fork
+	1 virtual_number_of_forks_for_projectiles_final
+	2
+		1 "Minion's Projectiles Fork"
+		# "Minion's Projectiles Fork {0} times"
+	lang "Korean"
+	2
+		1 "소환수의 투사체가 갈라짐"
+		# "소환수의 투사체가 {0}회 갈라짐"
+description return
+	2 projectiles_return projectile_return_%_chance
+	3
+		0  1|99 "Minions' Projectiles have {1}% chance to Return to them"
+		0  100|# "Minions' Projectiles Return to them"
+		!0 # "Minions' Projectiles Return to them"
+	lang "Korean"
+	3
+		0  1|99 "소환수의 투사체가 {1}%의 확률로 소환수에게 돌아옴"
+		0  100|# "소환수의 투사체가 소환수에게 돌아옴"
+		!0 # "소환수의 투사체가 소환수에게 돌아옴"
+description returning_pierce
+	1 returning_projectiles_always_pierce
+	1
+		# "Minions' Returning Projectiles Pierce all Targets"
+	lang "Korean"
+	1
+		# "소환수의 돌아오는 투사체가 모든 대상 관통"
+description support_return_returning_projectile_damage_incr
+	1 support_return_returning_projectiles_damage_+%_final
+	2
+		1|# "Minions' Projectiles deal {0}% more Damage with Hits and Ailments while Returning"
+		#|-1 "Minions' Projectiles deal {0}% less Damage with Hits and Ailments while Returning" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 투사체가 돌아오면서 주는 명중 및 상태 이상 피해 {0}% 증폭"
+		#|-1 "소환수의 투사체가 돌아오면서 주는 명중 및 상태 이상 피해 {0}% 감폭" negate 1
+description base_melee_splash
+	1 melee_splash
+	1
+		# "Minion's Melee Strike Skills deal Splash Damage to Surrounding Targets"
+	lang "Korean"
+	1
+		# "소환수의 근접 타격 스킬이 주변 대상에게 범위 피해를 줌"
+description melee_mulitple_attacks
+	1 base_melee_attack_repeat_count
+	1
+		# "Minion's Melee Attacks repeat {0} additional times"
+	lang "Korean"
+	1
+		# "소환수의 근접 공격 {0}회 추가 반복"
+description base_multicast
+	1 base_spell_repeat_count
+	2
+		1 "Minion's Spells Repeat an additional time"
+		2|# "Minion's Spells Repeat an additional {0} times"
+	lang "Korean"
+	2
+		1 "소환수의 주문 1회 추가 반복"
+		2|# "소환수의 주문 {0}회 추가 반복"
+description cruelty_duration_incr
+	1 cruelty_duration_+%
+	2
+		1|# "Minions have {0}% increased Duration of Cruelty"
+		#|-1 "Minions have {0}% reduced Duration of Cruelty" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 잔혹 지속시간 {0}% 증가"
+		#|-1 "소환수의 잔혹 지속시간 {0}% 감소" negate 1
+description power_charge_on_crit_chance
+	1 add_power_charge_on_critical_strike_%
+	2
+		1|99 "Minions have {0}% chance to gain a Power Charge on Critical Strike"
+		100|# "Minions gain a Power Charge on Critical Strike"
+	lang "Korean"
+	2
+		1|99 "소환수가 치명타 명중 시 {0}%의 확률로 권능 충전 획득"
+		100|# "소환수가 치명타 명중 시 권능 충전 획득"
+description multiple_attacks_speed
+	1 support_multiple_attacks_melee_attack_speed_+%_final
+	2
+		1|# "Minions have {0}% more Melee Attack Speed"
+		#|-1 "Minions have {0}% less Melee Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 공격 속도 {0}% 증폭"
+		#|-1 "소환수의 근접 공격 속도 {0}% 감폭" negate 1
+description multiple_attack_damage
+	1 support_multiple_attack_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Attack Damage"
+		#|-1 "Minions deal {0}% less Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 공격 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 공격 피해 {0}% 감폭" negate 1
+description burn_damage
+	1 burn_damage_+%
+	2
+		1|# "Minions have {0}% increased Burning Damage"
+		#|-1 "Minions have {0}% reduced Burning Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 화상 피해 {0}% 증가"
+		#|-1 "소환수의 화상 피해 {0}% 감소" negate 1
+description mine_damage
+	1 support_gem_mine_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description mine_damage_2_electric_boogaloo
+	1 support_remote_mine_2_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description totem_damage
+	1 support_totem_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description echo_damage
+	1 support_echo_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description multithrow_damage
+	1 support_multithrow_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description cast_on_damage_taken_damage
+	1 cast_on_damage_taken_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description chain_damage
+	1 support_chain_hit_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Hits"
+		#|-1 "Minions deal {0}% less Damage with Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 적 명중 시 피해 {0}% 증폭"
+		#|-1 "소환수가 적 명중 시 피해 {0}% 감폭" negate 1
+description split_damage
+	1 support_split_projectile_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description fork_damage
+	1 support_fork_projectile_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description endurance_charge_on_stun
+	2 gain_endurance_charge_on_melee_stun gain_endurance_charge_on_melee_stun_%
+	3
+		0 0|99 "Minions have {1}% chance to gain an Endurance Charge when they Stun an Enemy with a Melee Hit"
+		0 100|# "Minions gain an Endurance Charge when they Stun an Enemy with a Melee Hit"
+		# # "Minions gain an Endurance Charge when they Stun an Enemy with a Melee Hit"
+	lang "Korean"
+	3
+		0 0|99 "소환수가 근접 명중으로 적을 기절시킬 경우 {1}%의 확률로 인내 충전 획득"
+		0 100|# "소환수가 근접 명중으로 적을 기절시킬 경우 인내 충전 획득"
+		# # "소환수가 근접 명중으로 적을 기절시킬 경우 인내 충전 획득"
+description movement_speed_incr
+	1 base_movement_velocity_+%
+	2
+		1|# "Minions have {0}% increased Movement Speed"
+		#|-1 "Minions have {0}% reduced Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 이동 속도 {0}% 증가"
+		#|-1 "소환수의 이동 속도 {0}% 감소" negate 1
+description skill_duration_incr
+	1 skill_effect_duration_+%
+	2
+		1|# "Minions have {0}% increased Duration"
+		#|-1 "Minions have {0}% reduced Duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 지속시간 {0}% 증가"
+		#|-1 "소환수의 지속시간 {0}% 감소" negate 1
+description attack_speed_incr_on_low_life
+	1 attack_speed_+%_when_on_low_life
+	2
+		1|# "Minions have {0}% increased Attack Speed when on Low Life" reminderstring ReminderTextLowLife
+		#|-1 "Minions have {0}% reduced Attack Speed when on Low Life" negate 1 reminderstring ReminderTextLowLife
+	lang "Korean"
+	2
+		1|# "낮은 생명력 상태일 때 소환수 공격 속도 {0}% 증가" reminderstring ReminderTextLowLife
+		#|-1 "낮은 생명력 상태일 때 소환수 공격 속도 {0}% 감소" negate 1 reminderstring ReminderTextLowLife
+description cast_speed_incr_on_low_life
+	1 cast_speed_+%_when_on_low_life
+	2
+		1|# "Minions have {0}% increased Cast Speed when on Low Life" reminderstring ReminderTextLowLife
+		#|-1 "Minions have {0}% reduced Cast Speed when on Low Life" negate 1 reminderstring ReminderTextLowLife
+	lang "Korean"
+	2
+		1|# "낮은 생명력 상태일 때 소환수 시전 속도 {0}% 증가" reminderstring ReminderTextLowLife
+		#|-1 "낮은 생명력 상태일 때 소환수 시전 속도 {0}% 감소" negate 1 reminderstring ReminderTextLowLife
+description support_projectile_attack_phys_ailment_damage_incr
+	1 support_phys_proj_attack_damage_bleeing_and_poison_damage_+%_final_from_projectile_hits
+	2
+		1|# "Minions's Attacks deal {0}% more Damage with Bleeding and Poison caused by Projectile Hits"
+		#|-1 "Minions's Attacks deal {0}% more Damage with Bleeding and Poison caused by Projectile Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격으로 주는 투사체 적중에 의한 출혈 및 중독 피해 {0}% 증폭"
+		#|-1 "소환수의 공격으로 주는 투사체 적중에 의한 출혈 및 중독 피해 {0}% 증폭" negate 1
+description support_projectile_attack_phys_incr
+	1 support_projectile_attack_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Physical Projectile Attack Damage"
+		#|-1 "Minions deal {0}% less Physical Projectile Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 투사체 공격 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 물리 투사체 공격 피해 {0}% 감폭" negate 1
+description support_projectile_attack_speed_incr
+	1 support_projectile_attack_speed_+%_final
+	2
+		1|# "Minions have {0}% more Projectile Attack Speed"
+		#|-1 "Minions have {0}% less Projectile Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 투사체 공격 속도 {0}% 증폭"
+		#|-1 "소환수의 투사체 공격 속도 {0}% 감폭" negate 1
+description projectile_damage_incr
+	1 projectile_damage_+%
+	2
+		1|# "Minions deal {0}% increased Projectile Damage"
+		#|-1 "Minions deal {0}% reduced Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증가"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감소" negate 1
+description skill_cost_life_instead_mana
+	1 base_skill_cost_life_instead_of_mana
+	1
+		# "Minions' Skills Cost Life instead of Mana"
+	lang "Korean"
+	1
+		# "소환수의 스킬이 마나 대신 생명력 소모"
+description skill_reserve_life_instead_mana
+	1 base_skill_reserve_life_instead_of_mana
+	1
+		# "Minions' Skills Reserve Life instead of Mana"
+	lang "Korean"
+	1
+		# "소환수의 스킬이 마나 대신 생명력 점유"
+description skill_spend_life_instead_mana
+	1 base_use_life_in_place_of_mana
+	1
+		# "This Skill and Minions Spend Life instead of Mana for Skill Effects"
+	lang "Korean"
+	1
+		# "이 스킬 및 소환수가 스킬 효과에 마나 대신 생명력 소모"
+description bloodlust_damage
+	1 support_bloodlust_melee_physical_damage_+%_final_vs_bleeding_enemies
+	2
+		1|# "Minions deal {0}% more Melee Physical Damage against Bleeding Enemies"
+		#|-1 "Minions deal {0}% less Melee Physical Damage against Bleeding Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 출혈 중인 적을 상대로 주는 근접 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 출혈 중인 적을 상대로 주는 근접 물리 피해 {0}% 감폭" negate 1
+description bloodlust_damage_incr
+	1 melee_damage_vs_bleeding_enemies_+%
+	2
+		1|# "Minions deal {0}% increased Melee Damage against Bleeding Enemies"
+		#|-1 "Minions deal {0}% reduced Melee Damage against Bleeding Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 출혈 중인 적을 상대로 주는 근접 피해 {0}% 증가"
+		#|-1 "소환수가 출혈 중인 적을 상대로 주는 근접 피해 {0}% 감소" negate 1
+description chance_to_fortify_on_melee_hit
+	1 chance_to_fortify_on_melee_hit_+%
+	2
+		1|99 "Minions' Melee Hits have {0}% chance to Fortify" reminderstring ReminderTextFortifyingHit reminderstring ReminderTextFortification
+		100|# "Minions' Melee Hits Fortify" reminderstring ReminderTextFortifyingHit reminderstring ReminderTextFortification
+	lang "Korean"
+	2
+		1|99 "소환수가 근접 명중 시 {0}%의 확률로 방어 상승" reminderstring ReminderTextFortifyingHit reminderstring ReminderTextFortification
+		100|# "소환수가 근접 명중 시 방어 상승" reminderstring ReminderTextFortifyingHit reminderstring ReminderTextFortification
+description mine_laying_speed_incr
+	1 mine_laying_speed_+%
+	2
+		1|# "This Skill and Minions have {0}% increased Mine Throwing Speed"
+		#|-1 "This Skill and Minions have {0}% reduced Mine Throwing Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 스킬 및 소환수의 지뢰 투척 속도 {0}% 증가"
+		#|-1 "이 스킬 및 소환수의 지뢰 투척 속도 {0}% 감소" negate 1
+description freeze_chance_vs_chilled
+	1 additional_chance_to_freeze_chilled_enemies_%
+	1
+		# "Minions have {0:d}% chance to Freeze Enemies which are Chilled" reminderstring ReminderTextFreeze
+	lang "Korean"
+	1
+		# "소환수가 {0:d}%의 확률로 냉각된 적 동결 유발" reminderstring ReminderTextFreeze
+description hypothermia_damage
+	1 support_hypothermia_damage_+%_vs_chilled_enemies_final
+	2
+		1|# "Minions deal {0}% more Damage with Hits and Ailments against Chilled Enemies" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions deal {0}% less Damage with Hits and Ailments against Chilled Enemies" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수가 냉각된 적에 대한 적중 및 상태 이상 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "소환수가 냉각된 적에 대한 적중 및 상태 이상 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description trap_throw_speed_incr
+	1 trap_throwing_speed_+%
+	2
+		1|# "{0}% increased Trap Throwing Speed"
+		#|-1 "{0}% reduced Trap Throwing Speed" negate 1
+	lang "Korean"
+	2
+		1|# "덫 투척 속도 {0}% 증가"
+		#|-1 "덫 투척 속도 {0}% 감소" negate 1
+description mine_laying_speed_incr
+	1 mine_laying_speed_+%
+	2
+		1|# "{0}% increased Mine Throwing Speed"
+		#|-1 "{0}% reduced Mine Throwing Speed" negate 1
+	lang "Korean"
+	2
+		1|# "지뢰 투척 속도 {0}% 증가"
+		#|-1 "지뢰 투척 속도 {0}% 감소" negate 1
+description trap_mine_damage
+	1 support_trap_and_mine_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Trap and Mine Damage"
+		#|-1 "Minions deal {0}% less Trap and Mine Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 덫 및 지뢰 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 덫 및 지뢰 피해 {0}% 감폭" negate 1
+description cluster_trap_damage_incr
+	1 support_clustertrap_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description minefield_damage
+	1 support_minefield_mine_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description void_manipulation
+	1 support_void_manipulation_chaos_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Chaos Damage"
+		#|-1 "Minions deal {0}% less Chaos Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 카오스 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 카오스 피해 {0}% 감폭" negate 1
+description elemental_focus_damage
+	1 support_gem_elemental_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Elemental Damage"
+		#|-1 "Minions deal {0}% less Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 원소 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 원소 피해 {0}% 감폭" negate 1
+description cannot_inflict_ailments
+	1 cannot_inflict_status_ailments
+	1
+		# "Minions cannot inflict Elemental Ailments" reminderstring ReminderTextElementalAilments
+	lang "Korean"
+	1
+		# "소환수가 원소 상태 이상 유발 불가" reminderstring ReminderTextElementalAilments
+description poison_on_hit
+	1 global_poison_on_hit
+	1
+		# "Minions Poison Enemies on Hit" reminderstring ReminderTextPoison
+	lang "Korean"
+	1
+		# "소환수가 명중 시 적 중독 유발" reminderstring ReminderTextPoison
+description poison_damage
+	1 base_poison_damage_+%
+	2
+		1|# "Minions have {0}% increased Damage with Poison"
+		#|-1 "Minions have {0}% reduced Damage with Poison" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 중독 피해 {0}% 증가"
+		#|-1 "소환수의 중독 피해 {0}% 감소" negate 1
+description poison_duration
+	1 base_poison_duration_+%
+	2
+		1|# "Minions have {0}% increased Poison Duration"
+		#|-1 "Minions have {0}% reduced Poison Duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 중독 지속시간 {0}% 증가"
+		#|-1 "소환수의 중독 지속시간 {0}% 감소" negate 1
+description melee_splash_radius
+	1 melee_splash_area_of_effect_+%_final
+	2
+		1|# "Minions have {0}% more Melee Splash Area of Effect"
+		#|-1 "Minions have {0}% less Melee Splash Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 범위 피해 효과 범위 {0}% 증폭"
+		#|-1 "소환수의 근접 범위 피해 효과 범위 {0}% 감폭" negate 1
+description additional_crit
+	1 additional_base_critical_strike_chance
+	1
+		# "Minions have {0:+d}% to Critical Strike Chance" divide_by_one_hundred 1
+	lang "Korean"
+	1
+		# "소환수의 치명타 확률 {0:+d}%" divide_by_one_hundred 1
+description volatility_max
+	1 maximum_attack_damage_+%_final_from_volatility_support
+	2
+		1|# "Minions deal {0}% more Maximum Attack Damage"
+		#|-1 "Minions deal {0}% less Maximum Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 최대 공격 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 최대 공격 피해 {0}% 감폭" negate 1
+description volatility_min
+	1 minimum_attack_damage_+%_final_from_volatility_support
+	2
+		1|# "Minions deal {0}% more Minimum Attack Damage"
+		#|-1 "Minions deal {0}% less Minimum Attack Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 최소 공격 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 최소 공격 피해 {0}% 감폭" negate 1
+description support_ruthless_count
+	1 support_ruthless_big_hit_max_count
+	1
+		# "Every third use of Minion's Attacks deals a Ruthless Blow with Melee Hits"
+	lang "Korean"
+	1
+		# "소환수의 공격을 세 번째 사용할 때마다 근접 명중으로 무자비한 맹타 피해를 줌"
+description support_ruthless_damage
+	1 support_ruthless_big_hit_damage_+%_final
+	1
+		# "Minion's Ruthless Blows deal {0}% more Melee Damage"
+	lang "Korean"
+	1
+		# "소환수의 무자비한 맹타가 주는 근접 피해 {0}% 증폭"
+description support_ruthless_ailment_damage
+	1 support_ruthless_blow_ailment_damage_from_melee_hits_+%_final
+	1
+		# "Minion's Ruthless Blows deal {0}% more Damage with Ailments caused by Melee Hits"
+	lang "Korean"
+	1
+		# "소환수의 무자비한 맹타가 근접 명중으로 유발하는 상태 이상 피해 {0}% 증폭"
+description support_ruthless_stun
+	1 support_ruthless_big_hit_stun_base_duration_override_ms
+	1
+		# "Minion's Ruthless Blows have a base Stun Duration of {0} seconds" milliseconds_to_seconds 1
+	lang "Korean"
+	1
+		# "소환수의 무자비한 맹타의 기본 기절 지속시간 {0}초" milliseconds_to_seconds 1
+description skitterbots_limit
+	1 display_skitterbot_limit_per_type
+	1
+		# "Maximum {0} Summoned Skitterbot of each type"
+	lang "Korean"
+	1
+		# "소환된 원격 기폭 장치가 각 유형별로 최대 {0}기"
+description minion_added_damage
+	1 active_skill_minion_added_damage_+%_final
+	2
+		1|# "Minions gain {0}% more Added Damage"
+		#|-1 "Minions gain {0}% less Added Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 {0}% 증폭된 추가 피해 획득"
+		#|-1 "소환수가 {0}% 감폭된 추가 피해 획득" negate 1
+description quality_duration_final
+	1 active_skill_quality_duration_+%_final
+	2
+		1|# "Minions have {0}% more Duration"
+		#|-1 "Minions have {0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 지속시간 {0}% 증폭"
+		#|-1 "소환수의 지속시간 {0}% 감폭" negate 1
+description additive_bow_damage_applies_to_minions
+	1 additive_modifiers_to_bow_damage_also_apply_to_minions
+	1
+		# "Increases and Reductions to Damage with Bows also apply to Minions"
+	lang "Korean"
+	1
+		# "활 피해 증가 및 감소가 소환수에게도 적용"
+description area_damage_incr
+	1 area_damage_+%
+	2
+		1|# "Minions deal {0}% increased Area Damage"
+		#|-1 "Minions deal {0}% reduced Area Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 범위 피해 {0}% 증가"
+		#|-1 "소환수가 주는 범위 피해 {0}% 감소" negate 1
+description attack_and_cast_speed_incr
+	1 attack_and_cast_speed_+%
+	2
+		1|# "Minions have {0}% increased Attack and Cast Speed"
+		#|-1 "Minions have {0}% reduced Attack and Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격 및 시전 속도 {0}% 증가"
+		#|-1 "소환수의 공격 및 시전 속도 {0}% 감소" negate 1
+description mana_leech_from_any
+	1 attack_skill_mana_leech_from_any_damage_permyriad
+	1
+		1|# "Minion's Attack Skills Leech {0}% of Damage as Mana" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+	lang "Korean"
+	1
+		1|# "소환수의 공격 스킬이 피해의 {0}%를 마나로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextManaLeech
+description attack_speed_with_rage
+	1 attack_speed_+%_with_atleast_20_rage
+	2
+		1|# "Minions have {0}% increased Attack Speed while they have at least 20 Rage"
+		#|-1 "Minions Skills have {0}% reduced Attack Speed while they have at least 20 Rage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 격노가 20 이상인 경우 소환수의 공격 속도 {0}% 증가"
+		#|-1 "소환수의 격노가 20 이상인 경우 소환수 스킬의 공격 속도 {0}% 감소" negate 1
+description attack_impale_chance
+	1 attacks_impale_on_hit_%_chance
+	2
+		1|99 "Minions' Attacks have {0}% chance to Impale Enemies on Hit" reminderstring ReminderTextImpale
+		100|# "Minions' Attacks always Impale Enemies on Hit" reminderstring ReminderTextImpale
+	lang "Korean"
+	2
+		1|99 "소환수의 공격이 명중 시 {0}%의 확률로 적을 꿰뚫음" reminderstring ReminderTextImpale
+		100|# "소환수의 공격이 명중 시 항상 적을 꿰뚫음" reminderstring ReminderTextImpale
+description barrage_projectile_spread_incr
+	1 barrage_support_projectile_spread_+%
+	2
+		1|# "Projectiles Fired by Minions have {0}% increased Projectile spread"
+		#|-1 "Projectiles Fired by Minions have {0}% reduced Projectile spread" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 발사하는 투사체의 투사체 확산 범위 {0}% 증가"
+		#|-1 "소환수가 발사하는 투사체의 투사체 확산 범위 {0}% 감소" negate 1
+description ailment_duration_incr
+	1 base_all_ailment_duration_+%
+	2
+		1|# "{0}% increased Duration of Ailments inflicted by Minions" reminderstring ReminderTextAilments
+		#|-1 "{0}% reduced Duration of Ailments inflicted by Minions" negate 1 reminderstring ReminderTextAilments
+	lang "Korean"
+	2
+		1|# "소환수가 유발하는 상태 이상 지속시간 {0}% 증가" reminderstring ReminderTextAilments
+		#|-1 "소환수가 유발하는 상태 이상 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextAilments
+description poison_chance
+	1 base_chance_to_poison_on_hit_%
+	2
+		1|99 "Minions have {0}% chance to Poison on Hit" reminderstring ReminderTextPoison
+		100|# "Minions always Poison on Hit" reminderstring ReminderTextPoison
+	lang "Korean"
+	2
+		1|99 "소환수의 공격이 명중 시 {0}%의 확률로 적 중독 유발" reminderstring ReminderTextPoison
+		100|# "소환수가 명중 시 항상 중독 유발" reminderstring ReminderTextPoison
+description deal_no_chaos
+	1 base_deal_no_chaos_damage
+	1
+		# "Minions deal no Chaos Damage"
+	lang "Korean"
+	1
+		# "소환수가 주는 카오스 피해 없음"
+description inflict_cold_exposure_on_hit_chance
+	1 base_inflict_cold_exposure_on_hit_%_chance
+	2
+		1|99 "Minions have {0}% chance to inflict Cold Exposure on Hit" reminderstring ReminderTextColdExposure
+		100|# "Minions inflict Cold Exposure on Hit" reminderstring ReminderTextColdExposure
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}%의 확률로 냉기 노출 유발" reminderstring ReminderTextColdExposure
+		100|# "소환수가 명중 시 냉기 노출 유발" reminderstring ReminderTextColdExposure
+description inflict_fire_exposure_on_hit_chance
+	1 base_inflict_fire_exposure_on_hit_%_chance
+	2
+		1|99 "Minions have {0}% chance to inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+		100|# "Minions inflict Fire Exposure on Hit" reminderstring ReminderTextFireExposure
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}%의 확률로 화염 노출 유발" reminderstring ReminderTextFireExposure
+		100|# "소환수가 명중 시 화염 노출 유발" reminderstring ReminderTextFireExposure
+description inflict_lightning_exposure_on_hit_chance
+	1 base_inflict_lightning_exposure_on_hit_%_chance
+	2
+		1|99 "Minions have {0}% chance to inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+		100|# "Minions inflict Lightning Exposure on Hit" reminderstring ReminderTextLightningExposure
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}%의 확률로 번개 노출 유발" reminderstring ReminderTextLightningExposure
+		100|# "소환수가 명중 시 번개 노출 유발" reminderstring ReminderTextLightningExposure
+description life_leech_from_chaos_damage
+	1 base_life_leech_from_chaos_damage_permyriad
+	1
+		1|# "Minions have {0}% of Chaos Damage Leeched as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "소환수가 카오스 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description ghost_rare_chance
+	1 chance_to_summon_support_ghost_on_hitting_rare_or_unique_%
+	2
+		1|99 "{0}% chance to Summon a Phantasm when Non-Phantasm Minions Hit a Rare or Unique Enemy"
+		100|# "Summon a Phantasm when Non-Phantasm Minions Hit a Rare or Unique Enemy"
+	lang "Korean"
+	2
+		1|99 "비-환영 소환수가 희귀 또는 고유 적 명중 시 {0}%의 확률로 환영 1개체 소환"
+		100|# "비-환영 소환수가 희귀 또는 고유 적 명중 시 환영 1개체 소환"
+description ghost_chance
+	1 chance_to_summon_support_ghost_on_killing_blow_%
+	2
+		1|99 "{0}% chance to Summon a Phantasm when Non-Phantasm Minions deal a Killing Blow"
+		100|# "Summon a Phantasm when Non-Phantasm Minions deal a Killing Blow"
+	lang "Korean"
+	2
+		1|99 "비-환영 소환수가 최후의 일격 사용 시 {0}%의 확률로 환영 1개체 소환"
+		100|# "비-환영 소환수가 최후의 일격 사용 시 환영 1개체 소환"
+description cold_ailment_effect_incr
+	1 cold_ailment_effect_+%
+	2
+		1|# "Minions Have {0}% increased Effect of Cold Ailments" reminderstring ReminderTextColdAilments
+		#|-1 "Minions Have {0}% reduced Effect of Cold Ailments" negate 1 reminderstring ReminderTextColdAilments
+	lang "Korean"
+	2
+		1|# "소환수의 냉기 상태 이상 효과 {0}% 증가" reminderstring ReminderTextColdAilments
+		#|-1 "소환수의 냉기 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextColdAilments
+description cover_in_frost_on_hit_chance
+	1 cover_in_frost_on_hit_%
+	2
+		1|99 "Minions have {0}% chance to Cover Enemies in Frost on Hit" reminderstring ReminderTextCoveredInFrost
+		100|# "Minions Cover Enemies in Frost on Hit" reminderstring ReminderTextCoveredInFrost
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}% 확률로 적이 서리로 뒤덮임" reminderstring ReminderTextCoveredInFrost
+		100|# "소환수가 명중 시 적이 서리로 뒤덮임" reminderstring ReminderTextCoveredInFrost
+description crit_chance_per_righteous_charge
+	1 critical_strike_chance_+%_per_righteous_charge
+	2
+		1|# "This Skill has {0}% increased Critical Strike Chance per Inspiration Charge"
+		#|-1 "This Skill has {0}% reduced Critical Strike Chance per Inspiration Charge" negate 1
+	lang "Korean"
+	2
+		1|# "영감 충전 하나당 해당 스킬의 치명타 확률 {0}% 증가"
+		#|-1 "영감 충전 하나당 해당 스킬의 치명타 확률 {0}% 감소" negate 1
+description critical_strike_chance_incr_vs_blinded_enemies
+	1 critical_strike_chance_+%_vs_blinded_enemies
+	2
+		1|# "Minions have {0}% increased Critical Strike Chance against Blinded Enemies"
+		#|-1 "Minions have {0}% reduced Critical Strike Chance against Blinded Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 실명된 적에 대한 치명타 확률 {0}% 증가"
+		#|-1 "소환수의 실명된 적에 대한 치명타 확률 {0}% 감소" negate 1
+description cruelty_effect_incr
+	1 cruelty_effect_+%
+	2
+		1|# "{0}% increased Effect of Cruelty granted by Minions"
+		#|-1 "{0}% reduced Effect of Cruelty granted by Minions" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 부여하는 잔혹 효과 {0}% 증가"
+		#|-1 "소환수가 부여하는 잔혹 효과 {0}% 감소" negate 1
+description crush_on_hit_chance
+	1 crush_for_2_seconds_on_hit_%_chance
+	2
+		1|99 "Minions have {}% chance to Crush for 2 seconds on Hit" reminderstring ReminderTextCrushedNoDuration
+		100|# "Minions Crush for 2 seconds on Hit" reminderstring ReminderTextCrushedNoDuration
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {}%의 확률로 2초 동안 타쇄" reminderstring ReminderTextCrushedNoDuration
+		100|# "소환수가 명중 시 2초 동안 타쇄" reminderstring ReminderTextCrushedNoDuration
+description damage_if_consumed_corpse_recently
+	1 damage_+%_if_you_have_consumed_a_corpse_recently
+	2
+		1|# "Minions deal {0}% increased Damage if they have Consumed a corpse Recently" reminderstring ReminderTextRecently
+		#|-1 "Minions deal {0}% reduced Damage if they have Consumed a corpse Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|# "소환수가 최근 4초 이내 시신을 소모한 경우 소환수가 주는 피해 {0}% 증가" reminderstring ReminderTextRecently
+		#|-1 "소환수가 최근 4초 이내 시신을 소모한 경우 소환수가 주는 피해 {0}% 감소" negate 1 reminderstring ReminderTextRecently
+description damage_incr_per_ailment
+	1 damage_+%_vs_enemies_per_freeze_shock_ignite
+	2
+		1|# "Minions deal {0}% increased Damage with Hits and Ailments per Freeze, Shock or Ignite on Enemy" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions deal {0}% reduced Damage with Hits and Ailments  per Freeze, Shock or Ignite on Enemy" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "적에게 유발된 동결, 감전 또는 점화 하나당 소환수가 주는 적중 피해 및 상태 이상 피해 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "적에게 유발된 동결, 감전 또는 점화 하나당 소환수가 주는 적중 피해 및 상태 이상 피해 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description damage_while_es_leeching
+	1 damage_+%_while_es_leeching
+	2
+		1|# "Minions deal {0}% increased Damage while Leeching Energy Shield"
+		#|-1 "Minions deal {0}% reduced Damage while Leeching Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막을 흡수하는 동안 소환수가 주는 피해 {0}% 증가"
+		#|-1 "에너지 보호막을 흡수하는 동안 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_while_life_leeching
+	1 damage_+%_while_life_leeching
+	2
+		1|# "Minions deal {0}% increased Damage while Leeching Life"
+		#|-1 "Minions deal {0}% reduced Damage while Leeching Life" negate 1
+	lang "Korean"
+	2
+		1|# "생명력을 흡수하는 동안 소환수가 주는 피해 {0}% 증가"
+		#|-1 "생명력을 흡수하는 동안 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_while_mana_leeching
+	1 damage_+%_while_mana_leeching
+	2
+		1|# "Minions deal {0}% increased Damage while Leeching Mana"
+		#|-1 "Minions deal {0}% reduced Damage while Leeching Mana" negate 1
+	lang "Korean"
+	2
+		1|# "마나를 흡수하는 동안 소환수가 주는 피해 {0}% 증가"
+		#|-1 "마나를 흡수하는 동안 소환수가 주는 피해 {0}% 감소" negate 1
+description damage_per_enemy_curse_incr
+	1 damage_vs_cursed_enemies_per_enemy_curse_+%
+	2
+		1|# "Minions deal {0}% increased Damage with Hits and Ailments per Curse on Enemy" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions deal {0}% reduced Damage with Hits and Ailments per Curse on Enemy" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "적에게 걸린 저주 하나당 소환수가 주는 적중 피해 및 상태 이상 피해 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "적에게 걸린 저주 하나당 소환수가 주는 적중 피해 및 상태 이상 피해 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description damage_vs_enemies_on_low_life_incr
+	1 damage_vs_enemies_on_low_life_+%
+	1
+		1|# "Minions deal {0}% increased Damage with Hits against Enemies that are on Low Life"
+	lang "Korean"
+	1
+		1|# "소환수가 낮은 생명력 상태의 적 적중 시 주는 피해 {0}% 증가"
+description damaging_ailments_deal_damage_faster
+	1 damaging_ailments_deal_damage_+%_faster
+	1
+		# "Damaging Ailments inflicted by Minions deal damage {0}% faster" reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	1
+		# "소환수가 유발하는 상태 이상 피해 {0}%만큼 가속" reminderstring ReminderTextDamagingAilments
+description decay_on_hit
+	1 deal_chaos_damage_per_second_for_10_seconds_on_hit
+	1
+		# "Minions inflict Decay on Hit, dealing {0} Chaos Damage per second for 8 seconds"
+	lang "Korean"
+	1
+		# "소환수가 명중 시 부패를 유발하여, 8초 동안 1초마다 {0} 카오스 피해를 줌"
+description deal_no_elemental
+	1 deal_no_elemental_damage
+	1
+		# "Minions deal no Elemental Damage"
+	lang "Korean"
+	1
+		# "소환수가 주는 원소 피해 없음"
+description deathmark_minion_damage
+	1 deathmark_minion_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description minion_actor_level_is_user_level
+	1 display_minion_actor_level_is_user_level
+	1
+		# "Minions' Level is equal to yours"
+	lang "Korean"
+	1
+		# "소환수의 레벨이 플레이어의 레벨과 동일"
+description skitterbot_chill
+	1 display_skitterbot_chilling_aura
+	1
+		# "Chilling Skitterbot's Aura Chills Enemies near it" reminderstring ReminderTextChillNonHitNoDuration
+	lang "Korean"
+	1
+		# "냉각 원격 기폭 장치의 오라가 주변의 적을 냉각시킴" reminderstring ReminderTextChillNonHitNoDuration
+description skitterbot_shock
+	1 display_skitterbot_shocking_aura
+	1
+		# "Shocking Skitterbot's Aura Shocks Enemies near it" reminderstring ReminderTextShockNonHitNoDuration
+	lang "Korean"
+	1
+		# "감전 원격 기폭 장치의 오라가 주변의 적을 감전시킴" reminderstring ReminderTextShockNonHitNoDuration
+description skitterbot_scorch
+	1 summon_fire_skitterbot
+	1
+		# "Scorching Skitterbot's Aura Scorches Enemies near it" reminderstring ReminderTextScorchNonHitNoDuration
+	lang "Korean"
+	1
+		# "작열하는 원격 기폭 장치의 오라가 주변의 적을 그을림" reminderstring ReminderTextScorchNonHitNoDuration
+description elemental_damage_per_righteous_charge
+	1 elemental_damage_+%_final_per_righteous_charge
+	2
+		1|# "This Skill has {0}% more Elemental Damage per Inspiration Charge"
+		#|-1 "This Skill has {0}% less Elemental Damage per Inspiration Charge" negate 1
+	lang "Korean"
+	2
+		1|# "영감 충전 하나당 해당 스킬의 원소 피해 {0}% 증폭"
+		#|-1 "영감 충전 하나당 해당 스킬의 원소 피해 {0}% 감폭" negate 1
+description shocked_movement_speed
+	1 enemies_you_shock_movement_speed_+%
+	2
+		1|# "Enemies Shocked by Minions have {0}% increased Movement Speed"
+		#|-1 "Enemies Shocked by Minions have {0}% reduced Movement Speed" negate 1 canonical_line
+	lang "Korean"
+	2
+		1|# "소환수가 감전시킨 적의 이동 속도 {0}% 증가"
+		#|-1 "소환수가 감전시킨 적의 이동 속도 {0}% 감소" negate 1 canonical_line
+description shocked_enemy_physical_damage
+	1 enemies_you_shock_take_%_increased_physical_damage
+	2
+		1|# "Enemies Shocked by Minions take {0}% increased Physical Damage"
+		#|-1 "Enemies Shocked by Minions take {0}% reduced Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 감전시킨 적이 받는 물리 피해 {0}% 증가"
+		#|-1 "소환수가 감전시킨 적이 받는 물리 피해 {0}% 감소" negate 1
+description enemy_phys_reduction_percent
+	1 enemy_phys_reduction_%_penalty_vs_hit
+	1
+		# "Minions Overwhelm {0}% Physical Damage Reduction" reminderstring ReminderTextOverwhelm
+	lang "Korean"
+	1
+		# "소환수가 물리 피해 감소의 {0}% 압도" reminderstring ReminderTextOverwhelm
+description enemies_explode_random_element_on_killing_blow
+	1 explode_enemies_for_10%_life_as_random_element_on_killing_blow_chance_%
+	2
+		1|99 "Minion Killing Blows cause Enemies to have a {0}% chance to Explode, dealing a tenth of their maximum Life as Damage of a Random Element"
+		100|# "Minion Killing Blows cause Enemies to Explode, dealing a tenth of their maximum Life as Damage of a Random Element"
+	lang "Korean"
+	2
+		1|99 "소환수의 최후의 일격이 적을 {0}%의 확률로 폭발시켜, 해당 적 최대 생명력의 1/10을 무작위 원소 피해로 줌"
+		100|# "소환수의 최후의 일격이 적을 폭발시켜, 해당 적 최대 생명력의 1/10을 무작위 원소 피해로 줌"
+description frenzy_on_kill_blow_vs_5_poison
+	1 gain_frenzy_charge_on_killing_blow_vs_enemies_with_5+_poisons_%
+	2
+		#|99 "Minions have {0}% chance to gain a Frenzy Charge on Killing Blow against Enemies with at least 5 Poisons"
+		100|# "Minions gain a Frenzy Charge on Killing Blow against Enemies with at least 5 Poisons"
+	lang "Korean"
+	2
+		#|99 "소환수가 중독 5중첩 이상인 적을 상대로 최후의 일격 시 {0}%의 확률로 격분 충전 획득"
+		100|# "소환수가 중독 5중첩 이상인 적을 상대로 최후의 일격 시 격분 충전 획득"
+description gain_power_charge_on_kill_chance
+	1 gain_power_charge_on_kill_with_hit_%
+	1
+		1|# "Minions have {0}% chance to gain a Power Charge on Killing Blow"
+	lang "Korean"
+	1
+		1|# "소환수가 최후의 일격 시 {0}%의 확률로 권능 충전 획득"
+description tul_summon_maximum_allowed_demons
+	1 graft_skill_tul_summon_maximum_allowed_demons
+	1
+		1|# "Maximum {0} Hiveborn"
+	lang "Korean"
+	1
+		1|# "벌레집 태생 최대치 {0}마리"
+description elemental_relic_explode
+	1 guardian_relic_explode_on_death_for_%_life_as_element_damage
+	1
+		1|# "Minions Explode on Death, dealing {0}% of their maximum Life as Damage of their chosen Element"
+	lang "Korean"
+	1
+		1|# "소환수가 사망 시 폭발하여, 소환수의 최대 생명력의 {0}%를 선택된 원소 피해로 줌"
+description hits_cannot_kill
+	1 hits_cannot_kill_enemies
+	1
+		# "Minion Hits cannot kill Enemies"
+	lang "Korean"
+	1
+		# "소환수의 명중으로 적 처치 불가"
+description hits_grant_cruelty
+	1 hits_grant_cruelty
+	1
+		# "Minions gain Cruelty on Hit" reminderstring ReminderTextCruelty
+	lang "Korean"
+	1
+		# "소환수가 명중 시 소환수가 잔혹 획득" reminderstring ReminderTextCruelty
+description ignites_apply_fire_res
+	1 ignites_apply_fire_resistance_+
+	1
+		# "Enemies Ignited by Minions have {0:+d}% to Fire Resistance"
+	lang "Korean"
+	1
+		# "소환수에 의해 점화된 적의 화염 저항 {0:+d}%"
+description impale_effect
+	1 impale_debuff_effect_+%
+	2
+		1|# "Minions' Attacks have {0}% increased Impale Effect"
+		#|-1 "Minions' Attacks have {0}% reduced Impale Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수 공격의 꿰뚫기 효과 {0}% 증가"
+		#|-1 "소환수 공격의 꿰뚫기 효과 {0}% 감소" negate 1
+description impale_phys_reduction_penalty
+	1 impale_phys_reduction_%_penalty
+	1
+		# "Impale Damage dealt to Enemies Impaled by Minions Overwhelms {0}% Physical Damage Reduction" reminderstring ReminderTextOverwhelm
+	lang "Korean"
+	1
+		# "소환수에게 꿰뚫린 적에게 주는 꿰뚫기 피해가 물리 피해 감소의 {0}% 압도" reminderstring ReminderTextOverwhelm
+description impale_phys_damage
+	1 impale_support_physical_damage_+%_final
+	1
+		# "Minions deal {0}% more Physical Damage"
+	lang "Korean"
+	1
+		# "소환수가 주는 물리 피해 {0}% 증폭"
+description inc_area_plus_damage_final
+	1 inc_aoe_plus_more_area_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Area Damage"
+		#|-1 "Minions deal {0}% less Area Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 범위 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 범위 피해 {0}% 감폭" negate 1
+description infernal_legion_radius_plus
+	1 infernal_legion_minions_have_burning_effect_radius_+
+	2
+		10 "Minions have {0:+d} metre to Radius of their Burning Effect" locations_to_metres 1
+		# "Minions have {0:+d} metres to Radius of their Burning Effect" locations_to_metres 1
+	lang "Korean"
+	2
+		10 "소환수의 화상 효과 범위 {0:+d}미터" locations_to_metres 1
+		# "소환수의 화상 효과 범위 {0:+d}미터" locations_to_metres 1
+description inflict_all_exposure_on_hit
+	1 inflict_all_exposure_on_hit
+	1
+		# "Minions inflict Fire, Cold, and Lightning Exposure on Hit" reminderstring ReminderTextAll3Exposures
+	lang "Korean"
+	1
+		# "소환수가 명중 시 화염, 냉기, 번개 노출 유발" reminderstring ReminderTextAll3Exposures
+description support_inflict_equivalent_chill_on_shock
+	1 inflict_equivalent_chill_on_inflicting_shock_with_hits
+	1
+		# "Chill enemies when they are Shocked by Hits from Minons, reducing Action Speed by Shock Effect"
+	lang "Korean"
+	1
+		# "적이 소환수들의 명중으로 감전될 때 해당 적을 냉각시켜, 감전 효과로 인한 동작 속도를 감소시킴"
+
+description support_inflict_equivalent_shock_on_chill
+	1 inflict_equivalent_shock_on_inflicting_chill_with_hits
+	1
+		# "Shock enemies when they are Chilled by Hits from Minons, increasing Damage taken by Chill Effect"
+	lang "Korean"
+	1
+		# "적이 소환수들의 명중으로 냉각될 때 해당 적을 감전시켜, 냉각 효과로 받는 피해를 증가시킴"
+
+description normal_or_magic_enemy_cull
+	1 kill_normal_or_magic_enemy_on_hit_if_under_x%_life
+	1
+		1|# "Minions kill Normal and Magic Rarity Enemies that have {0}% Life or lower when Hit"
+	lang "Korean"
+	1
+		1|# "소환수가 명중 시 생명력이 {0}% 이하인 일반 및 마법 희귀도 적 처치"
+description killing_blow_consume_corpse_add_flat_life
+	2 killing_blow_consumes_corpse_restore_x_life killing_blow_consumes_corpse_restore_x_mana
+	3
+		1|# 1|# "Minions' Killing Blows Consume corpses to Recover {0} Life and {1} Mana"
+		1|# 0 "Minions' Killing Blows Consume corpses to Recover {0} Life"
+		0   1|# "Minions' Killing Blows Consume corpses to Recover {1} Mana"
+	lang "Korean"
+	3
+		1|# 1|# "소환수의 최후의 일격 시 시체를 소모해 생명력 {0} 및 마나 {1} 회복"
+		1|# 0 "소환수의 최후의 일격 시 시체를 소모해 생명력 {0} 회복"
+		0   1|# "소환수의 최후의 일격 시 시체를 소모해 마나 {1} 회복"
+description close_range_knockback
+	1 knockback_chance_%_at_close_range
+	1
+		# "Minions have {0}% chance to Knock Enemies Back with Hits at Close Range" reminderstring ReminderTextCloseRange
+	lang "Korean"
+	1
+		# "소환수의 공격이 근거리에서 적중 시 {0}%의 확률로 적을 밀어냄" reminderstring ReminderTextCloseRange
+description lightning_ailment_effect_incr
+	1 lightning_ailment_effect_+%
+	2
+		1|# "Minions have {0}% increased Effect of Lightning Ailments" reminderstring ReminderTextLightningAilments
+		#|-1 "Minions have {0}% reduced Effect of Lightning Ailments" negate 1 reminderstring ReminderTextLightningAilments
+	lang "Korean"
+	2
+		1|# "소환수의 번개 상태 이상 효과 {0}% 증가" reminderstring ReminderTextLightningAilments
+		#|-1 "소환수의 번개 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextLightningAilments
+description maim_chance
+	1 maim_on_hit_%
+	2
+		1|99 "Minions Attacks have {0}% chance to Maim on Hit"
+		100|# "Minions Attacks always Maim on Hit"
+	lang "Korean"
+	2
+		1|99 "소환수의 공격이 명중 시 {0}%의 확률로 힘줄 절단"
+		100|# "소환수의 공격이 명중 시 항상 힘줄 절단"
+description mine_crit_chance_per_power_charge
+	1 mine_critical_strike_chance_+%_per_power_charge
+	2
+		1|# "Minions' Skills have {0}% increased Critical Strike Chance per Power Charge if used by Mines"
+		#|-1 "Minions' Skills have {0}% reduced Critical Strike Chance per Power Charge if used by Mines" negate 1
+	lang "Korean"
+	2
+		1|# "지뢰에 의해 사용될 시 소환수의 스킬이 권능 충전 하나당 치명타 확률 {0}% 증가"
+		#|-1 "지뢰에 의해 사용될 시 소환수의 스킬이 권능 충전 하나당 치명타 확률 {0}% 감소" negate 1
+description mine_throwing_speed_per_frenzy_charge
+	1 mine_throwing_speed_+%_per_frenzy_charge
+	2
+		1|# "This Skill and Minions have {0}% increased Mine Throwing Speed per Frenzy Charge"
+		#|-1 "This Skill and Minions have {0}% reduced Mine Throwing Speed per Frenzy Charge" negate 1
+	lang "Korean"
+	2
+		1|# "격분 충전 하나당 이 스킬 및 소환수의 지뢰 투척 속도 {0}% 증가"
+		#|-1 "격분 충전 하나당 이 스킬 및 소환수의 지뢰 투척 속도 {0}% 감소" negate 1
+description support_ice_bite_damage
+	2 minimum_added_cold_damage_per_frenzy_charge maximum_added_cold_damage_per_frenzy_charge
+	1
+		# # "Minions have {0} to {1} added Cold Damage per Frenzy Charge"
+	lang "Korean"
+	1
+		# # "격분 충전 하나당 소환수의 냉기 피해 {0}~{1} 추가"
+description minion_attack_speed_more
+	1 active_skill_minion_attack_speed_+%_final
+	2
+		1|# "Minions have {0}% more Attack Speed"
+		#|-1 "Minions have {0}% less Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격 속도 {0}% 증폭"
+		#|-1 "소환수의 공격 속도 {0}% 감폭" negate 1
+description support_burning_minions_self_burn
+	1 minion_fire_damage_%_of_maximum_life_taken_per_minute
+	1
+		1|# "Minions take {0}% of their Maximum Life as Fire Damage per second" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		1|# "소환수가 1초마다 자신의 최대 생명력의 {0}%를 화염 피해로 받음" per_minute_to_per_second 1
+description minions_always_hit
+	1 minion_global_always_hit
+	1
+		# "Minions' Hits can't be Evaded"
+	lang "Korean"
+	1
+		# "소환수의 명중 회피 불가"
+description minion_grants_rampage_on_hit
+	1 minion_grants_rampage_kill_to_parent_on_hitting_rare_or_unique_enemy_%
+	2
+		1|99 "{0}% chance to gain a Rampage Kill when Minions Hit a Rare or Unique Enemy"
+		100|# "Gain a Rampage Kill when Minions Hit a Rare or Unique Enemy"
+	lang "Korean"
+	2
+		1|99 "소환수가 희귀 또는 고유 적 명중 시 {0}%의 확률로 광란 처치 획득"
+		100|# "소환수가 희귀 또는 고유 적 명중 시 광란 처치 획득"
+description minion_level_is_user_level_capped
+	1 minion_actor_level_is_user_level_up_to_maximum
+	1
+		# "Minions' Level is equal to yours, up to a maximum of {0}"
+	lang "Korean"
+	1
+		# "소환수의 레벨이 플레이어의 레벨과 동일, 최대 {0}레벨"
+description minion_elemental_damage_life_leech
+	1 minion_life_leech_from_elemental_damage_permyriad
+	1
+		1|# "Minions Leech {0}% of Elemental Damage as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "소환수가 원소 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description feeding_frenzy_life_on_hit
+	1 minion_recover_%_maximum_life_on_hit
+	1
+		1|# "Minions recover {0}% of Life on Hit"
+	lang "Korean"
+	1
+		1|# "소환수가 명중 시 생명력의 {0}% 회복"
+description minions_cannot_taunt
+	1 minions_cannot_taunt_enemies
+	1
+		# "Minions cannot Taunt Enemies"
+	lang "Korean"
+	1
+		# "소환수가 적 도발 불가"
+description minion_claw_crit_multi
+	1 modifiers_to_claw_critical_strike_chance_apply_minion_critical_strike_chance
+	1
+		1|# "Modifiers to Claw Critical Strike Chance also apply to Minions"
+	lang "Korean"
+	1
+		1|# "클로 치명타 확률 관련 속성 부여가 소환수에도 적용"
+description minion_claw_crit
+	1 modifiers_to_claw_critical_strike_multiplier_apply_minion_critical_strike_multiplier
+	1
+		1|# "Modifiers to Claw Critical Strike Multiplier also apply to Minions"
+	lang "Korean"
+	1
+		1|# "클로 치명타 피해 배율 속성 부여가 소환수에도 적용"
+description multiple_projectiles_projectile_spread_incr
+	1 multiple_projectiles_projectile_spread_+%
+	2
+		1|# "Projectiles Fired by Minions have {0}% increased Projectile spread"
+		#|-1 "Projectiles Fired by Minions have {0}% reduced Projectile spread" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 발사하는 투사체의 투사체 확산 범위 {0}% 증가"
+		#|-1 "소환수가 발사하는 투사체의 투사체 확산 범위 {0}% 감소" negate 1
+description multistrike_area_of_effect_per_repeat
+	1 multistrike_area_of_effect_+%_per_repeat
+	2
+		1|# "Minion's Melee Attacks have {0}% increased Area of Effect per Repeat"
+		#|-1 "Minion's Melee Attacks have {0}% reduced Area of Effect per Repeat" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 근접 공격을 반복할 때마다 해당 공격의 효과 범위 {0}% 증가"
+		#|-1 "소환수가 근접 공격을 반복할 때마다 해당 공격의 효과 범위 {0}% 감소" negate 1
+description multistrike_first_repeat_damage
+	1 multistrike_damage_+%_final_on_first_repeat
+	2
+		1|# "Minion's Melee Attack's First Repeat deals {0}% more Damage"
+		#|-1 "Minion's Melee Attack's First Repeat deals {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 공격 첫 번째 반복 시 주는 피해 {0}% 증폭"
+		#|-1 "소환수의 근접 공격 첫 번째 반복 시 주는 피해 {0}% 감폭" negate 1
+description multistrike_second_repeat_damage
+	1 multistrike_damage_+%_final_on_second_repeat
+	2
+		1|# "Minion's Melee Attack's Second Repeat deals {0}% more Damage"
+		#|-1 "Minion's Melee Attack's Second Repeat deals {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 공격 두 번째 반복 시 주는 피해 {0}% 증폭"
+		#|-1 "소환수의 근접 공격 두 번째 반복 시 주는 피해 {0}% 감폭" negate 1
+description multistrike_third_repeat_damage
+	1 multistrike_damage_+%_final_on_third_repeat
+	2
+		1|# "Minion's Melee Attack's Third Repeat deals {0}% more Damage"
+		#|-1 "Minion's Melee Attack's Third Repeat deals {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 공격을 세 번째 반복 시 주는 피해 {0}% 증폭"
+		#|-1 "소환수의 근접 공격을 세 번째 반복 시 주는 피해 {0}% 감폭" negate 1
+description ailment_non_damaging_incr_effect
+	1 non_damaging_ailment_effect_+%
+	2
+		1|# "Minions have {0}% increased Effect of non-Damaging Ailments on Enemies" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "Minions have {0}% reduced Effect of non-Damaging Ailments on Enemies" negate 1 reminderstring ReminderTextNonDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수가 적에게 적용하는 비-피해 상태 이상 효과 {0}% 증가" reminderstring ReminderTextNonDamagingAilments
+		#|-1 "소환수가 적에게 적용하는 비-피해 상태 이상 효과 {0}% 감소" negate 1 reminderstring ReminderTextNonDamagingAilments
+description non_reaper_minion_damage_final
+	1 active_skill_non_reaper_minion_damage_+%_final
+	2
+		1|# "Reapers cause your Non-Reaper Minions to deal {0}% more Damage"
+		#|-1 "Reapers cause your Non-Reaper Minions to deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "수확자의 영향으로 플레이어의 비-수확자 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "수확자의 영향으로 플레이어의 비-수확자 소환수가 주는 피해 {0}% 감폭" negate 1
+description non_reaper_minion_life_final
+	1 active_skill_non_reaper_minion_maximum_life_+%_final
+	2
+		1|# "Reapers cause your Non-Reaper Minions to have {0}% more Maximum Life"
+		#|-1 "Reapers cause your Non-Reaper Minions to have {0}% less Maximum Life" negate 1
+	lang "Korean"
+	2
+		1|# "수확자의 영향으로 플레이어의 비-수확자 소환수의 최대 생명력 {0}% 증폭"
+		#|-1 "수확자의 영향으로 플레이어의 비-수확자 소환수의 최대 생명력 {0}% 감폭" negate 1
+description number_of_arbalists
+	1 number_of_arbalists
+	2
+		1 "Summons {0} Arbalist"
+		# "Summons {0} Arbalists"
+	lang "Korean"
+	2
+		1 "석궁병 {0}마리 소환"
+		# "석궁병 {0}마리 소환"
+description number_of_harbinger_arcane_ascendancy_minions
+	1 number_of_harbinger_arcane_ascendancy_minions_allowed
+	2
+		1 "Maximum {0} Visiting Harbinger of the Arcane"
+		2|# "Maximum {0} Visiting Harbingers of the Arcane"
+	lang "Korean"
+	2
+		1 "방문하는 비전의 선구자 최대 {0}명"
+		2|# "방문하는 비전의 선구자 최대 {0}명"
+description number_of_harbinger_focus_ascendancy_minions
+	1 number_of_harbinger_focus_ascendancy_minions_allowed
+	2
+		1 "Maximum {0} Visiting Harbinger of Focus"
+		2|# "Maximum {0} Visiting Harbingers of Focus"
+	lang "Korean"
+	2
+		1 "방문하는 집중의 선구자 최대 {0}명"
+		2|# "방문하는 집중의 선구자 최대 {0}명"
+description number_of_harbinger_time_ascendancy_minions
+	1 number_of_harbinger_time_ascendancy_minions_allowed
+	2
+		1 "Maximum {0} Visiting Harbinger of Time"
+		2|# "Maximum {0} Visiting Harbingers of Time"
+	lang "Korean"
+	2
+		1 "방문하는 시간의 선구자 최대 {0}명"
+		2|# "방문하는 시간의 선구자 최대 {0}명"
+description number_of_tigers_allowed
+	1 number_of_tigers_allowed
+	2
+		1 "Maximum {0} Summoned Spectral Tiger"
+		2|# "Maximum {0} Summoned Spectral Tigers"
+	lang "Korean"
+	2
+		1 "소환된 영체 호랑이 최대 {0}마리"
+		2|# "소환된 영체 호랑이 최대 {0}마리"
+description firing_point_distance_incr
+	1 parallel_projectile_firing_point_x_dist_+%
+	2
+		1|# "Minions have {0}% increased distance between Firing Points"
+		#|-1 "Minions have {0}% reduced distance between Firing Points" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 발사 지점 간의 거리 {0}% 증가"
+		#|-1 "소환수의 발사 지점 간의 거리 {0}% 감소" negate 1
+description frenzy_charge_on_mine_detonate
+	1 %_chance_to_gain_frenzy_charge_on_mine_detonated_targeting_an_enemy
+	2
+		# "This Skill and Minions have {0}% chance to gain a Frenzy Charge when a Mine is Detonated targeting an Enemy"
+		100 "This Skill and Minions gain a Frenzy Charge when a Mine is Detonated targeting an Enemy"
+	lang "Korean"
+	2
+		# "지뢰가 적을 대상으로 폭발하면 {0}% 확률로 이 스킬 및 소환수가 격분 충전 획득"
+		100 "지뢰가 적을 대상으로 폭발하면 이 스킬 및 소환수가 격분 충전 획득"
+description frenzy_charge_on_trap_trig
+	1 %_chance_to_gain_frenzy_charge_on_trap_triggered_by_an_enemy
+	2
+		# "This Skill and Minions have {0}% chance to gain a Frenzy Charge when your Trap is triggered by an Enemy"
+		100 "This Skill and Minions have gain a Frenzy Charge when your Trap is triggered by an Enemy"
+	lang "Korean"
+	2
+		# "자신의 덫이 적에 의해 발동되면 {0}%의 확률로 이 스킬 및 소환수가 격분 충전 획득"
+		100 "자신의 덫이 적에 의해 발동되면 이 스킬 및 소환수가 격분 충전 획득"
+description power_charge_on_mine_detonate
+	1 %_chance_to_gain_power_charge_on_mine_detonated_targeting_an_enemy
+	2
+		# "This Skill and Minions have {0}% chance to gain a Power Charge when a Mine is Detonated targeting an Enemy"
+		100 "This Skill and Minions gain a Power Charge when a Mine is Detonated targeting an Enemy"
+	lang "Korean"
+	2
+		# "지뢰가 적을 대상으로 폭발하면 {0}% 확률로 이 스킬 및 소환수가 권능 충전 획득"
+		100 "지뢰가 적을 대상으로 폭발하면 이 스킬 및 소환수가 권능 충전 획득"
+description power_charge_on_trap_trig
+	1 %_chance_to_gain_power_charge_on_trap_triggered_by_an_enemy
+	2
+		# "This Skill and Minions have {0}% chance to gain a Power Charge when your Trap is triggered by an Enemy"
+		100 "This Skill and Minions gain a Power Charge when your Trap is triggered by an Enemy"
+	lang "Korean"
+	2
+		# "자신의 덫이 적에 의해 발동되면 {0}%의 확률로 이 스킬 및 소환수가 권능 충전 획득"
+		100 "자신의 덫이 적에 의해 발동되면 이 스킬 및 소환수가 권능 충전 획득"
+description projectile_additional_return_chance
+	1 projectile_additional_return_chance_%
+	1
+		# "Minions' Projectiles have {0}% chance to Return to you an additional Time"
+	lang "Korean"
+	1
+		# "소환수의 투사체가 {0}%의 확률로 1회 추가로 자신에게 돌아옴"
+description base_pierce_num
+	1 projectile_base_number_of_targets_to_pierce
+	2
+		1 "Minion's Projectiles Pierce an additional Target"
+		2|# "Minion's Projectiles Pierce {0} additional Targets"
+	lang "Korean"
+	2
+		1 "소환수의 투사체가 추가 대상 관통"
+		2|# "소환수의 투사체가 추가 대상 {0}개를 관통"
+description chance_to_not_pierce
+	1 projectile_chance_to_not_pierce_%
+	2
+		#|99 "Projectiles Fired by Minions have {0}% chance not to Pierce Enemies"
+		100|# "Projectiles Fired by Minions Cannot Pierce Enemies"
+	lang "Korean"
+	2
+		#|99 "소환수가 발사하는 투사체가 {0}%의 확률로 적을 관통하지 않음"
+		100|# "소환수가 발사하는 투사체가 적을 관통하지 않음"
+description proj_damage_if_pierced
+	1 projectile_damage_+%_if_pierced_enemy
+	2
+		1|# "Minions' Projectiles that have Pierced deal {0}% increased Damage"
+		#|-1 "Minions' Projectiles that have Pierced deal {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 관통한 투사체가 주는 피해 {0}% 증가"
+		#|-1 "소환수의 관통한 투사체가 주는 피해 {0}% 감소" negate 1
+description nearby_projectile_damage_incr
+	1 projectile_damage_+%_vs_nearby_enemies
+	2
+		1|# "Minions' Projectiles deal {0}% increased Damage with Hits to nearby Enemies"
+		#|-1 "Minions' Projectiles deal {0}% reduced Damage with Hits to nearby Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 투사체가 주변의 적에게 주는 명중 피해 {0}% 증가"
+		#|-1 "소환수의 투사체가 주변의 적에게 주는 명중 피해 {0}% 감소" negate 1
+description pierce_all_targets_in_x_range
+	1 projectiles_pierce_all_targets_in_x_range
+	2
+		10 "Projectiles Fired by Minions Pierce all Targets within {0} metre" locations_to_metres 1
+		# "Projectiles Fired by Minions Pierce all Targets within {0} metres" locations_to_metres 1
+	lang "Korean"
+	2
+		10 "소환수가 발사하는 투사체가 {0}미터 내의 모든 대상 관통" locations_to_metres 1
+		# "소환수가 발사하는 투사체가 {0}미터 내의 모든 대상 관통" locations_to_metres 1
+description life_recover_on_stun
+	1 recover_%_life_when_stunning_an_enemy_permyriad
+	1
+		# "Minions Recover {0}% of Life when you Stun an Enemy" divide_by_one_hundred 1
+	lang "Korean"
+	1
+		# "적 기절 시 소환수가 생명력의 {0}% 회복" divide_by_one_hundred 1
+description chaos_penetration
+	1 reduce_enemy_chaos_resistance_%
+	1
+		1|# "Minions Penetrate {0}% Chaos Resistance"
+	lang "Korean"
+	1
+		1|# "소환수가 카오스 저항 {0}% 관통"
+description critical_shock_effect
+	1 shock_effect_+%_with_critical_strikes
+	2
+		1|# "{0}% increased Effect of Shocks Minions inflict with Critical Strikes"
+		#|-1 "{0}% reduced Effect of Shocks Minions inflict with Critical Strikes" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 치명타로 유발한 감전의 효과 {0}% 증가"
+		#|-1 "소환수의 치명타로 유발한 감전의 효과 {0}% 감소" negate 1
+description skill_and_damaging_ailment_duration_incr
+	1 skill_effect_and_damaging_ailment_duration_+%
+	2
+		1|# "Minions have {0}% increased Duration of Skills and Duration of Damaging Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions have {0}% reduced Duration of Skills and Damaging Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수의 스킬 지속시간 및 피해를 주는 상태 이상 지속 시간{0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "소환수의 스킬 지속시간 및 피해를 주는 상태 이상 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description physical_damage_to_convert_to_chaos
+	1 skill_physical_damage_%_to_convert_to_chaos
+	1
+		1|# "Minions Convert {0}% of Physical Damage to Chaos Damage"
+	lang "Korean"
+	1
+		1|# "소환수 물리 피해의 {0}%를 카오스 피해로 전환"
+description physical_damage_to_convert_to_cold
+	2 skill_physical_damage_%_to_convert_to_cold active_skill_display_suppress_physical_to_cold_damage_conversion
+	1
+		1|# 0 "Minions Convert {0}% of Physical Damage to Cold Damage"
+	lang "Korean"
+	1
+		1|# 0 "소환수 물리 피해의 {0}%를 냉기 피해로 전환"
+description physical_damage_to_convert_to_fire
+	1 skill_physical_damage_%_to_convert_to_fire
+	1
+		1|# "Minions Convert {0}% of Physical Damage to Fire Damage"
+	lang "Korean"
+	1
+		1|# "소환수 물리 피해의 {0}%를 화염 피해로 전환"
+description skitterbots_trap_mine_damage
+	1 skitterbots_trap_mine_damage_+%_final
+	2
+		1|# "Skitterbots grant {0}% more Trap and Mine Damage"
+		#|-1 "Skitterbots grant {0}% less Trap and Mine Damage" negate 1
+	lang "Korean"
+	2
+		1|# "원격 기폭 장치가 덫 및 지뢰 피해 {0}% 증폭시킴"
+		#|-1 "원격 기폭 장치가 덫 및 지뢰 피해 {0}% 감폭시킴" negate 1
+description tiger_speed
+	1 spectral_tiger_grants_attack_and_cast_speed_+%
+	1
+		# "Buff grants {0}% increased Attack and Cast Speed"
+	lang "Korean"
+	1
+		# "버프 시 공격 및 시전 속도 {0}% 증가"
+description tiger_crit
+	1 spectral_tiger_grants_critical_strike_chance_+%
+	1
+		# "Buff grants {0}% increased Critical Strike Chance"
+	lang "Korean"
+	1
+		# "버프 시 치명타 확률 {0}% 증가"
+description wolf_damage
+	2 spectral_wolf_grants_attack_minimum_added_physical_damage spectral_wolf_grants_attack_maximum_added_physical_damage
+	1
+		# # "Buff grants {0} to {1} Added Attack Physical Damage"
+	lang "Korean"
+	1
+		# # "버프 시 공격 물리 피해 {0}~{1} 추가"
+description brutality_phys_damage
+	1 support_brutality_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Physical Damage"
+		#|-1 "Minions deal {0}% less Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 물리 피해 {0}% 감폭" negate 1
+description support_chilling_areas_incr_cold_dot_taken
+	1 support_chilling_areas_also_grant_cold_damage_taken_per_minute_+%
+	2
+		1|# "Enemies in Chilling Areas from Minion's Skills take {0}% increased Cold Damage over Time" reminderstring ReminderTextChillingArea
+		#|-1 "Enemies in Chilling Areas from Minion's Skills take {0}% reduced Cold Damage over Time" negate 1 reminderstring ReminderTextChillingArea
+	lang "Korean"
+	2
+		1|# "소환수의 스킬로 발생한 냉각 지역에 있는 적이 받는 지속 냉기 피해 {0}% 증가" reminderstring ReminderTextChillingArea
+		#|-1 "소환수의 스킬로 발생한 냉각 지역에 있는 적이 받는 지속 냉기 피해 {0}% 감소" negate 1 reminderstring ReminderTextChillingArea
+description support_chilling_areas_incr_cold_damage_taken
+	1 support_chilling_areas_also_grant_cold_damage_taken_+%_equal_to_slow_amount
+	1
+		# "Enemies in Chilling Areas from Minion's Skills have Cold Damage taken increased by Chill Effect" reminderstring ReminderTextChillingArea
+	lang "Korean"
+	1
+		# "소환수의 스킬로 발생한 냉각 지역에 있는 적이 냉각 효과로 받는 냉기 피해 증가" reminderstring ReminderTextChillingArea
+description support_chills_incr_cold_dot_taken
+	1 support_chills_also_grant_cold_damage_taken_per_minute_+%
+	2
+		1|# "Enemies Chilled by Minions take {0}% increased Cold Damage over Time"
+		#|-1 "Enemies Chilled by Minions take {0}% reduced Cold Damage over Time" negate 1
+	lang "Korean"
+	2
+		1|# "소환수에 의해 냉각된 적이 받는 지속 냉기 피해 {0}% 증가"
+		#|-1 "소환수에 의해 냉각된 적이 받는 지속 냉기 피해 {0}% 감소" negate 1
+description support_chills_incr_cold_damage_taken
+	1 support_chills_also_grant_cold_damage_taken_+%_equal_to_slow_amount
+	1
+		# "Enemies Chilled by Minions have Cold Damage taken increased by Chill Effect"
+	lang "Korean"
+	1
+		# "소환수에 의해 냉각된 적이 냉각 효과로 받는 냉기 피해 증가"
+description support_damage_full_es_incr
+	1 support_energy_shield_leech_damage_+%_on_full_energy_shield_final
+	2
+		1|# "Minions deal {0}% more Damage while on Full Energy Shield"
+		#|-1 "Minions deal {0}% less Damage while on Full Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막이 최대일 때 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "에너지 보호막이 최대일 때 소환수가 주는 피해 {0}% 감폭" negate 1
+description damage_while_es_leeching_more
+	1 support_energy_shield_leech_damage_+%_while_leeching_energy_shield_final
+	2
+		1|# "Minions deal {0}% more Damage while Leeching Energy Shield"
+		#|-1 "Minions deal {0}% less Damage while Leeching Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "에너지 보호막을 흡수하는 동안 소환수가 주는 피해 {0}% 증폭"
+		#|-1 "에너지 보호막을 흡수하는 동안 소환수가 주는 피해 {0}% 감폭" negate 1
+description executioner_low_life_damage
+	1 support_executioner_damage_vs_enemies_on_low_life_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Hits and Ailments against Enemies on Low Life"
+		#|-1 "Minions deal {0}% less Damage with Hits and Ailments against Enemies on Low Life" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 낮은 생명력 상태의 적에게 주는 명중 및 상태 이상 피해 {0}% 증폭"
+		#|-1 "소환수가 낮은 생명력 상태의 적에게 주는 명중 및 상태 이상 피해 {0}% 감폭" negate 1
+description executioner_steal_mod
+	1 support_executioner_gain_one_rare_monster_mod_on_kill_ms
+	1
+		1|# "Minions Killing a Rare Monster with a Hit from a Strike Skill with a Melee Weapon gain one of its Modifiers for a base Duration of {0} seconds" milliseconds_to_seconds_0dp 1
+	lang "Korean"
+	1
+		1|# "소환수가 타격 스킬을 명중시켜 희귀 몬스터 처치 시, 해당 몬스터의 속성 1개를 기본 지속시간 {0}초 동안 획득" milliseconds_to_seconds_0dp 1
+description executioner_refresh_stolen_mod
+	1 support_executioner_refresh_stolen_mod_on_hitting_rare_or_unique_monster_chance_%
+	1
+		1|# "Minions have {0}% chance to refresh Duration of their granted Modifier by up to 5 seconds on Hitting a Rare or Unique Enemy"
+	lang "Korean"
+	1
+		1|# "소환수가 희귀 또는 고유 적을 명중 시 {0}%의 확률로 획득한 속성의 지속시간 초기화, 최대 5초"
+description support_faster_ailments_duration
+	1 support_faster_ailments_ailment_duration_+%_final
+	2
+		1|# "{0}% more Duration of Ailments inflicted by Minions" reminderstring ReminderTextAilments
+		#|-1 "{0}% less Duration of Ailments inflicted by Minions" negate 1 reminderstring ReminderTextAilments
+	lang "Korean"
+	2
+		1|# "소환수가 유발하는 상태 이상 지속시간 {0}% 증폭" reminderstring ReminderTextAilments
+		#|-1 "소환수가 유발하는 상태 이상 지속시간 {0}% 감폭" negate 1 reminderstring ReminderTextAilments
+description support_fortify_ailment_damage_final_incr
+	1 support_fortify_ailment_damage_+%_final_from_melee_hits
+	2
+		1|# "Minions deal {0}% more Damage with Ailments caused by Melee Hits"
+		#|-1 "Minions deal {0}% less Damage with Ailments caused by Melee Hits" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 근접 명중이 유발하는 상태 이상 피해 {0}% 증폭"
+		#|-1 "소환수의 근접 명중이 유발하는 상태 이상 피해 {0}% 감폭" negate 1
+description support_fortify_melee_damage_final_incr
+	1 support_fortify_melee_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Melee Damage"
+		#|-1 "Minions deal {0}% less Melee Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 근접 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 근접 피해 {0}% 감폭" negate 1
+description greater_volley_projectiles_damage_final
+	1 support_greater_volley_projectile_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description hypothermia_cold_damage
+	1 support_hypothermia_cold_damage_over_time_+%_final
+	2
+		1|# "Minions deal {0}% more Cold Damage Over Time"
+		#|-1 "Minions deal {0}% less Cold Damage Over Time" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 지속 냉기 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 지속 냉기 피해 {0}% 감폭" negate 1
+description support_more_duration
+	1 support_more_duration_skill_effect_duration_+%_final
+	2
+		1|# "Minions have {0}% more Duration"
+		#|-1 "Minions have {0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 지속시간 {0}% 증폭"
+		#|-1 "소환수의 지속시간 {0}% 감폭" negate 1
+description maim_phys_damage
+	1 support_maim_chance_physical_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Physical Damage"
+		#|-1 "Minions deal {0}% less Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 물리 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 물리 피해 {0}% 감폭" negate 1
+description maimed_phys_damage_taken_incr
+	1 support_maimed_enemies_physical_damage_taken_+%
+	2
+		1|# "Enemies Maimed by Minions take {0}% increased Physical Damage"
+		#|-1 "Enemies Maimed by Minions take {0}% reduced Physical Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수에 의해 힘줄 절단된 적이 받는 물리 피해 {0}% 증가"
+		#|-1 "소환수에 의해 힘줄 절단된 적이 받는 물리 피해 {0}% 감소" negate 1
+description added_fire_against_burning
+	2 global_minimum_added_fire_damage_vs_burning_enemies global_maximum_added_fire_damage_vs_burning_enemies
+	1
+		# # "Minions deal {0} to {1} added Fire Damage against Burning Enemies"
+	lang "Korean"
+	1
+		# # "소환수가 화상 상태의 적에게 주는 화염 피해 {0}~{1} 추가"
+description deathmark_crit_chance_vs_target
+	1 support_minion_focus_fire_critical_strike_chance_+%_vs_focused_target
+	2
+		1|# "Minions have {0}% increased Critical Strike Chance against the Prey"
+		#|-1 "Minions have {0}% reduced Critical Strike Chance against the Prey" negate 1
+	lang "Korean"
+	2
+		1|# "사냥감에 대한 소환수의 치명타 확률 {0}% 증가"
+		#|-1 "사냥감에 대한 소환수의 치명타 확률 {0}% 감소" negate 1
+description deathmark_crit_multi_vs_target
+	1 support_minion_focus_fire_critical_strike_multiplier_+_vs_focused_target
+	1
+		# "Minions have {0:+d}% to Critical Strike Multiplier against the Prey"
+	lang "Korean"
+	1
+		# "사냥감에 대한 소환수의 치명타 피해 배율 {0:+d}%"
+description deathmark_damage_to_target
+	1 support_minion_focus_fire_damage_+%_final_vs_focussed_target
+	2
+		1|# "Minions deal {0}% more Damage to the Prey with Hits and Ailments"
+		#|-1 "Minions deal {0}% less Damage to the Prey with Hits and Ailments" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 사냥감에게 주는 명중 및 상태 이상 피해 {0}% 증폭"
+		#|-1 "소환수가 사냥감에게 주는 명중 및 상태 이상 피해 {0}% 감폭" negate 1
+description support_burning_minions_aura_burn
+	1 support_minion_instability_minion_base_fire_area_damage_per_minute
+	1
+		1|# "Minions deal {0} Base Fire Damage per second to Enemies near them" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		1|# "소환수가 주변의 적에게 1초마다 {0}의 기본 화염 피해를 줌" per_minute_to_per_second 1
+description minion_totem_resistance_support_damage
+	1 support_minion_totem_resistance_elemental_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Elemental Damage"
+		#|-1 "Minions deal {0}% less Elemental Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 원소 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 원소 피해 {0}% 감폭" negate 1
+description deathmark_target
+	1 support_minion_use_focussed_target
+	1
+		# "Minions always target the Prey if possible"
+	lang "Korean"
+	1
+		# "소환수가 항상 사냥감을 대상으로 삼음"
+description momentum_attack_speed
+	1 support_momentum_attack_speed_+%_per_stack
+	2
+		1|# "Minions have {0}% increased Attack Speed per Momentum"
+		#|-1 "Minions have {0}% reduced Attack Speed per Momentum" negate 1
+	lang "Korean"
+	2
+		1|# "기세 하나당 소환수의 공격 속도 {0}% 증가"
+		#|-1 "기세 하나당 소환수의 공격 속도 {0}% 감소" negate 1
+description momentum_buff_duration
+	3 support_momentum_base_buff_duration_ms support_momentum_buff_duration_ms support_momentum_max_stacks
+	1
+		# # # "When Minions reach {2} Momentum, they lose all Momentum and gain Swiftness for a Base Duration of {0} seconds" milliseconds_to_seconds_1dp 1
+	lang "Korean"
+	1
+		# # # "소환수가 기세 {2} 도달 시 모든 기세를 상실하고 기본 지속시간 {0}초 동안 재빠름 획득" milliseconds_to_seconds_1dp 1
+description momentum_generation
+	2 support_momentum_stack_while_channelling_base_ms support_momentum_stack_while_channelling_ms
+	1
+		# # "Minions gain 1 Momentum when they Attack\nMinions gain 1 Momentum every {0} seconds while Channelling an Attack\nMinions lose all Momentum if they Move" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		# # "소환수가 공격 시 기세 1 획득\n소환수가 공격을 집중 유지하는 동안 {0}초마다 기세 1 획득\n소환수가 이동 시 모든 기세 상실" milliseconds_to_seconds_2dp 1
+description support_overheat_ailment_damage
+	1 support_overheat_ailment_damage_+%_final_per_3_fortification_consumed
+	2
+		1|# "Minions consume all Fortification on Melee Attack, dealing {0}% more Damage with\nAilments per 3 Fortification consumed" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions consume all Fortification on Melee Attack, dealing {0}% less Damage with\nAilments per 3 Fortification consumed" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수가 근접 공격 시 모든 방어 상승을 소모하여, 소모한 방어 상승 3당\n상태 이상으로 주는 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "소환수가 근접 공격 시 모든 방어 상승을 소모하여, 소모한 방어 상승 3당\n상태 이상으로 주는 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description support_overpowered_on_enemy_block_base_duration
+	1 support_overpowered_base_duration_ms
+	1
+		# "Minions inflict Overpowered for a base Duration of {0} seconds when Their Hits are Blocked" milliseconds_to_seconds 1 reminderstring ReminderTextOverpowered
+	lang "Korean"
+	1
+		# "소환수의 공격 명중이 막혔을 시 소환수가 기본 지속시간 {0}초 동안 압도 유발" milliseconds_to_seconds 1 reminderstring ReminderTextOverpowered
+description support_parallel_projectiles
+	1 support_parallel_projectile_number_of_points_per_side
+	2
+		1 "Minions also fire Projectiles from up to {0} point on each side of them"
+		2|# "Minions fire Projectiles from up to {0} points on each side of them"
+	lang "Korean"
+	2
+		1 "소환수 또한 그들의 양옆 최대 {0}개 지점에서 투사체 발사"
+		2|# "소환수 또한 그들의 양옆 최대 {0}개 지점에서 투사체 발사"
+description parallel_projectiles_damage_final
+	1 support_parallel_projectiles_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Projectile Damage"
+		#|-1 "Minions deal {0}% less Projectile Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 투사체 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 투사체 피해 {0}% 감폭" negate 1
+description power_charge_on_crit_damage
+	1 support_power_charge_on_crit_damage_+%_final_per_power_charge
+	2
+		1|# "Minions deal {0}% more Damage per Power Charge"
+		#|-1 "Minions deal {0}% less Damage per Power Charge" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 권능 충전 하나당 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 권능 충전 하나당 주는 피해 {0}% 감폭" negate 1
+description pulverise_area_of_effect
+	1 support_pulverise_area_of_effect_+%_final
+	2
+		1|# "Minions have {0}% more Area of Effect"
+		#|-1 "Minions have {0}% less Area of Effect" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 효과 범위 {0}% 증폭"
+		#|-1 "소환수의 효과 범위 {0}% 감폭" negate 1
+description pulverise_attack_speed
+	1 support_pulverise_attack_speed_+%_final
+	2
+		1|# "Minions have {0}% more Attack Speed"
+		#|-1 "Minions have {0}% less Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격 속도 {0}% 증폭"
+		#|-1 "소환수의 공격 속도 {0}% 감폭" negate 1
+description pulverise_melee_area_damage
+	1 support_pulverise_melee_area_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Melee Area Damage"
+		#|-1 "Minions deal {0}% less Melee Area Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 근접 범위 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 근접 범위 피해 {0}% 감폭" negate 1
+description pure_shock_less_damage
+	1 support_pure_shock_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage"
+		#|-1 "Minions deal {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 주는 피해 {0}% 감폭" negate 1
+description support_shock_with_more_damage
+	1 support_pure_shock_shock_as_though_damage_+%_final
+	2
+		1|# "Minions Shock Enemies as though dealing {0}% more Damage"
+		#|-1 "Minions Shock Enemies as though dealing {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 {0}% 증폭된 피해를 준 것처럼 적에게 감전 유발"
+		#|-1 "소환수가 {0}% 감폭된 피해를 준 것처럼 적에게 감전 유발" negate 1
+description support_recent_ignites_damage
+	2 support_recent_ignites_damage_per_recent_ignite_+%_final support_recent_ignites_damage_per_recent_ignite_+%_final_minimum
+	2
+		1|#  # "Minions' Skills deal {0}% more Damage for each Ignite inflicted with that Skill Recently" reminderstring ReminderTextRecently
+		#|-1 # "Minions' Skills deal {0}% less Damage for each Ignite inflicted with that Skill Recently, up to a maximum of {1}%" negate 1 negate 2 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|#  # "소환수의 스킬로 최근 4초 이내 유발한 점화 하나당 해당 스킬로 주는 피해 {0}% 증폭" reminderstring ReminderTextRecently
+		#|-1 # "소환수의 스킬로 최근 4초 이내 유발한 점화 하나당 해당 스킬로 주는 피해 {0}% 감폭, 최대 {1}%" negate 1 negate 2 reminderstring ReminderTextRecently
+description support_recent_ignites_ignite_damage
+	2 support_recent_ignites_ignite_damage_per_recent_ignite_+%_final support_recent_ignites_ignite_damage_per_recent_ignite_+%_final_maximum
+	2
+		1|#  # "Minions' Skills deal {0}% more Damage with Ignite for each Ignite inflicted with that Skill Recently, up to a maximum of {1}%" reminderstring ReminderTextRecently
+		#|-1 # "Minions' Skills deal {0}% less Damage with Ignite for each Ignite inflicted with that Skill Recently" negate 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	2
+		1|#  # "소환수의 스킬로 최근 4초 이내 유발한 점화 하나당 해당 스킬로 주는 점화 피해 {0}% 증폭, 최대 {1}%" reminderstring ReminderTextRecently
+		#|-1 # "소환수의 스킬로 최근 4초 이내 유발한 점화 하나당 해당 스킬로 주는 점화 피해 {0}% 감폭" negate 1 reminderstring ReminderTextRecently
+description support_reduced_block_chance
+	1 support_reduce_enemy_block_and_spell_block_%
+	1
+		# "Enemies have -{0}% chance to Block Attack or Spell Damage from Minions"
+	lang "Korean"
+	1
+		# "적이 -{0}%의 확률로 소환수의 공격 또는 주문 피해를 막아냄"
+description support_less_duration
+	1 support_reduced_duration_skill_effect_duration_+%_final
+	2
+		1|# "Minions have {0}% more Duration"
+		#|-1 "Minions have {0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 지속시간 {0}% 증폭"
+		#|-1 "소환수의 지속시간 {0}% 감폭" negate 1
+description rupture_on_crit_bleed
+	1 critical_strikes_that_inflict_bleeding_also_rupture
+	1
+		# "Minions' Critical Strikes that inflict Bleeding also inflict Rupture" reminderstring ReminderTextRupture
+	lang "Korean"
+	1
+		# "소환수의 치명타가 출혈 유발 시 파열도 유발" reminderstring ReminderTextRupture
+description rupture_damage_taken
+	1 support_rupture_bleeding_damage_taken_+%_final
+	2
+		1|# "Targets take {0}% more Damage from Bleeding per Rupture on them from Minions"
+		#|-1 "Targets take {0}% less Damage from Bleeding per Rupture on them from Minions"
+	lang "Korean"
+	2
+		1|# "소환수가 대상에게 유발한 파열 하나당 대상이 출혈로 받는 피해 {0}% 증폭"
+		#|-1 "소환수가 대상에게 유발한 파열 하나당 대상이 출혈로 받는 피해 {0}% 감폭"
+description rupture_time_passed
+	1 support_rupture_bleeding_time_passed_+%_final
+	2
+		1|# "Bleeding expires {0}% more quickly per Rupture from Minions on targets"
+		#|-1 "Bleeding expires {0}% less quickly per Rupture from Minions on targets"
+	lang "Korean"
+	2
+		1|# "소환수가 대상에게 유발한 파열 하나당 출혈이 만료되는 속도 {0}% 증폭"
+		#|-1 "소환수가 대상에게 유발한 파열 하나당 출혈이 만료되는 속도 {0}% 감폭"
+description support_scion_unique_chance
+	2 support_scion_onslaught_for_3_seconds_on_hitting_unique_enemy_%_chance support_scion_onslaught_on_unique_hit_duration_ms
+	1
+		# # "Minions have {0}% chance to gain Onslaught for {1} seconds when they Hit a Unique Enemy" milliseconds_to_seconds 2 reminderstring ReminderTextOnslaught
+	lang "Korean"
+	1
+		# # "소환수가 고유 적 명중 시 소환수가 {0}%의 확률로 {1}초 동안 맹공 획득" milliseconds_to_seconds 2 reminderstring ReminderTextOnslaught
+description support_scion_chance
+	3 support_scion_onslaught_on_killing_blow_%_chance support_scion_onslaught_on_killing_blow_duration_ms virtual_support_scion_onslaught_on_killing_blow_duration_ms
+	1
+		# # !0 "Minions have {0}% chance to gain Onslaught for {2} seconds on\ndealing a Killing Blow" milliseconds_to_seconds 3 reminderstring ReminderTextOnslaught
+	lang "Korean"
+	1
+		# # !0 "소환수는 최후의 일격으로 피해를 주면 {0}%의 확률로 {2}초 동안\n맹공 획득" milliseconds_to_seconds 3 reminderstring ReminderTextOnslaught
+description support_slashing_damage_from_distance
+	1 support_slashing_damage_+%_final_from_distance
+	1
+		# "Minions deal up to {0}% more Melee Damage to Enemies, based on proximity"
+	lang "Korean"
+	1
+		# "적이 가까울수록 소환수가 적에게 주는 근접 피해 {0}% 증폭"
+description spell_echo_final_repeat_damage
+	1 support_spell_echo_final_repeat_damage_+%_final
+	2
+		1|# "Minion's Final Repeat deals {0}% more Damage"
+		#|-1 "Minion's Final Repeat deals {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수가 마지막 반복 시 주는 피해 {0}% 증폭"
+		#|-1 "소환수가 마지막 반복 시 주는 피해 {0}% 감폭" negate 1
+description ailment_damage_incr
+	1 support_unbound_ailments_ailment_damage_+%_final
+	2
+		1|# "Minions deal {0}% more Damage with Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "Minions deal {0}% less Damage with Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "소환수가 주는 상태 이상 피해 {0}% 증폭" reminderstring ReminderTextDamagingAilments
+		#|-1 "소환수가 주는 상태 이상 피해 {0}% 감폭" negate 1 reminderstring ReminderTextDamagingAilments
+description withered_support_base_duration
+	1 support_withered_base_duration_ms
+	2
+		1000 "Withered inflicted by Minions has a base duration of {0} second" milliseconds_to_seconds 1
+		# "Withered inflicted by Minions has a base duration of {0} seconds" milliseconds_to_seconds 1
+	lang "Korean"
+	2
+		1000 "소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+		# "소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+description trap_crit_per_power_charge
+	1 trap_critical_strike_multiplier_+_per_power_charge
+	1
+		# "Minions' Skills have {0:+d}% to Critical Strike Multiplier per Power Charge when used by Traps"
+	lang "Korean"
+	1
+		# "덫 설치 시 소환수의 스킬의 권능 충전 하나당 치명타 피해 배율 {0:+d}%"
+description trap_throwing_speed_per_frenzy
+	1 trap_throwing_speed_+%_per_frenzy_charge
+	2
+		1|# "This Skill and Minions have {0}% increased Trap Throwing Speed per Frenzy Charge"
+		#|-1 "This Skill and Minions have {0}% reduced Trap Throwing Speed per Frenzy Charge" negate 1
+	lang "Korean"
+	2
+		1|# "격분 충전 하나당 이 스킬 및 소환수의 덫 투척 속도 {0}% 증가"
+		#|-1 "격분 충전 하나당 이 스킬 및 소환수의 덫 투척 속도 {0}% 감소" negate 1
+description invert_elemental_resistance
+	1 treat_enemy_resistances_as_negated_on_elemental_damage_hit_%_chance
+	2
+		1|99 "Hits from Minions have {0}% chance to treat Enemy Monster Elemental Resistance values as inverted"
+		100|# "Hits from Minions treat Enemy Monster Elemental Resistance values as inverted"
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}% 확률로 적 몬스터 원소 저항을 반대로 간주"
+		100|# "소환수가 명중 시 적 몬스터 원소 저항을 반대로 간주"
+description void_spawn_withered_duration
+	1 void_spawn_withered_base_duration_ms
+	2
+		1000 "Withered inflicted by Minions has a base duration of {0} second" milliseconds_to_seconds 1
+		# "Withered inflicted by Minions has a base duration of {0} seconds" milliseconds_to_seconds 1
+	lang "Korean"
+	2
+		1000 "소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+		# "소환수가 유발한 위축의 기본 지속시간 {0}초" milliseconds_to_seconds 1
+description void_spawn_withered_chance
+	1 void_spawn_withered_on_hit_chance_%
+	2
+		1|99 "Minions have {0}% chance to inflict Withered on Hit" reminderstring ReminderTextWithered
+		100|# "Minions inflict Withered on Hit" reminderstring ReminderTextWithered
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}%의 확률로 위축 유발" reminderstring ReminderTextWithered
+		100|# "소환수가 명중 시 위축 유발" reminderstring ReminderTextWithered
+description withered_on_hit_chance
+	1 withered_on_hit_chance_%
+	2
+		1|99 "Minions have {0}% chance to inflict Withered on Hit" reminderstring ReminderTextWithered
+		100|# "Minions inflict Withered on Hit" reminderstring ReminderTextWithered
+	lang "Korean"
+	2
+		1|99 "소환수가 명중 시 {0}%의 확률로 위축 유발" reminderstring ReminderTextWithered
+		100|# "소환수가 명중 시 위축 유발" reminderstring ReminderTextWithered
+description wither_2_seconds_chance
+	1 withered_on_hit_for_2_seconds_%_chance
+	2
+		1|99 "Agony Crawler has {0}% chance to inflict Withered for 2 seconds on Hit" reminderstring ReminderTextWithered
+		100|# "Agony Crawler inflicts Withered for 2 seconds on Hit" reminderstring ReminderTextWithered
+	lang "Korean"
+	2
+		1|99 "명중 시 고통의 벌레가 {0}%의 확률로 2초 동안 위축 유발" reminderstring ReminderTextWithered
+		100|# "명중 시 고통의 벌레가 2초 동안 위축 유발" reminderstring ReminderTextWithered

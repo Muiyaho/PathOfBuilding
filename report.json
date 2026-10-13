@@ -1,0 +1,168 @@
+{
+  "patch": "3.29.3.3",
+  "files": {
+    "active_skill_gem_stat_descriptions.txt": {
+      "descriptions": 361,
+      "korean": 359
+    },
+    "advanced_mod_stat_descriptions.txt": {
+      "descriptions": 21,
+      "korean": 21
+    },
+    "aura_skill_stat_descriptions.txt": {
+      "descriptions": 92,
+      "korean": 92
+    },
+    "banner_aura_skill_stat_descriptions.txt": {
+      "descriptions": 17,
+      "korean": 17
+    },
+    "beam_skill_stat_descriptions.txt": {
+      "descriptions": 3,
+      "korean": 3
+    },
+    "brand_skill_stat_descriptions.txt": {
+      "descriptions": 12,
+      "korean": 12
+    },
+    "buff_skill_stat_descriptions.txt": {
+      "descriptions": 61,
+      "korean": 61
+    },
+    "curse_skill_stat_descriptions.txt": {
+      "descriptions": 78,
+      "korean": 78
+    },
+    "debuff_skill_stat_descriptions.txt": {
+      "descriptions": 27,
+      "korean": 27
+    },
+    "gem_stat_descriptions.txt": {
+      "descriptions": 787,
+      "korean": 784
+    },
+    "graft_stat_descriptions.txt": {
+      "descriptions": 97,
+      "korean": 97
+    },
+    "minion_attack_skill_stat_descriptions.txt": {
+      "descriptions": 161,
+      "korean": 161
+    },
+    "minion_skill_stat_descriptions.txt": {
+      "descriptions": 346,
+      "korean": 346
+    },
+    "minion_spell_damage_skill_stat_descriptions.txt": {
+      "descriptions": 92,
+      "korean": 92
+    },
+    "minion_spell_skill_stat_descriptions.txt": {
+      "descriptions": 8,
+      "korean": 8
+    },
+    "offering_skill_stat_descriptions.txt": {
+      "descriptions": 16,
+      "korean": 16
+    },
+    "passive_skill_aura_stat_descriptions.txt": {
+      "descriptions": 25,
+      "korean": 25
+    },
+    "passive_skill_stat_descriptions.txt": {
+      "descriptions": 135,
+      "korean": 134
+    },
+    "secondary_debuff_skill_stat_descriptions.txt": {
+      "descriptions": 2,
+      "korean": 2
+    },
+    "single_minion_spell_skill_stat_descriptions.txt": {
+      "descriptions": 46,
+      "korean": 46
+    },
+    "skill_stat_descriptions.txt": {
+      "descriptions": 1731,
+      "korean": 1730
+    },
+    "stat_descriptions.txt": {
+      "descriptions": 11040,
+      "korean": 10986
+    },
+    "tincture_stat_descriptions.txt": {
+      "descriptions": 85,
+      "korean": 85
+    },
+    "variable_duration_skill_stat_descriptions.txt": {
+      "descriptions": 5,
+      "korean": 5
+    }
+  },
+  "tables": {
+    "ActiveSkills": {
+      "rows": 1941,
+      "translatedCells": 2161,
+      "fallbackToEnglish": false
+    },
+    "AlternatePassiveSkills": {
+      "rows": 381,
+      "translatedCells": 381,
+      "fallbackToEnglish": false
+    },
+    "Ascendancy": {
+      "rows": 21,
+      "translatedCells": 21,
+      "fallbackToEnglish": false
+    },
+    "BaseItemTypes": {
+      "rows": 5461,
+      "translatedCells": 5028,
+      "fallbackToEnglish": false
+    },
+    "Characters": {
+      "rows": 7,
+      "translatedCells": 7,
+      "fallbackToEnglish": false
+    },
+    "ClientStrings": {
+      "rows": 8494,
+      "translatedCells": 8048,
+      "fallbackToEnglish": false
+    },
+    "GemEffects": {
+      "rows": 1292,
+      "translatedCells": 626,
+      "fallbackToEnglish": false
+    },
+    "ItemClassCategories": {
+      "rows": 67,
+      "translatedCells": 67,
+      "fallbackToEnglish": false
+    },
+    "ItemClasses": {
+      "rows": 103,
+      "translatedCells": 91,
+      "fallbackToEnglish": false
+    },
+    "Mods": {
+      "rows": 40355,
+      "translatedCells": 15379,
+      "fallbackToEnglish": false
+    },
+    "PantheonPanelLayout": {
+      "rows": 16,
+      "translatedCells": 32,
+      "fallbackToEnglish": false
+    },
+    "PassiveSkills": {
+      "rows": 5706,
+      "translatedCells": 5772,
+      "fallbackToEnglish": false
+    },
+    "Words": {
+      "rows": 4117,
+      "translatedCells": 4102,
+      "fallbackToEnglish": false
+    }
+  }
+}

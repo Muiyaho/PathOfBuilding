@@ -1,0 +1,129 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description blood_offering_life_loss
+	2 blood_offering_%_of_life_to_lose blood_offering_%_of_lost_life_to_regenerate_as_life_per_second
+	1
+		# # "Sacrifices {0}% of your Life\nMinions Regenerate {1}% of Sacrificed Life per second"
+	lang "Korean"
+	1
+		# # "생명력의 {0}% 희생\n소환수가 1초마다 희생된 생명력의 {1}% 재생"
+description blood_offering_life_regen_multi
+	1 blood_offering_life_regenerated_+%_final_per_corpse
+	2
+		1|# "{0}% more Life Regeneration granted to Minions per corpse Consumed"
+		#|-1 "{0}% less Life Regeneration granted to Minions per corpse Consumed" negate 1
+	lang "Korean"
+	2
+		1|# "소모한 시신 하나당 소환수가 획득하는 생명력 재생 {0}% 증폭"
+		#|-1 "소모한 시신 하나당 소환수가 획득하는 생명력 재생 {0}% 감폭" negate 1
+description attack_speed_incr_skill_granted
+	1 attack_speed_+%_granted_from_skill
+	2
+		1|# "Grants Minions {0}% increased Attack Speed"
+		#|-1 "Grants Minions {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 공격 속도 {0}% 증가"
+		#|-1 "소환수의 공격 속도 {0}% 감소" negate 1
+description damage_incr
+	1 damage_+%
+	2
+		1|# "Grants Minions {0}% increased Damage"
+		#|-1 "Grants Minions {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 피해 {0}% 증가"
+		#|-1 "소환수의 피해{0}% 감소" negate 1
+description cast_speed_incr_skill_granted
+	1 cast_speed_+%_granted_from_skill
+	2
+		1|# "Grants Minions {0}% increased Cast Speed"
+		#|-1 "Grants Minions {0}% reduced Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 시전 속도 {0}% 증가"
+		#|-1 "소환수의 시전 속도 {0}% 감소" negate 1
+description movement_speed_incr
+	1 base_movement_velocity_+%
+	2
+		1|# "Grants Minions {0}% increased Movement Speed"
+		#|-1 "Grants Minions {0}% reduced Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "소환수의 이동 속도 {0}% 증가"
+		#|-1 "소환수의 이동 속도 {0}% 감소" negate 1
+description base_block
+	1 monster_base_block_%
+	1
+		# "Grants Minions {0:+d}% Chance to Block Attack Damage"
+	lang "Korean"
+	1
+		# "소환수의 공격 피해 막기 확률 {0:+d}%"
+description base_spell_block
+	1 base_spell_block_%
+	1
+		# "Grants Minions {0:+d}% Chance to Block Spell Damage"
+	lang "Korean"
+	1
+		# "소환수의 주문 피해 막기 확률 {0:+d}%"
+description recover_life_on_block
+	1 minion_recover_X_life_on_block
+	1
+		# "Minions recover {0} Life when they Block"
+	lang "Korean"
+	1
+		# "소환수가 막아낼 시 소환수의 생명력 {0} 회복"
+description physical_damage_to_add_as_chaos
+	1 physical_damage_%_to_add_as_chaos
+	1
+		1|# "Minions gain {0}% of their Physical Damage as Extra Chaos Damage"
+	lang "Korean"
+	1
+		1|# "소환수가 물리 피해의 {0}%를 추가 카오스 피해로 획득"
+description spirit_offering_life_as_es_per_corpse
+	1 spirit_offering_life_%_added_as_base_maximum_energy_shield_per_corpse_consumed
+	1
+		# "Minions gain {0}% of their Maximum Life as\nExtra Maximum Energy Shield for each corpse Consumed"
+	lang "Korean"
+	1
+		# "소환수가 소모한 시신 하나당 최대 생명력의 {0}%를\n추가 에너지 보호막 최대치로 획득"
+description chaos_res
+	1 base_chaos_damage_resistance_%
+	1
+		1|# "Grants Minions +{0}% to Chaos Resistance"
+	lang "Korean"
+	1
+		1|# "소환수의 카오스 저항 +{0}%"
+description elemental_resist
+	1 base_resist_all_elements_%
+	1
+		# "Minions gain {0:+d}% to all Elemental Resistances"
+	lang "Korean"
+	1
+		# "소환수가 모든 원소 저항 {0:+d}% 획득"
+description life_leech_from_any
+	1 life_leech_from_any_damage_permyriad
+	1
+		1|# "Grants Minions {0}% of Damage Leeched as Life" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+	lang "Korean"
+	1
+		1|# "소환수가 피해의 {0}%를 생명력으로 흡수" divide_by_one_hundred 1 reminderstring ReminderTextLifeLeech
+description minion_life_regen_if_blocked
+	1 minion_life_regeneration_rate_per_minute_%_if_blocked_recently
+	1
+		1|# "Grants Minions {0}% of Life Regenerated per Second if they have Blocked recently" per_minute_to_per_second 1 reminderstring ReminderTextRecently
+	lang "Korean"
+	1
+		1|# "소환수가 최근 4초 이내 막아낸 경우 1초당 생명력의 {0}% 재생" per_minute_to_per_second 1 reminderstring ReminderTextRecently
+description offering_effect
+	1 offering_spells_effect_+%
+	2
+		1|# "{0}% increased Effect of Offering"
+		#|-1 "{0}% reduced Effect of Offering" negate 1
+	lang "Korean"
+	2
+		1|# "공물 효과 {0}% 증가"
+		#|-1 "공물 효과 {0}% 감소" negate 1

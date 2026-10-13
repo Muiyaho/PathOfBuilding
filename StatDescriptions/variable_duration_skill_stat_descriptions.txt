@@ -1,0 +1,50 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description quality_duration_final
+	1 active_skill_quality_duration_+%_final
+	2
+		1|# "{0}% more Duration"
+		#|-1 "{0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "지속시간 {0}% 증폭"
+		#|-1 "지속시간 {0}% 감폭" negate 1
+description skill_and_damaging_ailment_duration_incr
+	1 skill_effect_and_damaging_ailment_duration_+%
+	2
+		1|# "{0}% increased Duration of this Skill and Damaging Ailments" reminderstring ReminderTextDamagingAilments
+		#|-1 "{0}% reduced Duration of this Skill and Damaging Ailments" negate 1 reminderstring ReminderTextDamagingAilments
+	lang "Korean"
+	2
+		1|# "이 스킬 및 피해를 주는 상태 이상 지속시간 {0}% 증가" reminderstring ReminderTextDamagingAilments
+		#|-1 "이 스킬 및 피해를 주는 상태 이상 지속시간 {0}% 감소" negate 1 reminderstring ReminderTextDamagingAilments
+description skill_duration_incr
+	1 skill_effect_duration_+%
+	2
+		1|# "{0}% increased Duration"
+		#|-1 "{0}% reduced Duration" negate 1
+	lang "Korean"
+	2
+		1|# "지속시간 {0}% 증가"
+		#|-1 "지속시간 {0}% 감소" negate 1
+description support_more_duration
+	1 support_more_duration_skill_effect_duration_+%_final
+	2
+		1|# "{0}% more Duration"
+		#|-1 "{0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "지속시간 {0}% 증폭"
+		#|-1 "지속시간 {0}% 감폭" negate 1
+description support_less_duration
+	1 support_reduced_duration_skill_effect_duration_+%_final
+	2
+		1|# "{0}% more Duration"
+		#|-1 "{0}% less Duration" negate 1
+	lang "Korean"
+	2
+		1|# "지속시간 {0}% 증폭"
+		#|-1 "지속시간 {0}% 감폭" negate 1

@@ -1,0 +1,146 @@
+include "Metadata/StatDescriptions/aura_skill_stat_descriptions.txt"
+		
+has_identifiers		
+		
+
+description gain_valour
+	2 base_can_gain_banner_resource can_gain_banner_resource_while_banner_is_placed
+	2
+		!0 0 "While you have no placed Banner, you can gain Valour" reminderstring ReminderTextValourGain
+		!0 # "You can gain Valour" reminderstring ReminderTextValourGain
+	lang "Korean"
+	2
+		!0 0 "깃발을 설치하지 않은 동안 기백 획득 가능" reminderstring ReminderTextValourGain
+		!0 # "기백 획득 가능" reminderstring ReminderTextValourGain
+description evasion_and_physical_damage_reduction_rating_incr
+	1 evasion_and_physical_damage_reduction_rating_+%
+	2
+		1|# "Banner grants {0}% increased Armour and Evasion Rating to You and Allies"
+		#|-1 "Banner grants {0}% reduced Armour and Evasion Rating to You and Allies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 플레이어 및 동료들의 방어도 및 회피 {0}% 증가"
+		#|-1 "깃발의 영향을 받는 플레이어 및 동료들의 방어도 및 회피 {0}% 감소" negate 1
+description armour_evasion_banner_crit_chance
+	1 armour_evasion_banner_critical_strike_chance_+%
+	2
+		1|# "Banner applies {0}% increased Critical Strike Chance to Enemies"
+		#|-1 "Banner applies {0}% reduced Critical Strike Chance to Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 적의 치명타 확률 {0}% 증가"
+		#|-1 "깃발의 영향을 받는 적의 치명타 확률 {0}% 감소" negate 1
+description dread_banner_accuracy_final
+	1 puresteel_banner_accuracy_rating_+%_final
+	2
+		1|# "Banner applies {0}% more Accuracy Rating to Enemies"
+		#|-1 "Banner applies {0}% less Accuracy Rating to Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 적의 정확도 {0}% 증폭"
+		#|-1 "깃발의 영향을 받는 적의 정확도 {0}% 감폭" negate 1
+description dread_banner_enemy_damage_final
+	1 puresteel_banner_damage_+%_final
+	2
+		1|# "Banner applies {0}% more Damage to Enemies"
+		#|-1 "Banner applies {0}% less Damage to Enemies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 적의 피해 {0}% 증폭"
+		#|-1 "깃발의 영향을 받는 적의 피해 {0}% 감폭" negate 1
+description buff_duration
+	1 buff_effect_duration
+	1
+		1|# "Banner lasts {0} seconds" milliseconds_to_seconds_2dp 1
+	lang "Korean"
+	1
+		1|# "{0}초간 깃발 지속" milliseconds_to_seconds_2dp 1
+description banner_resource_aoe
+	1 banner_area_of_effect_+%_final_per_resource
+	2
+		1|# "{0}% more Area of Effect per Valour consumed"
+		#|-1 "{0}% less Area of Effect per Valour consumed" negate 1
+	lang "Korean"
+	2
+		1|# "소모한 기백 하나당 효과 범위 {0}% 증폭"
+		#|-1 "소모한 기백 하나당 효과 범위 {0}% 감폭" negate 1
+description banner_resource_aura_effect
+	1 banner_buff_effect_+%_final_per_resource
+	2
+		1|# "{0}% more Aura effect per Valour consumed"
+		#|-1 "{0}% less Aura effect per Valour consumed" negate 1
+	lang "Korean"
+	2
+		1|# "소모한 기백 하나당 오라 효과 {0}% 증폭"
+		#|-1 "소모한 기백 하나당 오라 효과 {0}% 감폭" negate 1
+description accuracy_rating_incr
+	1 accuracy_rating_+%
+	2
+		1|# "Banner grants {0}% increased Accuracy Rating to You and Allies"
+		#|-1 "Banner grants {0}% reduced Accuracy Rating to You and Allies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 플레이어 및 동료들의 정확도 {0}% 증가"
+		#|-1 "깃발의 영향을 받는 플레이어 및 동료들의 정확도 {0}% 감소" negate 1
+description block_add
+	1 additional_block_%
+	1
+		# "Banner grants {0:+d}% Chance to Block Attack Damage to You and Allies"
+	lang "Korean"
+	1
+		# "깃발의 영향을 받는 플레이어 및 동료들의 공격 피해 막기 확률 {0:+d}%"
+description movement_speed_incr
+	1 base_movement_velocity_+%
+	2
+		1|# "Banner grants {0}% increased Movement Speed to You and Allies"
+		#|-1 "Banner grants {0}% reduced Movement Speed to You and Allies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 플레이어 및 동료들의 이동 속도 {0}% 증가"
+		#|-1 "깃발의 영향을 받는 플레이어 및 동료들의 이동 속도 {0}% 감소" negate 1
+description base_suppress_chance
+	1 base_spell_suppression_chance_%
+	1
+		# "Banner grants {0:+d}% chance to Suppress Spell Damage to You and Allies" reminderstring ReminderTextSuppression
+	lang "Korean"
+	1
+		# "깃발의 영향을 받는 플레이어 및 동료들의 주문 피해 억제 확률 {0:+d}%" reminderstring ReminderTextSuppression
+description bleeding_dot_multi
+	1 bleeding_dot_multiplier_+
+	1
+		# "Banner grants {0:+d}% to Damage over Time Multiplier for Bleeding to You and Allies"
+	lang "Korean"
+	1
+		# "깃발의 영향을 받는 플레이어 및 동료들의 출혈 지속 피해 배율 {0:+d}%"
+description suppressed_damage
+	1 damage_taken_+_from_suppressed_hits
+	1
+		# "Banner grants {0:+d} Damage taken of each Damage Type from Suppressed Hits to You and Allies" reminderstring ReminderTextDamageTypes
+	lang "Korean"
+	1
+		# "깃발의 영향을 받는 플레이어 및 동료들이 억제된 명중으로 받는 각 피해 유형의 피해 {0:+d}" reminderstring ReminderTextDamageTypes
+description impale_effect
+	1 impale_debuff_effect_+%
+	2
+		1|# "Banner grants {0}% increased Impale Effect to You and Allies"
+		#|-1 "Banner grants {0}% reduced Impale Effect to You and Allies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발의 영향을 받는 플레이어 및 동료들의 꿰뚫기 효과 {0}% 증가"
+		#|-1 "깃발의 영향을 받는 플레이어 및 동료들의 꿰뚫기 효과 {0}% 감소" negate 1
+description recover_life_on_block
+	1 recover_X_life_on_block
+	1
+		# "Banner causes you and Allies to Recover {0} Life when Blocking"
+	lang "Korean"
+	1
+		# "깃발의 영향을 받는 플레이어 및 동료들이 막아낼 시 생명력 {0} 회복"
+description war_banner_phys_damage
+	1 war_banner_physical_damage_+%_final_with_melee_skills
+	2
+		1|# "Banner grants {0}% more Physical Damage with Melee Skills to You and Allies"
+		#|-1 "Banner grants {0}% less Physical Damage with Melee Skills to You and Allies" negate 1
+	lang "Korean"
+	2
+		1|# "깃발이 플레이어 및 동료들이 근접 스킬로 주는 물리 피해 {0}% 증폭"
+		#|-1 "깃발이 플레이어 및 동료들이 근접 스킬로 주는 물리 피해 {0}% 감폭" negate 1

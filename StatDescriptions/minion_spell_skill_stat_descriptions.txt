@@ -1,0 +1,69 @@
+include "Metadata/StatDescriptions/minion_skill_stat_descriptions.txt"
+
+has_identifiers
+
+
+description cast_speed_incr
+	1 base_cast_speed_+%
+	2
+		1|# "This Spell and Minions have {0}% increased Cast Speed"
+		#|-1 "This Spell and Minions have {0}% reduced Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 시전 속도 {0}% 증가"
+		#|-1 "이 주문 및 소환수의 시전 속도 {0}% 감소" negate 1
+description cast_speed_incr_on_low_life
+	1 cast_speed_+%_when_on_low_life
+	2
+		1|# "This Spell and Minions have {0}% increased Cast Speed when on Low Life" reminderstring ReminderTextLowLife
+		#|-1 "This Spell and Minions have {0}% reduced Cast Speed when on Low Life" negate 1 reminderstring ReminderTextLowLife
+	lang "Korean"
+	2
+		1|# "낮은 생명력 상태일 때 이 주문 및 소환수의 시전 속도 {0}% 증가" reminderstring ReminderTextLowLife
+		#|-1 "낮은 생명력 상태일 때 이 주문 및 소환수의 시전 속도 {0}% 감소" negate 1 reminderstring ReminderTextLowLife
+description multicast_cast_speed_incr
+	1 support_multicast_cast_speed_+%_final
+	2
+		1|# "This Spell and Minions have {0}% more Cast Speed"
+		#|-1 "This Spell and Minions have {0}% less Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 시전 속도 {0}% 증폭"
+		#|-1 "이 주문 및 소환수의 시전 속도 {0}% 감폭" negate 1
+description totem_cast_speed
+	1 support_spell_totem_cast_speed_+%_final
+	2
+		1|# "This Spell and Minions have {0}% more Cast Speed"
+		#|-1 "This Spell and Minions have {0}% less Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "이 주문 및 소환수의 시전 속도 {0}% 증폭"
+		#|-1 "이 주문 및 소환수의 시전 속도 {0}% 감폭" negate 1
+description melee_splash_fire_only
+	1 summon_raging_spirit_melee_splash_fire_damage_only
+	1
+		# "Minion's Melee Strike Skills deal Fire-only Splash Damage to Surrounding Targets"
+	lang "Korean"
+	1
+		# "소환수의 근접 타격 스킬이 주변 대상에게 화염으로만 범위 피해를 줌"
+description chance_for_1_additional_trap_mine
+	1 support_additional_trap_mine_%_chance_for_1_additional_trap_mine
+	1
+		# "This Skill and Minions have {0}% chance to throw up to 1 additional Trap or Mine" reminderstring ReminderTextMultipleMines
+	lang "Korean"
+	1
+		# "해당 스킬 및 소환수가 {0}% 확률로 덫 또는 지뢰 최대 1개 추가 투척" reminderstring ReminderTextMultipleMines
+description chance_for_2_additional_trap_mine
+	1 support_additional_trap_mine_%_chance_for_2_additional_trap_mine
+	1
+		# "This Skill and Minions have {0}% chance to throw up to 2 additional Traps or Mines" reminderstring ReminderTextMultipleMines
+	lang "Korean"
+	1
+		# "해당 스킬 및 소환수가 {0}%의 확률로 덫 또는 지뢰 최대 2개 추가 투척" reminderstring ReminderTextMultipleMines
+description chance_for_3_additional_trap_mine
+	1 support_additional_trap_mine_%_chance_for_3_additional_trap_mine
+	1
+		# "This Skill and Minions have {0}% chance to throw up to 3 additional Traps or Mines" reminderstring ReminderTextMultipleMines
+	lang "Korean"
+	1
+		# "해당 스킬 및 소환수가 {0}%의 확률로 덫 또는 지뢰 최대 3개 추가 투척" reminderstring ReminderTextMultipleMines

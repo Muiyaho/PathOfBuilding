@@ -1,0 +1,482 @@
+include "Metadata/StatDescriptions/skill_stat_descriptions.txt"
+		
+has_identifiers		
+		
+
+description attack_added_fire
+	2 attack_minimum_added_fire_damage attack_maximum_added_fire_damage
+	1
+		# # "Adds {0} to {1} Fire Damage to Attacks"
+	lang "Korean"
+	1
+		# # "공격 시 화염 피해 {0}~{1} 추가"
+description attack_added_cold
+	2 attack_minimum_added_cold_damage attack_maximum_added_cold_damage
+	1
+		# # "Buff grants {0} to {1} Added Attack Cold Damage"
+	lang "Korean"
+	1
+		# # "버프 시 공격 냉기 피해 {0}~{1} 추가"
+description spell_added_cold
+	2 spell_minimum_added_cold_damage spell_maximum_added_cold_damage
+	1
+		# # "Buff grants {0} to {1} Added Spell Cold Damage"
+	lang "Korean"
+	1
+		# # "버프 시 주문 냉기 피해 {0}~{1} 추가"
+description attack_added_lightning
+	2 attack_minimum_added_lightning_damage attack_maximum_added_lightning_damage
+	1
+		# # "Buff grants {0} to {1} Added Attack Lightning Damage"
+	lang "Korean"
+	1
+		# # "버프 시 공격 번개 피해 {0}~{1} 추가"
+description spell_added_lightning
+	2 spell_minimum_added_lightning_damage spell_maximum_added_lightning_damage
+	1
+		# # "Buff grants {0} to {1} Added Spell Lightning Damage"
+	lang "Korean"
+	1
+		# # "버프 시 주문 번개 피해 {0}~{1} 추가"
+description grants_critical_strike_chance_incr
+	1 skill_buff_grants_critical_strike_chance_+%
+	2
+		1|# "Buff grants {0}% increased Critical Strike Chance"
+		#|-1 "Buff grants have {0}% reduced Critical Strike Chance" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 치명타 확률 {0}% 증가"
+		#|-1 "버프 시 치명타 확률 {0}% 감소" negate 1
+description herald_of_ice_cold_damage_incr
+	1 herald_of_ice_cold_damage_+%
+	1
+		1|# "Buff grants {0}% increased Cold Damage"
+	lang "Korean"
+	1
+		1|# "버프 시 냉기 피해 {0}% 증가"
+description herald_of_thunder_lightning_damage_incr
+	1 herald_of_thunder_lightning_damage_+%
+	1
+		1|# "Buff grants {0}% increased Lightning Damage"
+	lang "Korean"
+	1
+		1|# "버프 시 번개 피해 {0}% 증가"
+description stealth_increase
+	1 stealth_+%
+	2
+		1|# "Buff grants {0}% increased Stealth"
+		#|-1 "Buff grants {0}% reduced Stealth" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 은신 {0}% 증가"
+		#|-1 "버프 시 은신 {0}% 감소" negate 1
+description mana_regen
+	1 base_mana_regeneration_rate_per_minute
+	1
+		# "Buff grants {0} Mana Regeneration per second" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		# "버프 시 1초당 마나 {0} 재생" per_minute_to_per_second 1
+description es_regen
+	1 base_energy_shield_regeneration_rate_per_minute
+	1
+		# "Buff grants {0} Energy Shield Regeneration per second" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		# "버프 시 1초당 에너지 보호막 {0} 재생" per_minute_to_per_second 1
+description mana_infused_staff_buff_mana_cost_final
+	1 active_skill_buff_mana_cost_+%_final_to_grant
+	2
+		1|# "Buff grants {0}% more Mana Cost of Skills"
+		#|-1 "Buff grants {0}% less Mana Cost of Skills" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 스킬의 마나 소모 {0}% 증폭"
+		#|-1 "버프 시 스킬의 마나 소모 {0}% 감폭" negate 1
+description shield_spell_block
+	1 shield_spell_block_%
+	1
+		# "Buff grants {0:+d}% Chance to Block Spell Damage while holding a Shield"
+	lang "Korean"
+	1
+		# "버프 시 방패를 들고 있는 동안 주문 피해 막기 확률 {0:+d}% 부여"
+description mana_infused_staff_buff_block_chance_final
+	1 active_skill_buff_block_chance_+%_final_to_grant
+	2
+		1|# "Buff grants {0}% more Chance to Block Attack and Spell Damage"
+		#|-1 "Buff grants {0}% less Chance to Block Attack and Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 공격 및 주문 피해 막기 확률 {0}% 증폭"
+		#|-1 "버프 시 공격 및 주문 피해 막기 확률 {0}% 감폭" negate 1
+description phasing
+	1 phase_through_objects
+	1
+		# "Buff grants Phasing" reminderstring ReminderTextPhasing
+	lang "Korean"
+	1
+		# "버프가 차원 능력 부여" reminderstring ReminderTextPhasing
+description buff_chill_effect
+	1 active_skill_buff_chill_effect_+%_to_grant
+	1
+		1|# "Buff grants {0:+d}% increased effect of Chill"
+	lang "Korean"
+	1
+		1|# "버프 시 냉각 효과 {0:+d}% 증가"
+description buff_cold_pen_vs_chilled
+	1 active_skill_buff_cold_penetration_%_vs_chilled_enemies_to_grant
+	1
+		1|# "Buff causes Damage to Penetrate {0}% of Cold Resistance against Chilled Enemies"
+	lang "Korean"
+	1
+		1|# "버프 시 냉각된 적에게 주는 피해가 {0}%의 냉기 저항 관통"
+description skill_grants_shock_chance
+	2 base_chance_to_shock_%_from_skill quality_display_shock_chance_from_skill_is_gem
+	2
+		# 0 "Buff grants {0:+d}% chance to Shock enemies"
+		1|# # "Buff Grants {0}% chance to Shock enemies" reminderstring ReminderTextShock
+	lang "Korean"
+	2
+		# 0 "버프 시 {0:+d}%의 확률로 적을 감전"
+		1|# # "버프 시 {0}%의 확률로 적을 감전" reminderstring ReminderTextShock
+description damage_taken_incr
+	1 base_damage_taken_+%
+	2
+		1|# "Buff grants {0}% increased Damage taken"
+		#|-1 "Buff grants {0}% reduced Damage taken" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 받는 피해 {0}% 증가"
+		#|-1 "버프 시 받는 피해 {0}% 감소" negate 1
+description immune_to_freeze
+	1 base_immune_to_freeze
+	1
+		# "Buff grants Immunity to Freeze"
+	lang "Korean"
+	1
+		# "버프 시 동결에 면역"
+description movement_speed_incr
+	1 base_movement_velocity_+%
+	2
+		1|# "Buff grants {0}% increased Movement Speed"
+		#|-1 "Buff grants {0}% reduced Movement Speed" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 이동 속도 {0}% 증가"
+		#|-1 "버프 시 이동 속도 {0}% 감소" negate 1
+description base_armour
+	1 base_physical_damage_reduction_rating
+	1
+		# "Buff grants {0:+d} to Armour"
+	lang "Korean"
+	1
+		# "버프 시 방어도 {0:+d} 부여"
+description berserk_rage_effect
+	1 berserk_rage_effect_+%
+	1
+		# "{0}% increased Rage Effect" reminderstring ReminderTextRageEffect
+	lang "Korean"
+	1
+		# "격노 효과 {0}% 증가" reminderstring ReminderTextRageEffect
+description berserk_spell_damage_final
+	1 berserk_spell_damage_+%_final
+	2
+		1|# "Buff grants {0}% more Spell Damage"
+		#|-1 "Buff grants {0}% less Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 주문 피해 {0}% 증폭"
+		#|-1 "버프 시 주문 피해 {0}% 감폭" negate 1
+description buff_spell_phys
+	2 buff_added_spell_minimum_base_physical_damage_per_shield_quality buff_added_spell_maximum_base_physical_damage_per_shield_quality
+	1
+		# # "Buff grants {0} to {1} Added Spell Physical Damage per 1% Shield Quality"
+	lang "Korean"
+	1
+		# # "버프 시 방패 퀄리티 1%당 주문 물리 피해 {0}~{1} 추가"
+description bulwark_link_recover
+	1 bulwark_link_grants_recover_X_life_on_block
+	1
+		1|# "Linked target Recovers {0} Life when they Block"
+	lang "Korean"
+	1
+		1|# "연결된 대상이 막아낼 시 생명력 {0} 회복"
+description bulwark_link_stun_threshold
+	1 bulwark_link_grants_stun_threshold_+%
+	2
+		1|# "Linked target has {0}% increased Stun Threshold"
+		#|-1 "Linked target has {0}% reduced Stun Threshold" negate 1
+	lang "Korean"
+	2
+		1|# "연결된 대상의 기절 한계치 {0}% 증가"
+		#|-1 "연결된 대상의 기절 한계치 {0}% 감소" negate 1
+description critical_link_accuracy
+	1 critical_link_grants_accuracy_rating_+%
+	2
+		1|# "Linked target has {0}% increased Accuracy Rating"
+		#|-1 "Linked target has {0}% reduced Accuracy Rating" negate 1
+	lang "Korean"
+	2
+		1|# "연결된 대상의 정확도 {0}% 증가"
+		#|-1 "연결된 대상의 정확도 {0}% 감소" negate 1
+description critical_link_multiplier
+	1 critical_link_grants_base_critical_strike_multiplier_+
+	1
+		# "Linked target has {0:+d}% to Critical Strike Multiplier"
+	lang "Korean"
+	1
+		# "연결된 대상의 치명타 피해 배율 {0:+d}%"
+description skill_damage_taken_goes_to_mana
+	1 damage_taken_goes_to_mana_%
+	1
+		# "{0}% of Damage taken Recouped as Mana" reminderstring ReminderTextRecoup
+	lang "Korean"
+	1
+		# "받은 피해의 {0}%를 마나로 회생" reminderstring ReminderTextRecoup
+description display_bulwark_link_override
+	1 display_bulwark_link_overrides_attack_block_and_maximum_attack_block
+	1
+		# "Linked target's Chance to Block Attack Damage is equal to yours\nLinked target's Maximum Chance to Block Attack Damage is equal to yours"
+	lang "Korean"
+	1
+		# "연결된 대상의 공격 피해 막기 확률이 자신과 동일하게 적용\n연결된 대상의 공격 피해 막기 확률의 최대치가 자신과 동일하게 적용"
+description display_critical_link_override
+	1 display_critical_link_overrides_main_hand_critical_strike_chance
+	1
+		# "Linked target's Main Hand Critical Strike Chance is equal to yours"
+	lang "Korean"
+	1
+		# "연결된 대상이 플레이어와 동일한 주 무기 치명타 확률 획득"
+description display_immune_to_bleeding
+	1 display_skill_buff_grants_bleeding_immunity
+	1
+		# "Buff grants Immunity to Bleeding"
+	lang "Korean"
+	1
+		# "버프 시 출혈에 면역"
+description energy_shield_loss
+	1 energy_shield_lost_per_minute
+	1
+		# "You lose {0} Energy Shield per second" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		# "1초마다 에너지 보호막 {0} 상실" per_minute_to_per_second 1
+description flame_link_ignite_chance
+	1 flame_link_grants_chance_to_ignite_%
+	1
+		1|# "Linked target has {0}% chance to Ignite" reminderstring ReminderTextIgnite
+	lang "Korean"
+	1
+		1|# "연결된 대상이 {0}%의 확률로 점화 유발" reminderstring ReminderTextIgnite
+description petrified_blood_life_loss_over_time
+	3 petrified_blood_%_life_loss_below_half_from_hit_to_prevent petrified_blood_%_prevented_life_loss_to_lose_over_time cannot_recover_above_low_life_except_flasks
+	4
+		1|# 1|# !0 "Life Recovery other than Flasks cannot Recover Life to above Low Life\nWhen taking Damage from Hits, {0}% of Life loss below half Life is Prevented, then {1}% of Life loss prevented this way is lost over 4 seconds"
+		!0  !0   0 "When taking Damage from Hits, {0:+d}% of Life loss below half Life is Prevented\n{1:+d}% of Life loss prevented this way is lost over 4 seconds"
+		!0   0   0 "When taking Damage from Hits, {0:+d}% of Life loss below half Life is Prevented"
+		0  !0   0 "{1:+d}% of Life loss prevented is lost over 4 seconds"
+	lang "Korean"
+	4
+		1|# 1|# !0 "플라스크를 제외한 다른 방법으로는 낮은 생명력 상태 그 이상으로 생명력을 회복할 수 없음\n피격으로 피해를 받을 때, 생명력 50% 이하 구간에서 상실되는 생명력의 {0}%가 예방되고 이 방식으로 예방된 생명력 상실량의 {1}%가 4초에 걸쳐 상실됨"
+		!0  !0   0 "피격으로 피해를 받을 때, 생명력 50% 이하 구간에서 상실되는 생명력의 {0:+d}%가 예방\n이 방식으로 예방된 생명력 상실량의 {1:+d}%가 4초에 걸쳐 상실됨"
+		!0   0   0 "피격으로 피해를 받을 때, 생명력 50% 이하 구간에서 상실되는 생명력의 {0:+d}% 예방"
+		0  !0   0 "예방된 생명력 상실량의 {1:+d}%가 4초에 걸쳐 상실됨"
+description endurance_charge_phys_reduction
+	1 physical_damage_reduction_%_per_endurance_charge
+	1
+		# "Buff grants {0}% additional Physical Damage Reduction per Endurance Charge"
+	lang "Korean"
+	1
+		# "버프 시 인내 충전 하나당 받는 물리 피해 {0}% 추가 감소"
+description armour_incr
+	1 physical_damage_reduction_rating_+%
+	2
+		1|# "Buff grants {0}% increased Armour"
+		#|-1 "Buff grants {0}% reduced Armour" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 방어도 {0}% 증가"
+		#|-1 "버프 시 방어도 {0}% 감소" negate 1
+description remora_link
+	1 life_leech_is_applied_to_remora_link_targets_instead
+	1
+		# "Life Leech effects are not removed at Full Life\nLife Leech effects apply Recovery Linked Target instead of you\nLinked target's Maximum total Life Recovery per second from Leech is equal to yours"
+	lang "Korean"
+	1
+		# "최대 생명력일 때 생명력 흡수 효과가 제거되지 않음\n생명력 흡수 효과가 플레이어가 아닌 연결된 대상 회복\n연결된 대상이 플레이어와 동일한 흡수 시 1초당 총 생명력 회복량 최대치 획득"
+description remora_link_damage_on_full_life
+	1 remora_link_grants_damage_+%_when_on_full_life
+	2
+		1|# "Linked target deals {0}% increased Damage when on Full Life"
+		#|-1 "Linked target deals {0}% reduced Damage when on Full Life" negate 1
+	lang "Korean"
+	2
+		1|# "연결된 대상이 생명력이 최대일 때 피해 {0}% 증가"
+		#|-1 "연결된 대상이 생명력이 최대일 때 피해 {0}% 감소" negate 1
+description remora_link_leech_max
+	1 remora_link_grants_maximum_life_leech_rate_%_per_minute
+	1
+		# "Buff grants {0:+d}% to Maximum total Life Recovery per second from Leech" per_minute_to_per_second 1
+	lang "Korean"
+	1
+		# "버프 시 흡수 시 1초당 총 생명력 회복량 최대치 {0:+d}% 부여" per_minute_to_per_second 1
+description endurance_charge_ele_resist
+	1 resist_all_elements_%_per_endurance_charge
+	1
+		# "Buff grants {0:+d}% to all Elemental Resistances per Endurance Charge"
+	lang "Korean"
+	1
+		# "버프 시 인내 충전 하나당 모든 원소 저항 {0:+d}%"
+description all_resist
+	1 resist_all_%
+	1
+		# "Buff grants {0:+d}% to all Resistances"
+	lang "Korean"
+	1
+		# "버프 시 모든 저항 {0:+d}%"
+description skill_buff_effect
+	1 skill_buff_effect_+%
+	2
+		1|# "{0}% increased Buff Effect"
+		#|-1 "{0}% reduced Buff Effect" negate 1
+	lang "Korean"
+	2
+		1|# "버프 효과 {0}% 증가"
+		#|-1 "버프 효과 {0}% 감소" negate 1
+description buff_grants_attack_and_cast_speed
+	1 skill_buff_grants_attack_and_cast_speed_+%
+	2
+		1|# "Buff grants {0}% increased Attack and Cast Speed"
+		#|-1 "Buff grants {0}% reduced Attack and Cast Speed" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 공격 및 시전 속도 {0}% 증가"
+		#|-1 "버프 시 공격 및 시전 속도 {0}% 감소" negate 1
+description buff_grants_chance_to_freeze
+	1 skill_buff_grants_chance_to_freeze_%
+	1
+		1|# "Buff grants {0}% chance to Freeze"
+	lang "Korean"
+	1
+		1|# "버프 시 {0}%의 확률로 동결 유발"
+description buff_grants_damage_pluspercent
+	1 skill_buff_grants_damage_+%
+	2
+		1|# "Buff grants {0}% increased Damage"
+		#|-1 "Buff grants {0}% reduced Damage" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 피해 {0}% 증가"
+		#|-1 "버프 시 피해 {0}% 감소" negate 1
+description buff_grants_shock_duration
+	1 skill_buff_grants_shock_duration_+%
+	2
+		1|# "Buff grants {0}% increased Shock Duration"
+		#|-1 "Buff grants {0}% reduced Shock Duration" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 감전 지속시간 {0}% 증가"
+		#|-1 "버프 시 감전 지속시간 {0}% 감소" negate 1
+description display_buff_shock_immune
+	1 skill_display_buff_grants_shock_immunity
+	1
+		# "Buff grants Immunity to Shock"
+	lang "Korean"
+	1
+		# "버프 시 감전 면역"
+description life_cost_from_mana_cost_not_low_life
+	1 skill_grants_life_cost_%_mana_cost_while_not_on_low_life
+	1
+		# "Skills gain a Base Life Cost equal to {0}% of Base Mana Cost while not on Low Life" reminderstring ReminderTextLowLife
+	lang "Korean"
+	1
+		# "낮은 생명력 상태가 아닐 때 스킬이 기본 마나 소모의 {0}%와 동일한 기본 생명력 소모를 얻음" reminderstring ReminderTextLowLife
+description soul_link_damage_taken
+	1 soul_link_grants_damage_taken_+%_final
+	2
+		1|# "Linked target takes {0}% more Damage"
+		#|-1 "Linked target takes {0}% less Damage" negate 1
+	lang "Korean"
+	2
+		1|# "연결된 대상이 받는 피해 {0}% 증폭"
+		#|-1 "연결된 대상이 받는 피해 {0}% 감폭" negate 1
+description soul_link_mana_regen
+	1 soul_link_grants_mana_regeneration_+%
+	2
+		1|# "Linked target has {0}% increased Mana Regeneration Rate"
+		#|-1 "Linked target has {0}% reduced Mana Regeneration Rate" negate 1
+	lang "Korean"
+	2
+		1|# "연결된 대상의 마나 재생 속도 {0}% 증가"
+		#|-1 "연결된 대상의 마나 재생 속도 {0}% 감소" negate 1
+description soul_link_transfer_percent
+	1 soul_link_grants_take_%_of_hit_damage_from_soul_link_source_energy_shield_before_you
+	1
+		# "{0}% of Damage from Hits against target is taken from your Energy Shield before them"
+	lang "Korean"
+	1
+		# "대상이 피격 시 받는 피해의 {0}%가 대상보다 자신의 에너지 보호막에 먼저 적용"
+description spell_damage_incr
+	1 spell_damage_+%
+	2
+		1|# "Buff Grants {0}% increased Spell Damage"
+		#|-1 "Buff Grants {0}% reduced Spell Damage" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 주문 피해 {0}% 증가"
+		#|-1 "버프 시 주문 피해 {0}% 감소" negate 1
+description storm_blade_less_energy_shield
+	1 storm_blade_energy_shield_+%_final
+	2
+		1|# "Buff grants {0}% more Maximum Energy Shield"
+		#|-1 "Buff grants {0}% less Maximum Energy Shield" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 에너지 보호막 {0}% 증폭"
+		#|-1 "버프 시 에너지 보호막 {0}% 감폭" negate 1
+description storm_blade_buff_attack_speed
+	1 storm_blade_global_attack_speed_+%
+	2
+		1|# "Buff grants {0}% increased Attack Speed"
+		#|-1 "Buff grants {0}% reduced Attack Speed" negate 1
+	lang "Korean"
+	2
+		1|# "버프 시 공격 속도 {0}% 증가"
+		#|-1 "버프 시 공격 속도 {0}% 감소" negate 1
+description unaffected_by_temporal_chains
+	1 unaffected_by_temporal_chains
+	1
+		# "Buff makes you Unaffected by Temporal Chains" reminderstring ReminderTextUnaffectedBy
+	lang "Korean"
+	1
+		# "버프 시 시간의 사슬의 영향을 받지 않음" reminderstring ReminderTextUnaffectedBy
+description vaal_molten_shall_armour_incr
+	1 vaal_molten_shall_armour_+%_final
+	1
+		1|# "Buff grants {0}% more Armour"
+	lang "Korean"
+	1
+		1|# "버프 시 방어도 {0}% 증폭"
+description flame_link_added_damage
+	2 virtual_flame_link_minimum_fire_damage virtual_flame_link_maximum_fire_damage
+	1
+		# # "Linked target gains {0} to {1} Added Fire Damage"
+	lang "Korean"
+	1
+		# # "연결된 대상이 화염 피해 {0}~{1} 추가 획득"
+description storm_blade_base_damage
+	2 virtual_storm_blade_minimum_lightning_damage virtual_storm_blade_maximum_lightning_damage
+	1
+		# # "Energy Blades have {0} to {1} Lightning Damage"
+	lang "Korean"
+	1
+		# # "에너지 칼날이 번개 피해 {0}~{1} 획득"
+description link_stuff
+	2 display_link_stuff link_grace_period_8_second_override
+	2
+		!0 0 "Link breaks if target leaves range or line of sight for 4 seconds\nMaximum 1 Link from any source per target\nYou die if Linked target dies"
+		!0 !0 "Link breaks if target leaves range or line of sight for 8 seconds\nMaximum 1 Link from any source per target\nYou die if Linked target dies"
+	lang "Korean"
+	2
+		!0 0 "대상이 4초 동안 범위 또는 시야를 벗어나면 연결이 끊어짐\n대상 하나당 연결 최대 1개(출처 무관)\n연결된 대상이 죽으면 자신이 죽음"
+		!0 !0 "대상이 8초 동안 범위 또는 시야를 벗어나면 연결이 끊어짐\n대상 하나당 연결 최대 1개(출처 무관)\n연결된 대상이 죽으면 자신이 죽음"

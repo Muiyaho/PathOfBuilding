@@ -1,5 +1,16 @@
 -- Tests for the Korean translation layer. Run from the src directory: luajit ../tools/ko/test.lua
 
+-- On GitHub Actions, failures are also emitted as annotations so they are visible without the job log
+local function report(msg)
+	print(msg)
+	if os.getenv("GITHUB_ACTIONS") then
+		local escaped = msg:gsub("%%", "%%25"):gsub("\r", "%%0D"):gsub("\n", "%%0A")
+		print("::error::" .. escaped)
+	end
+end
+
+local function main()
+
 -- Minimal stand-ins for the SimpleGraphic functions used by Language/ko/Init.lua
 local drawn
 function DrawString(left, top, align, height, font, text) drawn = text end
@@ -67,7 +78,14 @@ end
 print(string.format("200k translations in %.2fs", os.clock() - startTime))
 
 if failures > 0 then
-	print(failures .. " check(s) failed")
+	report(failures .. " check(s) failed")
 	os.exit(1)
 end
 print("All checks passed")
+end
+
+local ok, err = xpcall(main, debug.traceback)
+if not ok then
+	report(err)
+	os.exit(1)
+end

@@ -213,7 +213,8 @@ function writeLua (file, header, tables) {
   for (const [name, dict] of Object.entries(tables)) {
     const entries = [...dict.entries].sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0)
     for (let i = 0; i < entries.length; i += 4000) {
-      lines.push('(function()')
+      // Leading ";" avoids Lua 5.1's "ambiguous syntax" error after the previous chunk's "end)()"
+      lines.push(';(function()')
       for (const [en, kr] of entries.slice(i, i + 4000)) lines.push(`${name}[${luaString(en)}]=${luaString(kr)}`)
       lines.push('end)()')
     }

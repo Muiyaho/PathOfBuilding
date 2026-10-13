@@ -1,0 +1,24 @@
+name: Test Korean language pack
+
+on:
+  push:
+    branches: [ korean ]
+    paths:
+      - 'src/Language/ko/**'
+      - 'src/LaunchKO.lua'
+      - 'tools/ko/**'
+      - '.github/workflows/ko-test.yml'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install LuaJIT
+        run: sudo apt-get update -q && sudo apt-get install -y -q luajit
+
+      - name: Run translation tests
+        working-directory: src
+        run: luajit ../tools/ko/test.lua

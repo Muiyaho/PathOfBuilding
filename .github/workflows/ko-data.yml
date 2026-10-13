@@ -1,0 +1,65 @@
+name: Extract Korean game data
+
+# Downloads English + Korean game data for the patch in tools/ko/extract/PATCH from the
+# GGG patch CDN and publishes the slimmed result to the orphan branch "ko-data".
+on:
+  push:
+    branches: [ korean ]
+    paths:
+      - 'tools/ko/extract/**'
+      - '.github/workflows/ko-data.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ko-data
+  cancel-in-progress: true
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Read patch version
+        id: patch
+        run: echo "version=$(tr -d '[:space:]' < tools/ko/extract/PATCH)" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare export directory
+        run: |
+          mkdir -p work
+          node -e '
+            const fs = require("fs");
+            const config = JSON.parse(fs.readFileSync("tools/ko/extract/config.json", "utf-8"));
+            config.patch = process.argv[1];
+            fs.writeFileSync("work/config.json", JSON.stringify(config, null, 2));
+          ' "${{ steps.patch.outputs.version }}"
+
+      - name: Cache CDN bundles
+        uses: actions/cache@v4
+        with:
+          path: work/.cache
+          key: poe-cdn-${{ steps.patch.outputs.version }}
+
+      - name: Export from patch CDN
+        working-directory: work
+        run: npx --yes pathofexile-dat@16.0.0
+
+      - name: Slim to English + Korean
+        run: node tools/ko/extract/slim.mjs work out "${{ steps.patch.outputs.version }}"
+
+      - name: Publish to ko-data branch
+        run: |
+          cd out
+          git init -q -b ko-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Korean game data for patch ${{ steps.patch.outputs.version }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ko-data
